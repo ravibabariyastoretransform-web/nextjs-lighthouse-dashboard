@@ -7,6 +7,7 @@ import Link from "next/link";
 import { AuditReport } from "@/types/lighthouse";
 import { Button } from "@/components/ui/elements";
 import ReportViewer from "@/components/dashboard/report-viewer";
+import { ApiEndpoints } from "@/utils/api";
 
 export default function ReportPageClient({ report }: { report: AuditReport }) {
     const router = useRouter();
@@ -16,19 +17,16 @@ export default function ReportPageClient({ report }: { report: AuditReport }) {
         if (!confirm("Are you sure you want to delete this audit report?")) return;
         setIsDeleting(true);
         try {
-            const response = await fetch(`/api/audit/${id}`, {
-                method: "DELETE",
-            });
-            const data = await response.json();
-            if (response.ok && data.success) {
+            const { data } = await ApiEndpoints.deleteAudit(id);
+            if (data.success) {
                 router.push("/history");
             } else {
                 alert(data.error || "Failed to delete report.");
                 setIsDeleting(false);
             }
-        } catch (e) {
+        } catch (e: any) {
             console.error(e);
-            alert("Error contacting the delete endpoint.");
+            alert(e.response?.data?.error || "Error contacting the delete endpoint.");
             setIsDeleting(false);
         }
     };

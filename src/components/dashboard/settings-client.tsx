@@ -6,6 +6,7 @@ import {
     Trash2, Lightbulb, Info, FileText, Check, Copy
 } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, Button } from "@/components/ui/elements";
+import { ApiEndpoints } from "@/utils/api";
 
 export default function SettingsClient() {
     const [seeding, setSeeding] = useState(false);
@@ -21,16 +22,15 @@ export default function SettingsClient() {
     const handleSeed = async () => {
         setSeeding(true);
         try {
-            const res = await fetch("/api/settings/seed", { method: "POST" });
-            const data = await res.json();
-            if (res.ok && data.success) {
+            const { data } = await ApiEndpoints.seedSettings();
+            if (data.success) {
                 alert("Success! Tech benchmark reports seeded into reports folder.");
             } else {
                 alert(data.error || "Failed to seed demo data.");
             }
-        } catch (e) {
+        } catch (e: any) {
             console.error(e);
-            alert("Error calling seed API.");
+            alert(e.response?.data?.error || "Error calling seed API.");
         } finally {
             setSeeding(false);
         }
@@ -42,16 +42,15 @@ export default function SettingsClient() {
         }
         setResetting(true);
         try {
-            const res = await fetch("/api/settings/reset", { method: "POST" });
-            const data = await res.json();
-            if (res.ok && data.success) {
+            const { data } = await ApiEndpoints.resetSettings();
+            if (data.success) {
                 alert("Completed! All stored report JSONs have been purged.");
             } else {
                 alert(data.error || "Failed to purge historical reports.");
             }
-        } catch (e) {
+        } catch (e: any) {
             console.error(e);
-            alert("Error calling reset API.");
+            alert(e.response?.data?.error || "Error calling reset API.");
         } finally {
             setResetting(false);
         }

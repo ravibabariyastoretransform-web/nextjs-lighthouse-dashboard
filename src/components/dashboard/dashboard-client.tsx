@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Gauge, Sparkles, AlertCircle, RefreshCw, Send, HelpCircle, HardDrive } from "lucide-react";
 import { AuditReport } from "@/types/lighthouse";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, Button, Input } from "@/components/ui/elements";
+import { ApiEndpoints } from "@/utils/api";
 import ReportViewer from "./report-viewer";
 
 const AUDIT_STEPS = [
@@ -55,16 +56,9 @@ export default function DashboardClient({ initialLatestReport }: DashboardClient
         setCurrentStep(0);
 
         try {
-            const response = await fetch("/api/audit", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ url: url.trim(), simulated }),
-            });
+            const { data } = await ApiEndpoints.runAudit(url.trim(), simulated);
 
-            const data = await response.json();
-            if (!response.ok || !data.success) {
+            if (!data.success) {
                 throw new Error(data.error || "An error occurred while compiling the audit.");
             }
 
@@ -135,8 +129,8 @@ export default function DashboardClient({ initialLatestReport }: DashboardClient
                                             onClick={() => setSimulated(true)}
                                             disabled={isRunning}
                                             className={`flex-1 text-[11px] font-bold rounded-md py-1.5 transition-all cursor-pointer ${simulated
-                                                    ? "bg-card text-foreground shadow-xs"
-                                                    : "text-muted-foreground hover:text-foreground"
+                                                ? "bg-card text-foreground shadow-xs"
+                                                : "text-muted-foreground hover:text-foreground"
                                                 }`}
                                         >
                                             Simulated
@@ -146,8 +140,8 @@ export default function DashboardClient({ initialLatestReport }: DashboardClient
                                             onClick={() => setSimulated(false)}
                                             disabled={isRunning}
                                             className={`flex-1 text-[11px] font-bold rounded-md py-1.5 transition-all cursor-pointer ${!simulated
-                                                    ? "bg-card text-foreground shadow-xs"
-                                                    : "text-muted-foreground hover:text-foreground"
+                                                ? "bg-card text-foreground shadow-xs"
+                                                : "text-muted-foreground hover:text-foreground"
                                                 }`}
                                         >
                                             Lighthouse

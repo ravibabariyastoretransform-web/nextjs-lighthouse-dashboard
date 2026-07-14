@@ -9,6 +9,7 @@ import { AuditReport } from "@/types/lighthouse";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, Button, Input, Badge } from "@/components/ui/elements";
 import ScoreCircle from "./score-circle";
 import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, Legend } from "recharts";
+import { ApiEndpoints } from "@/utils/api";
 
 // Convert raw category score to a rating class
 const getRating = (score: number) => {
@@ -34,24 +35,20 @@ export default function HistoryClient({ initialReports }: HistoryClientProps) {
         setMounted(true);
     }, []);
 
-    // Handle report deletion
     const handleDelete = async (id: string) => {
         if (!confirm("Are you sure you want to delete this audit report?")) return;
         setIsDeleting(id);
         try {
-            const response = await fetch(`/api/audit/${id}`, {
-                method: "DELETE",
-            });
-            const data = await response.json();
-            if (response.ok && data.success) {
+            const { data } = await ApiEndpoints.deleteAudit(id);
+            if (data.success) {
                 setReports((prev) => prev.filter((r) => r.id !== id));
                 setSelectedIds((prev) => prev.filter((item) => item !== id));
             } else {
                 alert(data.error || "Failed to delete report.");
             }
-        } catch (e) {
+        } catch (e: any) {
             console.error(e);
-            alert("Error contacting the delete endpoint.");
+            alert(e.response?.data?.error || "Error contacting the delete endpoint.");
         } finally {
             setIsDeleting(null);
         }
