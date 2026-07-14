@@ -7,9 +7,6 @@ import { neon } from '@neondatabase/serverless';
 import { AuditReport, CoreWebVitals, PerformanceAnalytics, SEOAnalytics, AccessibilityAnalytics, BestPracticesAnalytics, ResourceSummaryItem, NetworkRequestItem, JSExecTimeItem, AssetSizeItem, AuditItem, MetricDetail } from '@/types/lighthouse';
 
 const execAsync = promisify(exec);
-const REPORTS_DIR = process.env.VERCEL
-    ? path.join(os.tmpdir(), 'reports_data')
-    : path.join(process.cwd(), 'reports_data');
 
 // Neon DB Initialization
 const sql = process.env.DATABASE_URL ? neon(process.env.DATABASE_URL) : null;
@@ -32,13 +29,6 @@ async function ensureTableExists() {
 
 // Ensure the table on module load
 ensureTableExists().catch(console.error);
-
-// Helper to ensure reports folder exists
-function ensureReportsDir() {
-    if (!fs.existsSync(REPORTS_DIR)) {
-        fs.mkdirSync(REPORTS_DIR, { recursive: true });
-    }
-}
 
 // Generate a deterministic number between min and max based on a string seed
 function getSeededRandom(seed: string, key: string, min: number, max: number): number {
@@ -431,140 +421,74 @@ export function generateMockReport(url: string): AuditReport {
 }
 
 export async function getReports(): Promise<AuditReport[]> {
-    if (sql) {
-        try {
-            const rows = await sql`SELECT report_data FROM audit_reports ORDER BY timestamp DESC`;
-            if (rows.length === 0) {
-                // Seed initial reports if DB is empty
-                const seedUrls = ['https://nextjs.org', 'https://github.com', 'https://vercel.com', 'https://tailwindcss.com'];
-                const reports: AuditReport[] = [];
-                for (let i = 0; i < seedUrls.length; i++) {
-                    const report = generateMockReport(seedUrls[i]);
-                    const date = new Date();
-                    date.setDate(date.getDate() - i * 2);
-                    report.timestamp = date.toISOString();
-                    report.id = `report_seed_${i + 1}`;
-                    await saveReport(report);
-                    reports.push(report);
-                }
-                return reports.sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime());
-            }
-            return rows.map((r: any) => r.report_data as AuditReport);
-        } catch (e) {
-            console.error('Error fetching reports from Neon DB:', e);
-            return [];
-        }
+    if (!sql) {
+        throw new Error("Neon Database is not configured. Cannot get reports.");
     }
-
-    ensureReportsDir();
     try {
-        const files = fs.readdirSync(REPORTS_DIR);
-        const reports: AuditReport[] = [];
-        for (const file of files) {
-            if (file.endsWith('.json')) {
-                try {
-                    const filePath = path.join(REPORTS_DIR, file);
-                    const raw = fs.readFileSync(filePath, 'utf-8');
-                    reports.push(JSON.parse(raw));
-                } catch (e) {
-                    console.error(`Error parsing report file ${file}:`, e);
-                }
-            }
-        }
-
-        // Seed initial reports if directory contains none
-        if (reports.length === 0) {
-            const seedUrls = [
-                'https://nextjs.org',
-                'https://github.com',
-                'https://vercel.com',
-                'https://tailwindcss.com'
-            ];
+        const rows = await sql`SELECT report_data FROM audit_reports ORDER BY timestamp DESC`;
+        if (rows.length === 0) {
+            // Seed initial reports if DB is empty
+            const seedUrls = ['https://nextjs.org', 'https://github.com', 'https://vercel.com', 'https://tailwindcss.com'];
+            const reports: AuditReport[] = [];
             for (let i = 0; i < seedUrls.length; i++) {
                 const report = generateMockReport(seedUrls[i]);
                 const date = new Date();
-                date.setDate(date.getDate() - i * 2); // space out timestamps by 2 days each
+                date.setDate(date.getDate() - i * 2);
                 report.timestamp = date.toISOString();
                 report.id = `report_seed_${i + 1}`;
                 await saveReport(report);
                 reports.push(report);
             }
+            return reports.sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime());
         }
-
-        // Sort from newest to oldest
-        return reports.sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime());
+        return rows.map((r: any) => r.report_data as AuditReport);
     } catch (e) {
-        console.error('Error listing reports:', e);
+        console.error('Error fetching reports from Neon DB:', e);
         return [];
     }
 }
 
 export async function getReportById(id: string): Promise<AuditReport | null> {
-    if (sql) {
-        try {
-            const rows = await sql`SELECT report_data FROM audit_reports WHERE id = ${id}`;
-            if (rows.length > 0) return rows[0].report_data as AuditReport;
-            return null;
-        } catch (e) {
-            console.error(`Error reading report from DB ${id}:`, e);
-            return null;
-        }
+    if (!sql) {
+        console.warn("Neon Database is not configured.");
+        return null;
     }
-
-    ensureReportsDir();
     try {
-        const filePath = path.join(REPORTS_DIR, `${id}.json`);
-        if (fs.existsSync(filePath)) {
-            const raw = fs.readFileSync(filePath, 'utf-8');
-            return JSON.parse(raw);
-        }
+        const rows = await sql`SELECT report_data FROM audit_reports WHERE id = ${id}`;
+        if (rows.length > 0) return rows[0].report_data as AuditReport;
         return null;
     } catch (e) {
-        console.error(`Error reading report ${id}:`, e);
+        console.error(`Error reading report from DB ${id}:`, e);
         return null;
     }
 }
 
 export async function saveReport(report: AuditReport): Promise<void> {
-    if (sql) {
-        try {
-            await sql`
-                INSERT INTO audit_reports (id, url, timestamp, report_data)
-                VALUES (${report.id}, ${report.url}, ${new Date(report.timestamp)}, ${report as any})
-                ON CONFLICT (id) DO UPDATE SET report_data = ${report as any}
-            `;
-            return;
-        } catch (e) {
-            console.error('Error saving to Neon DB:', e);
-        }
+    if (!sql) {
+        throw new Error("Neon Database is not configured. Cannot save report.");
     }
-
-    ensureReportsDir();
-    const filePath = path.join(REPORTS_DIR, `${report.id}.json`);
-    fs.writeFileSync(filePath, JSON.stringify(report, null, 2), 'utf-8');
+    try {
+        await sql`
+            INSERT INTO audit_reports (id, url, timestamp, report_data)
+            VALUES (${report.id}, ${report.url}, ${new Date(report.timestamp)}, ${report as any})
+            ON CONFLICT (id) DO UPDATE SET report_data = ${report as any}
+        `;
+    } catch (e) {
+        console.error('Error saving to Neon DB:', e);
+        throw e;
+    }
 }
 
 export async function deleteReport(id: string): Promise<boolean> {
-    if (sql) {
-        try {
-            await sql`DELETE FROM audit_reports WHERE id = ${id}`;
-            return true;
-        } catch (e) {
-            console.error(`Error deleting report from DB ${id}:`, e);
-            return false;
-        }
-    }
-
-    ensureReportsDir();
-    try {
-        const filePath = path.join(REPORTS_DIR, `${id}.json`);
-        if (fs.existsSync(filePath)) {
-            fs.unlinkSync(filePath);
-            return true;
-        }
+    if (!sql) {
+        console.warn("Neon Database is not configured.");
         return false;
+    }
+    try {
+        await sql`DELETE FROM audit_reports WHERE id = ${id}`;
+        return true;
     } catch (e) {
-        console.error(`Error deleting report ${id}:`, e);
+        console.error(`Error deleting report from DB ${id}:`, e);
         return false;
     }
 }
@@ -587,8 +511,7 @@ export async function runLighthouseAudit(url: string, forceSimulated = false): P
         // Note: We use headless mode and no-sandbox.
         // Specifying output as JSON lets us capture stdout.
         const tempFileId = `lh_temp_${Date.now()}`;
-        const tempOutPath = path.join(REPORTS_DIR, `${tempFileId}.json`);
-        ensureReportsDir();
+        const tempOutPath = path.join(os.tmpdir(), `${tempFileId}.json`);
 
         // Spawn command
         // We execute via npx lighthouse so it uses our local node_modules install if available, or pulls standard cli
