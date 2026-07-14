@@ -8,6 +8,7 @@ import {
 import { AuditReport } from "@/types/lighthouse";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, Button, Input, Badge } from "@/components/ui/elements";
 import ScoreCircle from "./score-circle";
+import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, Legend } from "recharts";
 
 // Convert raw category score to a rating class
 const getRating = (score: number) => {
@@ -350,6 +351,44 @@ export default function HistoryClient({ initialReports }: HistoryClientProps) {
                     </div>
                 </CardContent>
             </Card>
+
+            {/* Trends Chart */}
+            {filteredReports.length > 1 && (
+                <Card className="bg-card">
+                    <CardHeader>
+                        <CardTitle className="text-base flex items-center gap-2">
+                            <TrendingUp className="h-4.5 w-4.5 text-primary" />
+                            Historical Performance Trends
+                        </CardTitle>
+                        <CardDescription>Visual score progression over time across your filtered audits.</CardDescription>
+                    </CardHeader>
+                    <CardContent className="h-72 w-full pt-0">
+                        <ResponsiveContainer width="100%" height="100%">
+                            <LineChart data={[...filteredReports].reverse().map(r => ({
+                                date: mounted ? new Date(r.timestamp).toLocaleDateString(undefined, { month: 'short', day: 'numeric' }) : "",
+                                performance: Math.round(r.scores.performance * 100),
+                                accessibility: Math.round(r.scores.accessibility * 100),
+                                seo: Math.round(r.scores.seo * 100),
+                                bestPractices: Math.round(r.scores.bestPractices * 100),
+                                overall: Math.round(r.scores.overall * 100)
+                            }))} margin={{ top: 5, right: 20, left: -20, bottom: 5 }}>
+                                <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" vertical={false} opacity={0.5} />
+                                <XAxis dataKey="date" stroke="hsl(var(--muted-foreground))" fontSize={11} tickMargin={10} />
+                                <YAxis stroke="hsl(var(--muted-foreground))" fontSize={11} domain={[0, 100]} tickCount={6} />
+                                <Tooltip
+                                    contentStyle={{ backgroundColor: 'hsl(var(--card))', borderColor: 'hsl(var(--border))', borderRadius: '8px', fontSize: '12px' }}
+                                    itemStyle={{ padding: '2px 0' }}
+                                />
+                                <Legend wrapperStyle={{ fontSize: '11px', paddingTop: '10px' }} iconType="circle" />
+                                <Line type="monotone" dataKey="performance" name="Performance" stroke="#8884d8" strokeWidth={2} dot={{ r: 3 }} activeDot={{ r: 5 }} />
+                                <Line type="monotone" dataKey="accessibility" name="Accessibility" stroke="#82ca9d" strokeWidth={2} dot={{ r: 3 }} />
+                                <Line type="monotone" dataKey="seo" name="SEO" stroke="#ffc658" strokeWidth={2} dot={{ r: 3 }} />
+                                <Line type="monotone" dataKey="overall" name="Overall" stroke="hsl(var(--primary))" strokeWidth={3} dot={{ r: 4 }} activeDot={{ r: 6 }} />
+                            </LineChart>
+                        </ResponsiveContainer>
+                    </CardContent>
+                </Card>
+            )}
 
             {/* Audits table list */}
             <Card className="overflow-hidden">
