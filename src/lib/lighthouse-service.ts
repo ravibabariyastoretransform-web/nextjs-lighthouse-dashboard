@@ -494,7 +494,7 @@ export async function deleteReport(id: string): Promise<boolean> {
 }
 
 export async function runLighthouseAudit(url: string, forceSimulated = false): Promise<AuditReport> {
-    if (forceSimulated) {
+    if (forceSimulated || process.env.VERCEL) {
         const report = generateMockReport(url);
         await saveReport(report);
         return report;
