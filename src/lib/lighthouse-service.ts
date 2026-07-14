@@ -3,12 +3,35 @@ import path from 'path';
 import { exec } from 'child_process';
 import { promisify } from 'util';
 import os from 'os';
+import { neon } from '@neondatabase/serverless';
 import { AuditReport, CoreWebVitals, PerformanceAnalytics, SEOAnalytics, AccessibilityAnalytics, BestPracticesAnalytics, ResourceSummaryItem, NetworkRequestItem, JSExecTimeItem, AssetSizeItem, AuditItem, MetricDetail } from '@/types/lighthouse';
 
 const execAsync = promisify(exec);
 const REPORTS_DIR = process.env.VERCEL
     ? path.join(os.tmpdir(), 'reports_data')
     : path.join(process.cwd(), 'reports_data');
+
+// Neon DB Initialization
+const sql = process.env.DATABASE_URL ? neon(process.env.DATABASE_URL) : null;
+
+async function ensureTableExists() {
+    if (!sql) return;
+    try {
+        await sql`
+            CREATE TABLE IF NOT EXISTS audit_reports (
+                id VARCHAR(255) PRIMARY KEY,
+                url TEXT NOT NULL,
+                timestamp TIMESTAMP NOT NULL,
+                report_data JSONB NOT NULL
+            )
+        `;
+    } catch (e) {
+        console.error("Neon DB Table Creation Error:", e);
+    }
+}
+
+// Ensure the table on module load
+ensureTableExists().catch(console.error);
 
 // Helper to ensure reports folder exists
 function ensureReportsDir() {
@@ -408,6 +431,31 @@ export function generateMockReport(url: string): AuditReport {
 }
 
 export async function getReports(): Promise<AuditReport[]> {
+    if (sql) {
+        try {
+            const rows = await sql`SELECT report_data FROM audit_reports ORDER BY timestamp DESC`;
+            if (rows.length === 0) {
+                // Seed initial reports if DB is empty
+                const seedUrls = ['https://nextjs.org', 'https://github.com', 'https://vercel.com', 'https://tailwindcss.com'];
+                const reports: AuditReport[] = [];
+                for (let i = 0; i < seedUrls.length; i++) {
+                    const report = generateMockReport(seedUrls[i]);
+                    const date = new Date();
+                    date.setDate(date.getDate() - i * 2);
+                    report.timestamp = date.toISOString();
+                    report.id = `report_seed_${i + 1}`;
+                    await saveReport(report);
+                    reports.push(report);
+                }
+                return reports.sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime());
+            }
+            return rows.map((r: any) => r.report_data as AuditReport);
+        } catch (e) {
+            console.error('Error fetching reports from Neon DB:', e);
+            return [];
+        }
+    }
+
     ensureReportsDir();
     try {
         const files = fs.readdirSync(REPORTS_DIR);
@@ -452,6 +500,17 @@ export async function getReports(): Promise<AuditReport[]> {
 }
 
 export async function getReportById(id: string): Promise<AuditReport | null> {
+    if (sql) {
+        try {
+            const rows = await sql`SELECT report_data FROM audit_reports WHERE id = ${id}`;
+            if (rows.length > 0) return rows[0].report_data as AuditReport;
+            return null;
+        } catch (e) {
+            console.error(`Error reading report from DB ${id}:`, e);
+            return null;
+        }
+    }
+
     ensureReportsDir();
     try {
         const filePath = path.join(REPORTS_DIR, `${id}.json`);
@@ -467,12 +526,35 @@ export async function getReportById(id: string): Promise<AuditReport | null> {
 }
 
 export async function saveReport(report: AuditReport): Promise<void> {
+    if (sql) {
+        try {
+            await sql`
+                INSERT INTO audit_reports (id, url, timestamp, report_data)
+                VALUES (${report.id}, ${report.url}, ${new Date(report.timestamp)}, ${report as any})
+                ON CONFLICT (id) DO UPDATE SET report_data = ${report as any}
+            `;
+            return;
+        } catch (e) {
+            console.error('Error saving to Neon DB:', e);
+        }
+    }
+
     ensureReportsDir();
     const filePath = path.join(REPORTS_DIR, `${report.id}.json`);
     fs.writeFileSync(filePath, JSON.stringify(report, null, 2), 'utf-8');
 }
 
 export async function deleteReport(id: string): Promise<boolean> {
+    if (sql) {
+        try {
+            await sql`DELETE FROM audit_reports WHERE id = ${id}`;
+            return true;
+        } catch (e) {
+            console.error(`Error deleting report from DB ${id}:`, e);
+            return false;
+        }
+    }
+
     ensureReportsDir();
     try {
         const filePath = path.join(REPORTS_DIR, `${id}.json`);
