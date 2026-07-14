@@ -21,6 +21,11 @@ interface ReportViewerProps {
 export default function ReportViewer({ report, onDelete }: ReportViewerProps) {
     const [activeTab, setActiveTab] = useState<"overview" | "perf" | "seo" | "acc" | "bp">("overview");
     const [exportingPdf, setExportingPdf] = useState(false);
+    const [mounted, setMounted] = useState(false);
+
+    React.useEffect(() => {
+        setMounted(true);
+    }, []);
 
     // Setup tab menus
     const tabs = [
@@ -132,11 +137,11 @@ export default function ReportViewer({ report, onDelete }: ReportViewerProps) {
                         <div className="flex items-center gap-2">
                             <span className="font-bold text-foreground text-sm max-w-sm truncate">{report.url}</span>
                             <Badge variant="outline" className="text-[10px]">
-                                {new Date(report.timestamp).toLocaleTimeString()}
+                                {mounted ? new Date(report.timestamp).toLocaleTimeString() : "..."}
                             </Badge>
                         </div>
                         <p className="text-xs text-muted-foreground mt-0.5">
-                            Audited on {new Date(report.timestamp).toLocaleDateString()}
+                            Audited on {mounted ? new Date(report.timestamp).toLocaleDateString() : "..."}
                         </p>
                     </div>
                 </div>
@@ -220,8 +225,8 @@ export default function ReportViewer({ report, onDelete }: ReportViewerProps) {
                                 key={tab.id}
                                 onClick={() => setActiveTab(tab.id)}
                                 className={`flex items-center gap-2 px-4 py-3 border-b-2 font-medium text-sm transition-all whitespace-nowrap cursor-pointer ${isActive
-                                        ? "border-primary text-primary"
-                                        : "border-transparent text-muted-foreground hover:text-foreground hover:border-border"
+                                    ? "border-primary text-primary"
+                                    : "border-transparent text-muted-foreground hover:text-foreground hover:border-border"
                                     }`}
                             >
                                 <Icon className="h-4 w-4" />

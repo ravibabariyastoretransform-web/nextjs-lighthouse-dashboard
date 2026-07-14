@@ -27,6 +27,11 @@ export default function HistoryClient({ initialReports }: HistoryClientProps) {
     const [selectedIds, setSelectedIds] = useState<string[]>([]);
     const [compareMode, setCompareMode] = useState(false);
     const [isDeleting, setIsDeleting] = useState<string | null>(null);
+    const [mounted, setMounted] = useState(false);
+
+    React.useEffect(() => {
+        setMounted(true);
+    }, []);
 
     // Handle report deletion
     const handleDelete = async (id: string) => {
@@ -124,7 +129,7 @@ export default function HistoryClient({ initialReports }: HistoryClientProps) {
                     <div>
                         <h3 className="font-bold text-foreground text-base">Comparing {reportsToCompare.length} Audits</h3>
                         <p className="text-xs text-muted-foreground">
-                            Baseline report is: <span className="font-mono">{baseline.url}</span> ({new Date(baseline.timestamp).toLocaleDateString()})
+                            Baseline report is: <span className="font-mono">{baseline.url}</span> ({mounted ? new Date(baseline.timestamp).toLocaleDateString() : "..."})
                         </p>
                     </div>
                 </div>
@@ -144,7 +149,7 @@ export default function HistoryClient({ initialReports }: HistoryClientProps) {
                                         </CardTitle>
                                     </div>
                                     <Badge variant={idx === 0 ? "default" : "secondary"}>
-                                        {new Date(rep.timestamp).toLocaleDateString()}
+                                        {mounted ? new Date(rep.timestamp).toLocaleDateString() : "..."}
                                     </Badge>
                                 </div>
                             </CardHeader>
@@ -408,8 +413,8 @@ export default function HistoryClient({ initialReports }: HistoryClientProps) {
                                             <td className="p-4 text-muted-foreground">
                                                 <div className="flex items-center gap-1.5 whitespace-nowrap">
                                                     <Calendar className="h-3.5 w-3.5" />
-                                                    <span>{new Date(rep.timestamp).toLocaleDateString()}</span>
-                                                    <span className="text-[10px] opacity-75">{new Date(rep.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
+                                                    <span>{mounted ? new Date(rep.timestamp).toLocaleDateString() : "..."}</span>
+                                                    <span className="text-[10px] opacity-75">{mounted ? new Date(rep.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : "..."}</span>
                                                 </div>
                                             </td>
 
