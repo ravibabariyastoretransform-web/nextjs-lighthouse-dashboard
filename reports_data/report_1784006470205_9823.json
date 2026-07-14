@@ -1,0 +1,2159 @@
+{
+  "id": "report_1784006470205_9823",
+  "url": "https://getbootstrap.com",
+  "timestamp": "2026-07-14T05:20:42.821Z",
+  "scores": {
+    "performance": 0.89,
+    "accessibility": 0.92,
+    "bestPractices": 1,
+    "seo": 1,
+    "overall": 0.95
+  },
+  "coreWebVitals": {
+    "lcp": {
+      "displayValue": "1.9 s",
+      "numericValue": 1942.5909999999951,
+      "score": 0.97,
+      "status": "good"
+    },
+    "cls": {
+      "displayValue": "0.047",
+      "numericValue": 0.04662858171582791,
+      "score": 0.99,
+      "status": "good"
+    },
+    "tbt": {
+      "displayValue": "0 ms",
+      "numericValue": 0,
+      "score": 1,
+      "status": "good"
+    },
+    "fcp": {
+      "displayValue": "1.6 s",
+      "numericValue": 1565.8834999999963,
+      "score": 0.95,
+      "status": "good"
+    },
+    "speedIndex": {
+      "displayValue": "10.3 s",
+      "numericValue": 10258.932593999229,
+      "score": 0.08,
+      "status": "poor"
+    },
+    "inp": {
+      "displayValue": "2.0 s",
+      "numericValue": 1950.1251499999953,
+      "score": 0.99,
+      "status": "good"
+    }
+  },
+  "performanceAnalytics": {
+    "opportunities": [
+      {
+        "id": "modern-image-formats",
+        "title": "Serve images in next-gen formats",
+        "description": "Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads and less data consumption. [Learn more about modern image formats](https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images/).",
+        "score": 0.5,
+        "displayValue": "Est savings of 35 KiB",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": ""
+            },
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Resource Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-99-IMG",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,0,DIV,1,IMG",
+                "selector": "div#content > div.container-xxl > div.col-md-8 > img.img-fluid",
+                "boundingRect": {
+                  "top": 0,
+                  "bottom": 0,
+                  "left": 0,
+                  "right": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "snippet": "<img class=\"img-fluid mx-auto d-none d-sm-block mx-auto mb-3\" srcset=\"/docs/5.3/assets/brand/bootstrap-logo-shadow.png, /docs/5.3/assets/brand/b…\" src=\"https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow@2x.png\" alt=\"Bootstrap\" width=\"200\" height=\"165\">",
+                "nodeLabel": "Bootstrap"
+              },
+              "url": "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow@2x.png",
+              "fromProtocol": true,
+              "isCrossOrigin": false,
+              "totalBytes": 42797,
+              "wastedBytes": 23766.95,
+              "wastedWebpBytes": 3105
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-100-IMG",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,0,DIV,7,DIV,0,DIV,1,DIV,0,A,0,IMG",
+                "selector": "div#carbon-responsive > div.carbon-responsive-wrap > a.carbon-img > img",
+                "boundingRect": {
+                  "top": 664,
+                  "bottom": 764,
+                  "left": 40,
+                  "right": 170,
+                  "width": 130,
+                  "height": 100
+                },
+                "snippet": "<img src=\"https://srv.carbonads.net/static/30242/f3dc6d2c4c4ea6771977d883b7a49937b04…\" alt=\"ads via Carbon\" border=\"0\" height=\"100\" width=\"130\" data-no-statview=\"no\">",
+                "nodeLabel": "ads via Carbon"
+              },
+              "url": "https://srv.carbonads.net/static/30242/f3dc6d2c4c4ea6771977d883b7a49937b048390f",
+              "fromProtocol": true,
+              "isCrossOrigin": true,
+              "totalBytes": 17011,
+              "wastedBytes": 11921.5,
+              "wastedWebpBytes": 11361
+            }
+          ],
+          "overallSavingsMs": 0,
+          "overallSavingsBytes": 35688.45,
+          "sortedBy": [
+            "wastedBytes"
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "metricSavings": {
+              "FCP": 0,
+              "LCP": 0
+            }
+          }
+        }
+      },
+      {
+        "id": "render-blocking-resources",
+        "title": "Eliminate render-blocking resources",
+        "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
+        "score": 0,
+        "displayValue": "Est savings of 300 ms",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css",
+              "totalBytes": 32194,
+              "wastedMs": 301
+            },
+            {
+              "url": "https://getbootstrap.com/docs/5.3/assets/_slug_.CJzlHdSW.css",
+              "totalBytes": 12009,
+              "wastedMs": 151
+            }
+          ],
+          "overallSavingsMs": 301
+        }
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "score": 0,
+        "displayValue": "Est savings of 24 KiB",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "subItemsHeading": {
+                "key": "source",
+                "valueType": "code"
+              },
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "subItemsHeading": {
+                "key": "sourceBytes"
+              },
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "subItemsHeading": {
+                "key": "sourceWastedBytes"
+              },
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://getbootstrap.com/docs/5.3/assets/Scripts.astro_astro_type_script_index_0_lang.B072HICR.js",
+              "totalBytes": 29735,
+              "wastedBytes": 24833,
+              "wastedPercent": 83.51491899830653
+            }
+          ],
+          "overallSavingsMs": 0,
+          "overallSavingsBytes": 24833,
+          "sortedBy": [
+            "wastedBytes"
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "metricSavings": {
+              "FCP": 150,
+              "LCP": 0
+            }
+          }
+        }
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "dom-size",
+        "title": "Avoid an excessive DOM size",
+        "description": "A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).",
+        "score": 0.5,
+        "displayValue": "1,200 elements",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "statistic",
+              "valueType": "text",
+              "label": "Statistic"
+            },
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": "Element"
+            },
+            {
+              "key": "value",
+              "valueType": "numeric",
+              "label": "Value"
+            }
+          ],
+          "items": [
+            {
+              "statistic": "Total DOM Elements",
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 1200
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-97-SPAN",
+                "path": "1,HTML,1,BODY,3,MAIN,1,DIV,5,SECTION,1,DIV,0,DIV,3,DIV,1,DIV,0,PRE,0,CODE,0,SPAN,7,SPAN,1,SPAN,2,SPAN,0,SPAN",
+                "selector": "span.token > span.token > span.token > span.token",
+                "boundingRect": {
+                  "top": 6148,
+                  "bottom": 6165,
+                  "left": 932,
+                  "right": 1079,
+                  "width": 146,
+                  "height": 17
+                },
+                "snippet": "<span class=\"token property\">",
+                "nodeLabel": "--bs-nav-link-color"
+              },
+              "statistic": "Maximum DOM Depth",
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 15
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-98-CODE",
+                "path": "1,HTML,1,BODY,3,MAIN,1,DIV,3,SECTION,1,DIV,2,DIV,1,DIV,0,PRE,0,CODE",
+                "selector": "div.bd-code-snippet > div.highlight > pre.language-scss > code.language-scss",
+                "boundingRect": {
+                  "top": 3349,
+                  "bottom": 3807,
+                  "left": 24,
+                  "right": 455,
+                  "width": 431,
+                  "height": 458
+                },
+                "snippet": "<code class=\"language-scss\">",
+                "nodeLabel": "// Functions first\n@import \"../node_modules/bootstrap/scss/functions\";\n\n// Vari…"
+              },
+              "statistic": "Maximum Child Elements",
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 51
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimizes main-thread work",
+        "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to minimize main-thread work](https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/)",
+        "score": 1,
+        "displayValue": "0.6 s",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "groupLabel",
+              "valueType": "text",
+              "label": "Category"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "granularity": 1,
+              "label": "Time Spent"
+            }
+          ],
+          "items": [
+            {
+              "group": "styleLayout",
+              "groupLabel": "Style & Layout",
+              "duration": 229.56799999999987
+            },
+            {
+              "group": "other",
+              "groupLabel": "Other",
+              "duration": 196.6160000000004
+            },
+            {
+              "group": "paintCompositeRender",
+              "groupLabel": "Rendering",
+              "duration": 89.66400000000039
+            },
+            {
+              "group": "scriptEvaluation",
+              "groupLabel": "Script Evaluation",
+              "duration": 85.75600000000001
+            },
+            {
+              "group": "parseHTML",
+              "groupLabel": "Parse HTML & CSS",
+              "duration": 27.083999999999996
+            },
+            {
+              "group": "scriptParseCompile",
+              "groupLabel": "Script Parsing & Compilation",
+              "duration": 10.828000000000001
+            }
+          ],
+          "sortedBy": [
+            "duration"
+          ]
+        }
+      },
+      {
+        "id": "bootup-time",
+        "title": "JavaScript execution time",
+        "description": "Consider reducing the time spent parsing, compiling, and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to reduce Javascript execution time](https://developer.chrome.com/docs/lighthouse/performance/bootup-time/).",
+        "score": 1,
+        "displayValue": "0.0 s",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "total",
+              "granularity": 1,
+              "valueType": "ms",
+              "label": "Total CPU Time"
+            },
+            {
+              "key": "scripting",
+              "granularity": 1,
+              "valueType": "ms",
+              "label": "Script Evaluation"
+            },
+            {
+              "key": "scriptParseCompile",
+              "granularity": 1,
+              "valueType": "ms",
+              "label": "Script Parse"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://getbootstrap.com/",
+              "total": 359.6720000000001,
+              "scripting": 4.016,
+              "scriptParseCompile": 1.044
+            },
+            {
+              "url": "Unattributable",
+              "total": 173.42400000000004,
+              "scripting": 27.223999999999993,
+              "scriptParseCompile": 0
+            }
+          ],
+          "summary": {
+            "wastedMs": 32.28399999999999
+          },
+          "sortedBy": [
+            "total"
+          ]
+        }
+      },
+      {
+        "id": "font-display",
+        "title": "All text remains visible during webfont loads",
+        "description": "Leverage the `font-display` CSS feature to ensure text is user-visible while webfonts are loading. [Learn more about `font-display`](https://developer.chrome.com/docs/lighthouse/performance/font-display/).",
+        "score": 1,
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "ms",
+              "label": "Est Savings"
+            }
+          ],
+          "items": []
+        }
+      },
+      {
+        "id": "network-requests",
+        "title": "Network Requests",
+        "description": "Lists the network requests that were made during page load.",
+        "score": 1,
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "protocol",
+              "valueType": "text",
+              "label": "Protocol"
+            },
+            {
+              "key": "networkRequestTime",
+              "valueType": "ms",
+              "granularity": 1,
+              "label": "Network Request Time"
+            },
+            {
+              "key": "networkEndTime",
+              "valueType": "ms",
+              "granularity": 1,
+              "label": "Network End Time"
+            },
+            {
+              "key": "transferSize",
+              "valueType": "bytes",
+              "displayUnit": "kb",
+              "granularity": 1,
+              "label": "Transfer Size"
+            },
+            {
+              "key": "resourceSize",
+              "valueType": "bytes",
+              "displayUnit": "kb",
+              "granularity": 1,
+              "label": "Resource Size"
+            },
+            {
+              "key": "statusCode",
+              "valueType": "text",
+              "label": "Status Code"
+            },
+            {
+              "key": "mimeType",
+              "valueType": "text",
+              "label": "MIME Type"
+            },
+            {
+              "key": "resourceType",
+              "valueType": "text",
+              "label": "Resource Type"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://getbootstrap.com/",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 0,
+              "networkRequestTime": 1.6680000005289912,
+              "networkEndTime": 3330.967000000179,
+              "finished": true,
+              "transferSize": 17766,
+              "resourceSize": 81293,
+              "statusCode": 200,
+              "mimeType": "text/html",
+              "resourceType": "Document",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "getbootstrap.com"
+            },
+            {
+              "url": "https://getbootstrap.com/docs/5.3/assets/js/color-modes.js",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3326.029000000097,
+              "networkRequestTime": 3330.4760000007227,
+              "networkEndTime": 3400.92399999965,
+              "finished": true,
+              "transferSize": 1135,
+              "resourceSize": 2596,
+              "statusCode": 200,
+              "mimeType": "application/javascript",
+              "resourceType": "Script",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "getbootstrap.com"
+            },
+            {
+              "url": "https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3326.5750000001863,
+              "networkRequestTime": 3331.3310000002384,
+              "networkEndTime": 3461.9259999999776,
+              "finished": true,
+              "transferSize": 32194,
+              "resourceSize": 232111,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "getbootstrap.com"
+            },
+            {
+              "url": "https://cdn.usefathom.com/script.js",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3326.730000000447,
+              "networkRequestTime": 3403.4220000002533,
+              "networkEndTime": 9631.056000000797,
+              "finished": true,
+              "transferSize": 2731,
+              "resourceSize": 6905,
+              "statusCode": 200,
+              "mimeType": "application/javascript",
+              "resourceType": "Script",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "Fathom Analytics"
+            },
+            {
+              "url": "https://getbootstrap.com/docs/5.3/assets/_slug_.CJzlHdSW.css",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3326.845999999903,
+              "networkRequestTime": 3331.4479999998584,
+              "networkEndTime": 3411.8670000005513,
+              "finished": true,
+              "transferSize": 12009,
+              "resourceSize": 61839,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "getbootstrap.com"
+            },
+            {
+              "url": "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow@2x.png",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3326.94000000041,
+              "networkRequestTime": 3331.5320000005886,
+              "networkEndTime": 3406.876000000164,
+              "finished": true,
+              "transferSize": 43062,
+              "resourceSize": 42797,
+              "statusCode": 200,
+              "mimeType": "image/png",
+              "resourceType": "Image",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "getbootstrap.com"
+            },
+            {
+              "url": "https://getbootstrap.com/docs/5.3/assets/Code.astro_astro_type_script_index_0_lang.jwvOqc1M.js",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3327.0389999998733,
+              "networkRequestTime": 3331.6919999998063,
+              "networkEndTime": 3406.481000000611,
+              "finished": true,
+              "transferSize": 4110,
+              "resourceSize": 10676,
+              "statusCode": 200,
+              "mimeType": "application/javascript",
+              "resourceType": "Script",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "getbootstrap.com"
+            },
+            {
+              "url": "https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom&format=responsive",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3332.3629999998957,
+              "networkRequestTime": 3407.036000000313,
+              "networkEndTime": 9649.347000000067,
+              "finished": true,
+              "transferSize": 10843,
+              "resourceSize": 38328,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "Carbon Ads"
+            },
+            {
+              "url": "https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3332.553999999538,
+              "networkRequestTime": 3333.061999999918,
+              "networkEndTime": 3532.728000000119,
+              "finished": true,
+              "transferSize": 24339,
+              "resourceSize": 80496,
+              "statusCode": 200,
+              "mimeType": "application/javascript",
+              "resourceType": "Script",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "getbootstrap.com"
+            },
+            {
+              "url": "https://getbootstrap.com/docs/5.3/assets/Scripts.astro_astro_type_script_index_0_lang.B072HICR.js",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3332.6550000002608,
+              "networkRequestTime": 3333.4809999996796,
+              "networkEndTime": 3534.2249999996275,
+              "finished": true,
+              "transferSize": 38708,
+              "resourceSize": 133459,
+              "statusCode": 200,
+              "mimeType": "application/javascript",
+              "resourceType": "Script",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "getbootstrap.com"
+            },
+            {
+              "url": "https://getbootstrap.com/docs/5.3/assets/img/favicons/manifest.json",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3406.2410000003874,
+              "networkRequestTime": 3407.174000000581,
+              "networkEndTime": 3691.912000000477,
+              "finished": true,
+              "transferSize": 749,
+              "resourceSize": 412,
+              "statusCode": 200,
+              "mimeType": "application/json",
+              "resourceType": "Manifest",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "getbootstrap.com"
+            },
+            {
+              "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3…",
+              "sessionTargetType": "page",
+              "protocol": "data",
+              "rendererStartTime": 3468.493999999948,
+              "networkRequestTime": 3468.493999999948,
+              "networkEndTime": 3468.560999999754,
+              "finished": true,
+              "transferSize": 0,
+              "resourceSize": 280,
+              "statusCode": 200,
+              "mimeType": "image/svg+xml",
+              "resourceType": "Image",
+              "priority": "Low",
+              "experimentalFromMainFrame": true
+            },
+            {
+              "url": "https://getbootstrap.com/docs/5.3/assets/img/webpack.svg",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3533.5120000001043,
+              "networkRequestTime": 3533.875,
+              "networkEndTime": 3606.9799999995157,
+              "finished": true,
+              "transferSize": 578,
+              "resourceSize": 545,
+              "statusCode": 200,
+              "mimeType": "image/svg+xml",
+              "resourceType": "Image",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "getbootstrap.com"
+            },
+            {
+              "url": "https://getbootstrap.com/docs/5.3/assets/img/parcel.png",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3533.63300000038,
+              "networkRequestTime": 3534.6160000003874,
+              "networkEndTime": 3675.6730000004172,
+              "finished": true,
+              "transferSize": 6198,
+              "resourceSize": 6001,
+              "statusCode": 200,
+              "mimeType": "image/png",
+              "resourceType": "Image",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "getbootstrap.com"
+            },
+            {
+              "url": "https://getbootstrap.com/docs/5.3/assets/img/vite.svg",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3533.7450000001118,
+              "networkRequestTime": 3534.7330000000075,
+              "networkEndTime": 3676.682000000961,
+              "finished": true,
+              "transferSize": 889,
+              "resourceSize": 1213,
+              "statusCode": 200,
+              "mimeType": "image/svg+xml",
+              "resourceType": "Image",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "getbootstrap.com"
+            },
+            {
+              "url": "https://cdn.usefathom.com/?h=https%3A%2F%2Fgetbootstrap.com&p=%2F&r=&sid=ITUSEYJG&qs=%7B%7D&cid=96953061",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 9641.592000000179,
+              "networkRequestTime": 9641.908999999985,
+              "networkEndTime": 10013.002000000328,
+              "finished": true,
+              "transferSize": 433,
+              "resourceSize": 43,
+              "statusCode": 200,
+              "mimeType": "image/gif",
+              "resourceType": "Image",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "Fathom Analytics"
+            },
+            {
+              "url": "https://srv.carbonads.net/ads/CKYIKKJL.json?segment=placement:getbootstrapcom&v=true",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 9663.292000000365,
+              "networkRequestTime": 16192.502000000328,
+              "networkEndTime": 16332.400999999605,
+              "finished": true,
+              "transferSize": 646,
+              "resourceSize": 1125,
+              "statusCode": 200,
+              "mimeType": "application/json",
+              "resourceType": "Fetch",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "Carbon Ads"
+            },
+            {
+              "url": "https://srv.carbonads.net/ads/CKYIKKJL.json?segment=placement:getbootstrapcom&v=true",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 9666.870000000112,
+              "networkRequestTime": 9663.684000000358,
+              "networkEndTime": 16192.444000000134,
+              "finished": true,
+              "transferSize": 0,
+              "resourceSize": 0,
+              "statusCode": 200,
+              "mimeType": "",
+              "resourceType": "Preflight",
+              "priority": "High",
+              "entity": "Carbon Ads"
+            },
+            {
+              "url": "https://getbootstrap.com/docs/5.3/assets/img/favicons/favicon.ico",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 10016.585000000894,
+              "networkRequestTime": 10016.907000000589,
+              "networkEndTime": 10080.858000000939,
+              "finished": true,
+              "transferSize": 4937,
+              "resourceSize": 15086,
+              "statusCode": 200,
+              "mimeType": "image/vnd.microsoft.icon",
+              "resourceType": "Other",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "getbootstrap.com"
+            },
+            {
+              "url": "https://getbootstrap.com/docs/5.3/assets/img/favicons/android-chrome-192x192.png",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 10016.78000000026,
+              "networkRequestTime": 10017.04600000009,
+              "networkEndTime": 10079.577999999747,
+              "finished": true,
+              "transferSize": 8483,
+              "resourceSize": 8166,
+              "statusCode": 200,
+              "mimeType": "image/png",
+              "resourceType": "Other",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "getbootstrap.com"
+            },
+            {
+              "url": "https://srv.carbonads.net/ads/CK7DT53I.json?segment=placement:getbootstrapcom",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 16333.797000000253,
+              "networkRequestTime": 16474.330999999307,
+              "networkEndTime": 16630.48100000061,
+              "finished": true,
+              "transferSize": 1212,
+              "resourceSize": 2404,
+              "statusCode": 200,
+              "mimeType": "application/json",
+              "resourceType": "Fetch",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "Carbon Ads"
+            },
+            {
+              "url": "https://srv.carbonads.net/ads/CK7DT53I.json?segment=placement:getbootstrapcom",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 16334.382000000216,
+              "networkRequestTime": 16334.168000000529,
+              "networkEndTime": 16474.273000000045,
+              "finished": true,
+              "transferSize": 0,
+              "resourceSize": 0,
+              "statusCode": 200,
+              "mimeType": "",
+              "resourceType": "Preflight",
+              "priority": "High",
+              "entity": "Carbon Ads"
+            },
+            {
+              "url": "https://srv.carbonads.net/static/30242/f3dc6d2c4c4ea6771977d883b7a49937b048390f",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 16632.87500000093,
+              "networkRequestTime": 16633.189000000246,
+              "networkEndTime": 17120.90500000026,
+              "finished": true,
+              "transferSize": 17011,
+              "resourceSize": 17240,
+              "statusCode": 200,
+              "mimeType": "image/jpeg",
+              "resourceType": "Image",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "Carbon Ads"
+            },
+            {
+              "url": "https://insight.adsrvr.org/track/pxl/?adv=t3k9qrj&ct=0:djrfa1z&fmt=3&orderid=&v=",
+              "sessionTargetType": "page",
+              "protocol": "",
+              "rendererStartTime": 16632.974000000395,
+              "networkRequestTime": 16632.974000000395,
+              "finished": false,
+              "transferSize": 0,
+              "resourceSize": 0,
+              "statusCode": -1,
+              "mimeType": "",
+              "resourceType": "Image",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "The Trade Desk"
+            },
+            {
+              "url": "https://ad.doubleclick.net/ddm/activity/src=15643656;type=sales;cat=408690;qty=1;cost=[Revenue];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=$;gdpr_consent=$;ord=[OrderID]?",
+              "sessionTargetType": "page",
+              "protocol": "",
+              "rendererStartTime": 16633.04600000009,
+              "networkRequestTime": 16633.04600000009,
+              "finished": false,
+              "transferSize": 0,
+              "resourceSize": 0,
+              "statusCode": -1,
+              "mimeType": "",
+              "resourceType": "Image",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "Google/Doubleclick Ads"
+            },
+            {
+              "url": "https://sp.analytics.yahoo.com/spp.pl?a=10000&.yp=10207075&he=&hph=&gv=[ORDER_VALUE]&orderId=[ORDER_ID]&ec=[EVENT_CATEGORY]&ea=fire&el=[EVENT_LABEL]",
+              "sessionTargetType": "page",
+              "protocol": "",
+              "rendererStartTime": 16633.095999999903,
+              "networkRequestTime": 16633.095999999903,
+              "finished": false,
+              "transferSize": 0,
+              "resourceSize": 0,
+              "statusCode": -1,
+              "mimeType": "",
+              "resourceType": "Image",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "Yahoo!"
+            },
+            {
+              "url": "https://secure.adnxs.com/seg?add=37012073&t=2",
+              "sessionTargetType": "page",
+              "protocol": "",
+              "rendererStartTime": 16633.15700000059,
+              "networkRequestTime": 16633.15700000059,
+              "finished": false,
+              "transferSize": 0,
+              "resourceSize": 0,
+              "statusCode": -1,
+              "mimeType": "",
+              "resourceType": "Image",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "AppNexus"
+            },
+            {
+              "url": "https://secure.adnxs.com/px?id=1777282&t=2",
+              "sessionTargetType": "page",
+              "protocol": "",
+              "rendererStartTime": 16633.196000000462,
+              "networkRequestTime": 16633.196000000462,
+              "finished": false,
+              "transferSize": 0,
+              "resourceSize": 0,
+              "statusCode": -1,
+              "mimeType": "",
+              "resourceType": "Image",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "AppNexus"
+            },
+            {
+              "url": "https://segment.prod.bidr.io/associate-segment?buzz_key=dsp&segment_key=dsp-19102",
+              "sessionTargetType": "page",
+              "protocol": "",
+              "rendererStartTime": 16633.23900000006,
+              "networkRequestTime": 16633.23900000006,
+              "finished": false,
+              "transferSize": 0,
+              "resourceSize": 0,
+              "statusCode": -1,
+              "mimeType": "",
+              "resourceType": "Image",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "Beeswax"
+            },
+            {
+              "url": "https://cnv.event.prod.bidr.io/log/cnv?tag_id=3503&buzz_key=dsp&value=&account_id=79&order=[ORDER]&ord=[CACHEBUSTER]",
+              "sessionTargetType": "page",
+              "protocol": "",
+              "rendererStartTime": 16633.29300000053,
+              "networkRequestTime": 16633.29300000053,
+              "finished": false,
+              "transferSize": 0,
+              "resourceSize": 0,
+              "statusCode": -1,
+              "mimeType": "",
+              "resourceType": "Image",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "Beeswax"
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "networkStartTimeTs": 5378757692,
+            "initiators": [
+              {
+                "type": "parser",
+                "url": "https://getbootstrap.com/",
+                "lineNumber": 0,
+                "columnNumber": 865
+              },
+              {
+                "type": "parser",
+                "url": "https://getbootstrap.com/",
+                "lineNumber": 0,
+                "columnNumber": 1025
+              },
+              {
+                "type": "parser",
+                "url": "https://getbootstrap.com/",
+                "lineNumber": 1,
+                "columnNumber": 1462
+              },
+              {
+                "type": "parser",
+                "url": "https://getbootstrap.com/",
+                "lineNumber": 1,
+                "columnNumber": 1538
+              },
+              {
+                "type": "parser",
+                "url": "https://getbootstrap.com/",
+                "lineNumber": 19,
+                "columnNumber": 425
+              },
+              {
+                "type": "parser",
+                "url": "https://getbootstrap.com/",
+                "lineNumber": 22,
+                "columnNumber": 258
+              },
+              {
+                "type": "parser",
+                "url": "https://getbootstrap.com/",
+                "lineNumber": 25,
+                "columnNumber": 402
+              },
+              {
+                "type": "parser",
+                "url": "https://getbootstrap.com/",
+                "lineNumber": 171,
+                "columnNumber": 2601
+              },
+              {
+                "type": "parser",
+                "url": "https://getbootstrap.com/",
+                "lineNumber": 171,
+                "columnNumber": 2713
+              },
+              {
+                "type": "parser",
+                "url": "https://getbootstrap.com/",
+                "lineNumber": 171,
+                "columnNumber": 2610
+              },
+              {
+                "type": "parser",
+                "url": "https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css"
+              },
+              {
+                "type": "parser",
+                "url": "https://getbootstrap.com/",
+                "lineNumber": 171,
+                "columnNumber": 2610
+              },
+              {
+                "type": "parser",
+                "url": "https://getbootstrap.com/",
+                "lineNumber": 171,
+                "columnNumber": 2610
+              },
+              {
+                "type": "parser",
+                "url": "https://getbootstrap.com/",
+                "lineNumber": 171,
+                "columnNumber": 2610
+              },
+              {
+                "type": "preflight",
+                "url": "https://srv.carbonads.net/ads/CKYIKKJL.json?segment=placement:getbootstrapcom&v=true"
+              },
+              {
+                "type": "preflight",
+                "url": "https://srv.carbonads.net/ads/CK7DT53I.json?segment=placement:getbootstrapcom"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "network-server-latency",
+        "title": "Server Backend Latencies",
+        "description": "Server latencies can impact web performance. If the server latency of an origin is high, it's an indication the server is overloaded or has poor backend performance. [Learn more about server response time](https://hpbn.co/primer-on-web-performance/#analyzing-the-resource-waterfall).",
+        "score": 1,
+        "displayValue": "180 ms",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "origin",
+              "valueType": "text",
+              "label": "URL"
+            },
+            {
+              "key": "serverResponseTime",
+              "valueType": "ms",
+              "granularity": 1,
+              "label": "Time Spent"
+            }
+          ],
+          "items": [
+            {
+              "origin": "https://cdn.usefathom.com",
+              "serverResponseTime": 180.0874999999994
+            },
+            {
+              "origin": "https://getbootstrap.com",
+              "serverResponseTime": 60.4195
+            },
+            {
+              "origin": "https://cdn.carbonads.com",
+              "serverResponseTime": 0
+            },
+            {
+              "origin": "https://srv.carbonads.net",
+              "serverResponseTime": 0
+            }
+          ],
+          "sortedBy": [
+            "serverResponseTime"
+          ]
+        }
+      },
+      {
+        "id": "user-timings",
+        "title": "User Timing marks and measures",
+        "description": "Consider instrumenting your app with the User Timing API to measure your app's real-world performance during key user experiences. [Learn more about User Timing marks](https://developer.chrome.com/docs/lighthouse/performance/user-timings/).",
+        "score": 1,
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "name",
+              "valueType": "text",
+              "label": "Name"
+            },
+            {
+              "key": "timingType",
+              "valueType": "text",
+              "label": "Type"
+            },
+            {
+              "key": "startTime",
+              "valueType": "ms",
+              "granularity": 0.01,
+              "label": "Start Time"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "granularity": 0.01,
+              "label": "Duration"
+            }
+          ],
+          "items": []
+        }
+      }
+    ],
+    "resourceSummary": [
+      {
+        "resourceType": "total",
+        "count": 28
+      },
+      {
+        "resourceType": "script",
+        "count": 6
+      },
+      {
+        "resourceType": "image",
+        "count": 13
+      },
+      {
+        "resourceType": "stylesheet",
+        "count": 2
+      },
+      {
+        "resourceType": "document",
+        "count": 1
+      },
+      {
+        "resourceType": "other",
+        "count": 6
+      },
+      {
+        "resourceType": "media",
+        "count": 0
+      },
+      {
+        "resourceType": "font",
+        "count": 0
+      },
+      {
+        "resourceType": "third-party",
+        "count": 15
+      }
+    ],
+    "networkRequests": [
+      {
+        "url": "https://getbootstrap.com/",
+        "transferSize": 17766,
+        "resourceType": "Document",
+        "statusCode": 200
+      },
+      {
+        "url": "https://getbootstrap.com/docs/5.3/assets/js/color-modes.js",
+        "transferSize": 1135,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css",
+        "transferSize": 32194,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://cdn.usefathom.com/script.js",
+        "transferSize": 2731,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://getbootstrap.com/docs/5.3/assets/_slug_.CJzlHdSW.css",
+        "transferSize": 12009,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow@2x.png",
+        "transferSize": 43062,
+        "resourceType": "Image",
+        "statusCode": 200
+      },
+      {
+        "url": "https://getbootstrap.com/docs/5.3/assets/Code.astro_astro_type_script_index_0_lang.jwvOqc1M.js",
+        "transferSize": 4110,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom&format=responsive",
+        "transferSize": 10843,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js",
+        "transferSize": 24339,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://getbootstrap.com/docs/5.3/assets/Scripts.astro_astro_type_script_index_0_lang.B072HICR.js",
+        "transferSize": 38708,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://getbootstrap.com/docs/5.3/assets/img/favicons/manifest.json",
+        "transferSize": 749,
+        "resourceType": "Manifest",
+        "statusCode": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3…",
+        "transferSize": 280,
+        "resourceType": "Image",
+        "statusCode": 200
+      },
+      {
+        "url": "https://getbootstrap.com/docs/5.3/assets/img/webpack.svg",
+        "transferSize": 578,
+        "resourceType": "Image",
+        "statusCode": 200
+      },
+      {
+        "url": "https://getbootstrap.com/docs/5.3/assets/img/parcel.png",
+        "transferSize": 6198,
+        "resourceType": "Image",
+        "statusCode": 200
+      },
+      {
+        "url": "https://getbootstrap.com/docs/5.3/assets/img/vite.svg",
+        "transferSize": 889,
+        "resourceType": "Image",
+        "statusCode": 200
+      },
+      {
+        "url": "https://cdn.usefathom.com/?h=https%3A%2F%2Fgetbootstrap.com&p=%2F&r=&sid=ITUSEYJG&qs=%7B%7D&cid=96953061",
+        "transferSize": 433,
+        "resourceType": "Image",
+        "statusCode": 200
+      },
+      {
+        "url": "https://srv.carbonads.net/ads/CKYIKKJL.json?segment=placement:getbootstrapcom&v=true",
+        "transferSize": 646,
+        "resourceType": "Fetch",
+        "statusCode": 200
+      },
+      {
+        "url": "https://srv.carbonads.net/ads/CKYIKKJL.json?segment=placement:getbootstrapcom&v=true",
+        "transferSize": 0,
+        "resourceType": "Preflight",
+        "statusCode": 200
+      },
+      {
+        "url": "https://getbootstrap.com/docs/5.3/assets/img/favicons/favicon.ico",
+        "transferSize": 4937,
+        "resourceType": "Other",
+        "statusCode": 200
+      },
+      {
+        "url": "https://getbootstrap.com/docs/5.3/assets/img/favicons/android-chrome-192x192.png",
+        "transferSize": 8483,
+        "resourceType": "Other",
+        "statusCode": 200
+      },
+      {
+        "url": "https://srv.carbonads.net/ads/CK7DT53I.json?segment=placement:getbootstrapcom",
+        "transferSize": 1212,
+        "resourceType": "Fetch",
+        "statusCode": 200
+      },
+      {
+        "url": "https://srv.carbonads.net/ads/CK7DT53I.json?segment=placement:getbootstrapcom",
+        "transferSize": 0,
+        "resourceType": "Preflight",
+        "statusCode": 200
+      },
+      {
+        "url": "https://srv.carbonads.net/static/30242/f3dc6d2c4c4ea6771977d883b7a49937b048390f",
+        "transferSize": 17011,
+        "resourceType": "Image",
+        "statusCode": 200
+      },
+      {
+        "url": "https://insight.adsrvr.org/track/pxl/?adv=t3k9qrj&ct=0:djrfa1z&fmt=3&orderid=&v=",
+        "transferSize": 0,
+        "resourceType": "Image",
+        "statusCode": -1
+      },
+      {
+        "url": "https://ad.doubleclick.net/ddm/activity/src=15643656;type=sales;cat=408690;qty=1;cost=[Revenue];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=$;gdpr_consent=$;ord=[OrderID]?",
+        "transferSize": 0,
+        "resourceType": "Image",
+        "statusCode": -1
+      },
+      {
+        "url": "https://sp.analytics.yahoo.com/spp.pl?a=10000&.yp=10207075&he=&hph=&gv=[ORDER_VALUE]&orderId=[ORDER_ID]&ec=[EVENT_CATEGORY]&ea=fire&el=[EVENT_LABEL]",
+        "transferSize": 0,
+        "resourceType": "Image",
+        "statusCode": -1
+      },
+      {
+        "url": "https://secure.adnxs.com/seg?add=37012073&t=2",
+        "transferSize": 0,
+        "resourceType": "Image",
+        "statusCode": -1
+      },
+      {
+        "url": "https://secure.adnxs.com/px?id=1777282&t=2",
+        "transferSize": 0,
+        "resourceType": "Image",
+        "statusCode": -1
+      },
+      {
+        "url": "https://segment.prod.bidr.io/associate-segment?buzz_key=dsp&segment_key=dsp-19102",
+        "transferSize": 0,
+        "resourceType": "Image",
+        "statusCode": -1
+      },
+      {
+        "url": "https://cnv.event.prod.bidr.io/log/cnv?tag_id=3503&buzz_key=dsp&value=&account_id=79&order=[ORDER]&ord=[CACHEBUSTER]",
+        "transferSize": 0,
+        "resourceType": "Image",
+        "statusCode": -1
+      }
+    ],
+    "javascriptExecutionTime": [
+      {
+        "url": "https://getbootstrap.com/",
+        "duration": 0
+      },
+      {
+        "url": "Unattributable",
+        "duration": 0
+      }
+    ],
+    "largestAssets": [
+      {
+        "url": "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow@2x.png",
+        "totalBytes": 43062
+      },
+      {
+        "url": "https://getbootstrap.com/docs/5.3/assets/Scripts.astro_astro_type_script_index_0_lang.B072HICR.js",
+        "totalBytes": 38708
+      },
+      {
+        "url": "https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css",
+        "totalBytes": 32194
+      },
+      {
+        "url": "https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js",
+        "totalBytes": 24339
+      },
+      {
+        "url": "https://getbootstrap.com/",
+        "totalBytes": 17766
+      },
+      {
+        "url": "https://srv.carbonads.net/static/30242/f3dc6d2c4c4ea6771977d883b7a49937b048390f",
+        "totalBytes": 17011
+      },
+      {
+        "url": "https://getbootstrap.com/docs/5.3/assets/_slug_.CJzlHdSW.css",
+        "totalBytes": 12009
+      },
+      {
+        "url": "https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom&format=responsive",
+        "totalBytes": 10843
+      },
+      {
+        "url": "https://getbootstrap.com/docs/5.3/assets/img/favicons/android-chrome-192x192.png",
+        "totalBytes": 8483
+      },
+      {
+        "url": "https://getbootstrap.com/docs/5.3/assets/img/parcel.png",
+        "totalBytes": 6198
+      }
+    ]
+  },
+  "seoAnalytics": {
+    "passed": [
+      {
+        "id": "is-crawlable",
+        "title": "Page isn’t blocked from indexing",
+        "description": "Search engines are unable to include your pages in search results if they don't have permission to crawl them. [Learn more about crawler directives](https://developer.chrome.com/docs/lighthouse/seo/is-crawlable/).",
+        "score": 1
+      },
+      {
+        "id": "document-title",
+        "title": "Document has a `<title>` element",
+        "description": "The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a page is relevant to their search. [Learn more about document titles](https://dequeuniversity.com/rules/axe/4.10/document-title).",
+        "score": 1
+      },
+      {
+        "id": "meta-description",
+        "title": "Document has a meta description",
+        "description": "Meta descriptions may be included in search results to concisely summarize page content. [Learn more about the meta description](https://developer.chrome.com/docs/lighthouse/seo/meta-description/).",
+        "score": 1
+      },
+      {
+        "id": "http-status-code",
+        "title": "Page has successful HTTP status code",
+        "description": "Pages with unsuccessful HTTP status codes may not be indexed properly. [Learn more about HTTP status codes](https://developer.chrome.com/docs/lighthouse/seo/http-status-code/).",
+        "score": 1
+      },
+      {
+        "id": "link-text",
+        "title": "Links have descriptive text",
+        "description": "Descriptive link text helps search engines understand your content. [Learn how to make links more accessible](https://developer.chrome.com/docs/lighthouse/seo/link-text/).",
+        "score": 1
+      },
+      {
+        "id": "crawlable-anchors",
+        "title": "Links are crawlable",
+        "description": "Search engines may use `href` attributes on links to crawl websites. Ensure that the `href` attribute of anchor elements links to an appropriate destination, so more pages of the site can be discovered. [Learn how to make links crawlable](https://support.google.com/webmasters/answer/9112205)",
+        "score": 1
+      },
+      {
+        "id": "robots-txt",
+        "title": "robots.txt is valid",
+        "description": "If your robots.txt file is malformed, crawlers may not be able to understand how you want your website to be crawled or indexed. [Learn more about robots.txt](https://developer.chrome.com/docs/lighthouse/seo/invalid-robots-txt/).",
+        "score": 1
+      },
+      {
+        "id": "image-alt",
+        "title": "Image elements have `[alt]` attributes",
+        "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.10/image-alt).",
+        "score": 1
+      },
+      {
+        "id": "hreflang",
+        "title": "Document has a valid `hreflang`",
+        "description": "hreflang links tell search engines what version of a page they should list in search results for a given language or region. [Learn more about `hreflang`](https://developer.chrome.com/docs/lighthouse/seo/hreflang/).",
+        "score": 1
+      },
+      {
+        "id": "canonical",
+        "title": "Document has a valid `rel=canonical`",
+        "description": "Canonical links suggest which URL to show in search results. [Learn more about canonical links](https://developer.chrome.com/docs/lighthouse/seo/canonical/).",
+        "score": 1
+      },
+      {
+        "id": "structured-data",
+        "title": "Structured data is valid",
+        "description": "Run the [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/) and the [Structured Data Linter](http://linter.structured-data.org/) to validate structured data. [Learn more about Structured Data](https://developer.chrome.com/docs/lighthouse/seo/structured-data/).",
+        "score": 1
+      }
+    ],
+    "failed": [],
+    "metadata": {
+      "hasTitle": true,
+      "hasMetaDescription": true,
+      "hasViewport": true,
+      "hasH1": true,
+      "isIndexable": true
+    },
+    "structuredData": {
+      "valid": true,
+      "detectedTypes": []
+    }
+  },
+  "accessibilityAnalytics": {
+    "passed": [
+      {
+        "id": "accesskeys",
+        "title": "`[accesskey]` values are unique",
+        "description": "Access keys let users quickly focus a part of the page. For proper navigation, each access key must be unique. [Learn more about access keys](https://dequeuniversity.com/rules/axe/4.10/accesskeys).",
+        "score": 1
+      },
+      {
+        "id": "aria-allowed-attr",
+        "title": "`[aria-*]` attributes match their roles",
+        "description": "Each ARIA `role` supports a specific subset of `aria-*` attributes. Mismatching these invalidates the `aria-*` attributes. [Learn how to match ARIA attributes to their roles](https://dequeuniversity.com/rules/axe/4.10/aria-allowed-attr).",
+        "score": 1
+      },
+      {
+        "id": "aria-allowed-role",
+        "title": "Uses ARIA roles only on compatible elements",
+        "description": "Many HTML elements can only be assigned certain ARIA roles. Using ARIA roles where they are not allowed can interfere with the accessibility of the web page. [Learn more about ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role).",
+        "score": 1
+      },
+      {
+        "id": "aria-command-name",
+        "title": "`button`, `link`, and `menuitem` elements have accessible names",
+        "description": "When an element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn how to make command elements more accessible](https://dequeuniversity.com/rules/axe/4.10/aria-command-name).",
+        "score": 1
+      },
+      {
+        "id": "aria-conditional-attr",
+        "title": "ARIA attributes are used as specified for the element's role",
+        "description": "Some ARIA attributes are only allowed on an element under certain conditions. [Learn more about conditional ARIA attributes](https://dequeuniversity.com/rules/axe/4.10/aria-conditional-attr).",
+        "score": 1
+      },
+      {
+        "id": "aria-deprecated-role",
+        "title": "Deprecated ARIA roles were not used",
+        "description": "Deprecated ARIA roles may not be processed correctly by assistive technology. [Learn more about deprecated ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-deprecated-role).",
+        "score": 1
+      },
+      {
+        "id": "aria-dialog-name",
+        "title": "Elements with `role=\"dialog\"` or `role=\"alertdialog\"` have accessible names.",
+        "description": "ARIA dialog elements without accessible names may prevent screen readers users from discerning the purpose of these elements. [Learn how to make ARIA dialog elements more accessible](https://dequeuniversity.com/rules/axe/4.10/aria-dialog-name).",
+        "score": 1
+      },
+      {
+        "id": "aria-hidden-body",
+        "title": "`[aria-hidden=\"true\"]` is not present on the document `<body>`",
+        "description": "Assistive technologies, like screen readers, work inconsistently when `aria-hidden=\"true\"` is set on the document `<body>`. [Learn how `aria-hidden` affects the document body](https://dequeuniversity.com/rules/axe/4.10/aria-hidden-body).",
+        "score": 1
+      },
+      {
+        "id": "aria-hidden-focus",
+        "title": "`[aria-hidden=\"true\"]` elements do not contain focusable descendents",
+        "description": "Focusable descendents within an `[aria-hidden=\"true\"]` element prevent those interactive elements from being available to users of assistive technologies like screen readers. [Learn how `aria-hidden` affects focusable elements](https://dequeuniversity.com/rules/axe/4.10/aria-hidden-focus).",
+        "score": 1
+      },
+      {
+        "id": "aria-input-field-name",
+        "title": "ARIA input fields have accessible names",
+        "description": "When an input field doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn more about input field labels](https://dequeuniversity.com/rules/axe/4.10/aria-input-field-name).",
+        "score": 1
+      },
+      {
+        "id": "aria-meter-name",
+        "title": "ARIA `meter` elements have accessible names",
+        "description": "When a meter element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn how to name `meter` elements](https://dequeuniversity.com/rules/axe/4.10/aria-meter-name).",
+        "score": 1
+      },
+      {
+        "id": "aria-progressbar-name",
+        "title": "ARIA `progressbar` elements have accessible names",
+        "description": "When a `progressbar` element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn how to label `progressbar` elements](https://dequeuniversity.com/rules/axe/4.10/aria-progressbar-name).",
+        "score": 1
+      },
+      {
+        "id": "aria-prohibited-attr",
+        "title": "Elements use only permitted ARIA attributes",
+        "description": "Using ARIA attributes in roles where they are prohibited can mean that important information is not communicated to users of assistive technologies. [Learn more about prohibited ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-prohibited-attr).",
+        "score": 1
+      },
+      {
+        "id": "aria-required-attr",
+        "title": "`[role]`s have all required `[aria-*]` attributes",
+        "description": "Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more about roles and required attributes](https://dequeuniversity.com/rules/axe/4.10/aria-required-attr).",
+        "score": 1
+      },
+      {
+        "id": "aria-required-children",
+        "title": "Elements with an ARIA `[role]` that require children to contain a specific `[role]` have all required children.",
+        "description": "Some ARIA parent roles must contain specific child roles to perform their intended accessibility functions. [Learn more about roles and required children elements](https://dequeuniversity.com/rules/axe/4.10/aria-required-children).",
+        "score": 1
+      },
+      {
+        "id": "aria-required-parent",
+        "title": "`[role]`s are contained by their required parent element",
+        "description": "Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.10/aria-required-parent).",
+        "score": 1
+      },
+      {
+        "id": "aria-roles",
+        "title": "`[role]` values are valid",
+        "description": "ARIA roles must have valid values in order to perform their intended accessibility functions. [Learn more about valid ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-roles).",
+        "score": 1
+      },
+      {
+        "id": "aria-text",
+        "title": "Elements with the `role=text` attribute do not have focusable descendents.",
+        "description": "Adding `role=text` around a text node split by markup enables VoiceOver to treat it as one phrase, but the element's focusable descendents will not be announced. [Learn more about the `role=text` attribute](https://dequeuniversity.com/rules/axe/4.10/aria-text).",
+        "score": 1
+      },
+      {
+        "id": "aria-toggle-field-name",
+        "title": "ARIA toggle fields have accessible names",
+        "description": "When a toggle field doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn more about toggle fields](https://dequeuniversity.com/rules/axe/4.10/aria-toggle-field-name).",
+        "score": 1
+      },
+      {
+        "id": "aria-tooltip-name",
+        "title": "ARIA `tooltip` elements have accessible names",
+        "description": "When a tooltip element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn how to name `tooltip` elements](https://dequeuniversity.com/rules/axe/4.10/aria-tooltip-name).",
+        "score": 1
+      },
+      {
+        "id": "aria-treeitem-name",
+        "title": "ARIA `treeitem` elements have accessible names",
+        "description": "When a `treeitem` element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn more about labeling `treeitem` elements](https://dequeuniversity.com/rules/axe/4.10/aria-treeitem-name).",
+        "score": 1
+      },
+      {
+        "id": "aria-valid-attr-value",
+        "title": "`[aria-*]` attributes have valid values",
+        "description": "Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid values. [Learn more about valid values for ARIA attributes](https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr-value).",
+        "score": 1
+      },
+      {
+        "id": "aria-valid-attr",
+        "title": "`[aria-*]` attributes are valid and not misspelled",
+        "description": "Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid names. [Learn more about valid ARIA attributes](https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr).",
+        "score": 1
+      },
+      {
+        "id": "button-name",
+        "title": "Buttons have an accessible name",
+        "description": "When a button doesn't have an accessible name, screen readers announce it as \"button\", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.10/button-name).",
+        "score": 1
+      },
+      {
+        "id": "bypass",
+        "title": "The page contains a heading, skip link, or landmark region",
+        "description": "Adding ways to bypass repetitive content lets keyboard users navigate the page more efficiently. [Learn more about bypass blocks](https://dequeuniversity.com/rules/axe/4.10/bypass).",
+        "score": 1
+      },
+      {
+        "id": "definition-list",
+        "title": "`<dl>`'s contain only properly-ordered `<dt>` and `<dd>` groups, `<script>`, `<template>` or `<div>` elements.",
+        "description": "When definition lists are not properly marked up, screen readers may produce confusing or inaccurate output. [Learn how to structure definition lists correctly](https://dequeuniversity.com/rules/axe/4.10/definition-list).",
+        "score": 1
+      },
+      {
+        "id": "dlitem",
+        "title": "Definition list items are wrapped in `<dl>` elements",
+        "description": "Definition list items (`<dt>` and `<dd>`) must be wrapped in a parent `<dl>` element to ensure that screen readers can properly announce them. [Learn how to structure definition lists correctly](https://dequeuniversity.com/rules/axe/4.10/dlitem).",
+        "score": 1
+      },
+      {
+        "id": "document-title",
+        "title": "Document has a `<title>` element",
+        "description": "The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a page is relevant to their search. [Learn more about document titles](https://dequeuniversity.com/rules/axe/4.10/document-title).",
+        "score": 1
+      },
+      {
+        "id": "duplicate-id-aria",
+        "title": "ARIA IDs are unique",
+        "description": "The value of an ARIA ID must be unique to prevent other instances from being overlooked by assistive technologies. [Learn how to fix duplicate ARIA IDs](https://dequeuniversity.com/rules/axe/4.10/duplicate-id-aria).",
+        "score": 1
+      },
+      {
+        "id": "form-field-multiple-labels",
+        "title": "No form fields have multiple labels",
+        "description": "Form fields with multiple labels can be confusingly announced by assistive technologies like screen readers which use either the first, the last, or all of the labels. [Learn how to use form labels](https://dequeuniversity.com/rules/axe/4.10/form-field-multiple-labels).",
+        "score": 1
+      },
+      {
+        "id": "frame-title",
+        "title": "`<frame>` or `<iframe>` elements have a title",
+        "description": "Screen reader users rely on frame titles to describe the contents of frames. [Learn more about frame titles](https://dequeuniversity.com/rules/axe/4.10/frame-title).",
+        "score": 1
+      },
+      {
+        "id": "html-has-lang",
+        "title": "`<html>` element has a `[lang]` attribute",
+        "description": "If a page doesn't specify a `lang` attribute, a screen reader assumes that the page is in the default language that the user chose when setting up the screen reader. If the page isn't actually in the default language, then the screen reader might not announce the page's text correctly. [Learn more about the `lang` attribute](https://dequeuniversity.com/rules/axe/4.10/html-has-lang).",
+        "score": 1
+      },
+      {
+        "id": "html-lang-valid",
+        "title": "`<html>` element has a valid value for its `[lang]` attribute",
+        "description": "Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) helps screen readers announce text properly. [Learn how to use the `lang` attribute](https://dequeuniversity.com/rules/axe/4.10/html-lang-valid).",
+        "score": 1
+      },
+      {
+        "id": "html-xml-lang-mismatch",
+        "title": "`<html>` element has an `[xml:lang]` attribute with the same base language as the `[lang]` attribute.",
+        "description": "If the webpage does not specify a consistent language, then the screen reader might not announce the page's text correctly. [Learn more about the `lang` attribute](https://dequeuniversity.com/rules/axe/4.10/html-xml-lang-mismatch).",
+        "score": 1
+      },
+      {
+        "id": "image-alt",
+        "title": "Image elements have `[alt]` attributes",
+        "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.10/image-alt).",
+        "score": 1
+      },
+      {
+        "id": "image-redundant-alt",
+        "title": "Image elements do not have `[alt]` attributes that are redundant text.",
+        "description": "Informative elements should aim for short, descriptive alternative text. Alternative text that is exactly the same as the text adjacent to the link or image is potentially confusing for screen reader users, because the text will be read twice. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt).",
+        "score": 1
+      },
+      {
+        "id": "input-button-name",
+        "title": "Input buttons have discernible text.",
+        "description": "Adding discernable and accessible text to input buttons may help screen reader users understand the purpose of the input button. [Learn more about input buttons](https://dequeuniversity.com/rules/axe/4.10/input-button-name).",
+        "score": 1
+      },
+      {
+        "id": "input-image-alt",
+        "title": "`<input type=\"image\">` elements have `[alt]` text",
+        "description": "When an image is being used as an `<input>` button, providing alternative text can help screen reader users understand the purpose of the button. [Learn about input image alt text](https://dequeuniversity.com/rules/axe/4.10/input-image-alt).",
+        "score": 1
+      },
+      {
+        "id": "label",
+        "title": "Form elements have associated labels",
+        "description": "Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more about form element labels](https://dequeuniversity.com/rules/axe/4.10/label).",
+        "score": 1
+      },
+      {
+        "id": "link-name",
+        "title": "Links have a discernible name",
+        "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.10/link-name).",
+        "score": 1
+      },
+      {
+        "id": "list",
+        "title": "Lists contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+        "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.10/list).",
+        "score": 1
+      },
+      {
+        "id": "listitem",
+        "title": "List items (`<li>`) are contained within `<ul>`, `<ol>` or `<menu>` parent elements",
+        "description": "Screen readers require list items (`<li>`) to be contained within a parent `<ul>`, `<ol>` or `<menu>` to be announced properly. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.10/listitem).",
+        "score": 1
+      },
+      {
+        "id": "meta-refresh",
+        "title": "The document does not use `<meta http-equiv=\"refresh\">`",
+        "description": "Users do not expect a page to refresh automatically, and doing so will move focus back to the top of the page. This may create a frustrating or confusing experience. [Learn more about the refresh meta tag](https://dequeuniversity.com/rules/axe/4.10/meta-refresh).",
+        "score": 1
+      },
+      {
+        "id": "meta-viewport",
+        "title": "`[user-scalable=\"no\"]` is not used in the `<meta name=\"viewport\">` element and the `[maximum-scale]` attribute is not less than 5.",
+        "description": "Disabling zooming is problematic for users with low vision who rely on screen magnification to properly see the contents of a web page. [Learn more about the viewport meta tag](https://dequeuniversity.com/rules/axe/4.10/meta-viewport).",
+        "score": 1
+      },
+      {
+        "id": "object-alt",
+        "title": "`<object>` elements have alternate text",
+        "description": "Screen readers cannot translate non-text content. Adding alternate text to `<object>` elements helps screen readers convey meaning to users. [Learn more about alt text for `object` elements](https://dequeuniversity.com/rules/axe/4.10/object-alt).",
+        "score": 1
+      },
+      {
+        "id": "select-name",
+        "title": "Select elements have associated label elements.",
+        "description": "Form elements without effective labels can create frustrating experiences for screen reader users. [Learn more about the `select` element](https://dequeuniversity.com/rules/axe/4.10/select-name).",
+        "score": 1
+      },
+      {
+        "id": "skip-link",
+        "title": "Skip links are focusable.",
+        "description": "Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.10/skip-link).",
+        "score": 1
+      },
+      {
+        "id": "tabindex",
+        "title": "No element has a `[tabindex]` value greater than 0",
+        "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.10/tabindex).",
+        "score": 1
+      },
+      {
+        "id": "table-duplicate-name",
+        "title": "Tables have different content in the summary attribute and `<caption>`.",
+        "description": "The summary attribute should describe the table structure, while `<caption>` should have the onscreen title. Accurate table mark-up helps users of screen readers. [Learn more about summary and caption](https://dequeuniversity.com/rules/axe/4.10/table-duplicate-name).",
+        "score": 1
+      },
+      {
+        "id": "target-size",
+        "title": "Touch targets have sufficient size and spacing.",
+        "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.10/target-size).",
+        "score": 1
+      },
+      {
+        "id": "td-headers-attr",
+        "title": "Cells in a `<table>` element that use the `[headers]` attribute refer to table cells within the same table.",
+        "description": "Screen readers have features to make navigating tables easier. Ensuring `<td>` cells using the `[headers]` attribute only refer to other cells in the same table may improve the experience for screen reader users. [Learn more about the `headers` attribute](https://dequeuniversity.com/rules/axe/4.10/td-headers-attr).",
+        "score": 1
+      },
+      {
+        "id": "th-has-data-cells",
+        "title": "`<th>` elements and elements with `[role=\"columnheader\"/\"rowheader\"]` have data cells they describe.",
+        "description": "Screen readers have features to make navigating tables easier. Ensuring table headers always refer to some set of cells may improve the experience for screen reader users. [Learn more about table headers](https://dequeuniversity.com/rules/axe/4.10/th-has-data-cells).",
+        "score": 1
+      },
+      {
+        "id": "valid-lang",
+        "title": "`[lang]` attributes have a valid value",
+        "description": "Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) on elements helps ensure that text is pronounced correctly by a screen reader. [Learn how to use the `lang` attribute](https://dequeuniversity.com/rules/axe/4.10/valid-lang).",
+        "score": 1
+      },
+      {
+        "id": "video-caption",
+        "title": "`<video>` elements contain a `<track>` element with `[kind=\"captions\"]`",
+        "description": "When a video provides a caption it is easier for deaf and hearing impaired users to access its information. [Learn more about video captions](https://dequeuniversity.com/rules/axe/4.10/video-caption).",
+        "score": 1
+      },
+      {
+        "id": "focusable-controls",
+        "title": "Interactive controls are keyboard focusable",
+        "description": "Custom interactive controls are keyboard focusable and display a focus indicator. [Learn how to make custom controls focusable](https://developer.chrome.com/docs/lighthouse/accessibility/focusable-controls/).",
+        "score": 1
+      },
+      {
+        "id": "interactive-element-affordance",
+        "title": "Interactive elements indicate their purpose and state",
+        "description": "Interactive elements, such as links and buttons, should indicate their state and be distinguishable from non-interactive elements. [Learn how to decorate interactive elements with affordance hints](https://developer.chrome.com/docs/lighthouse/accessibility/interactive-element-affordance/).",
+        "score": 1
+      },
+      {
+        "id": "logical-tab-order",
+        "title": "The page has a logical tab order",
+        "description": "Tabbing through the page follows the visual layout. Users cannot focus elements that are offscreen. [Learn more about logical tab ordering](https://developer.chrome.com/docs/lighthouse/accessibility/logical-tab-order/).",
+        "score": 1
+      },
+      {
+        "id": "visual-order-follows-dom",
+        "title": "Visual order on the page follows DOM order",
+        "description": "DOM order matches the visual order, improving navigation for assistive technology. [Learn more about DOM and visual ordering](https://developer.chrome.com/docs/lighthouse/accessibility/visual-order-follows-dom/).",
+        "score": 1
+      },
+      {
+        "id": "focus-traps",
+        "title": "User focus is not accidentally trapped in a region",
+        "description": "A user can tab into and out of any control or region without accidentally trapping their focus. [Learn how to avoid focus traps](https://developer.chrome.com/docs/lighthouse/accessibility/focus-traps/).",
+        "score": 1
+      },
+      {
+        "id": "managed-focus",
+        "title": "The user's focus is directed to new content added to the page",
+        "description": "If new content, such as a dialog, is added to the page, the user's focus is directed to it. [Learn how to direct focus to new content](https://developer.chrome.com/docs/lighthouse/accessibility/managed-focus/).",
+        "score": 1
+      },
+      {
+        "id": "use-landmarks",
+        "title": "HTML5 landmark elements are used to improve navigation",
+        "description": "Landmark elements (`<main>`, `<nav>`, etc.) are used to improve the keyboard navigation of the page for assistive technology. [Learn more about landmark elements](https://developer.chrome.com/docs/lighthouse/accessibility/use-landmarks/).",
+        "score": 1
+      },
+      {
+        "id": "offscreen-content-hidden",
+        "title": "Offscreen content is hidden from assistive technology",
+        "description": "Offscreen content is hidden with display: none or aria-hidden=true. [Learn how to properly hide offscreen content](https://developer.chrome.com/docs/lighthouse/accessibility/offscreen-content-hidden/).",
+        "score": 1
+      },
+      {
+        "id": "custom-controls-labels",
+        "title": "Custom controls have associated labels",
+        "description": "Custom interactive controls have associated labels, provided by aria-label or aria-labelledby. [Learn more about custom controls and labels](https://developer.chrome.com/docs/lighthouse/accessibility/custom-controls-labels/).",
+        "score": 1
+      },
+      {
+        "id": "custom-controls-roles",
+        "title": "Custom controls have ARIA roles",
+        "description": "Custom interactive controls have appropriate ARIA roles. [Learn how to add roles to custom controls](https://developer.chrome.com/docs/lighthouse/accessibility/custom-control-roles/).",
+        "score": 1
+      },
+      {
+        "id": "empty-heading",
+        "title": "All heading elements contain content.",
+        "description": "A heading with no content or inaccessible text prevent screen reader users from accessing information on the page's structure. [Learn more about headings](https://dequeuniversity.com/rules/axe/4.10/empty-heading).",
+        "score": 1
+      },
+      {
+        "id": "identical-links-same-purpose",
+        "title": "Identical links have the same purpose.",
+        "description": "Links with the same destination should have the same description, to help users understand the link's purpose and decide whether to follow it. [Learn more about identical links](https://dequeuniversity.com/rules/axe/4.10/identical-links-same-purpose).",
+        "score": 1
+      },
+      {
+        "id": "landmark-one-main",
+        "title": "Document has a main landmark.",
+        "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.10/landmark-one-main).",
+        "score": 1
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels have matching accessible names.",
+        "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.10/label-content-name-mismatch).",
+        "score": 1
+      },
+      {
+        "id": "table-fake-caption",
+        "title": "Tables use `<caption>` instead of cells with the `[colspan]` attribute to indicate a caption.",
+        "description": "Screen readers have features to make navigating tables easier. Ensuring that tables use the actual caption element instead of cells with the `[colspan]` attribute may improve the experience for screen reader users. [Learn more about captions](https://dequeuniversity.com/rules/axe/4.10/table-fake-caption).",
+        "score": 1
+      },
+      {
+        "id": "td-has-header",
+        "title": "`<td>` elements in a large `<table>` have one or more table headers.",
+        "description": "Screen readers have features to make navigating tables easier. Ensuring that `<td>` elements in a large table (3 or more cells in width and height) have an associated table header may improve the experience for screen reader users. [Learn more about table headers](https://dequeuniversity.com/rules/axe/4.10/td-has-header).",
+        "score": 1
+      }
+    ],
+    "failed": [
+      {
+        "id": "color-contrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.10/color-contrast).",
+        "score": 0
+      },
+      {
+        "id": "heading-order",
+        "title": "Heading elements are not in a sequentially-descending order",
+        "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.10/heading-order).",
+        "score": 0
+      },
+      {
+        "id": "link-in-text-block",
+        "title": "Links rely on color to be distinguishable.",
+        "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.10/link-in-text-block).",
+        "score": 0
+      }
+    ],
+    "colorContrast": {
+      "passed": false,
+      "score": 0
+    },
+    "ariaValidation": {
+      "passed": true,
+      "score": 1
+    }
+  },
+  "bestPracticesAnalytics": {
+    "passed": [
+      {
+        "id": "is-on-https",
+        "title": "Uses HTTPS",
+        "description": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more about HTTPS](https://developer.chrome.com/docs/lighthouse/pwa/is-on-https/).",
+        "score": 1
+      },
+      {
+        "id": "redirects-http",
+        "title": "Redirects HTTP traffic to HTTPS",
+        "description": "Make sure that you redirect all HTTP traffic to HTTPS in order to enable secure web features for all your users. [Learn more](https://developer.chrome.com/docs/lighthouse/pwa/redirects-http/).",
+        "score": 1
+      },
+      {
+        "id": "geolocation-on-start",
+        "title": "Avoids requesting the geolocation permission on page load",
+        "description": "Users are mistrustful of or confused by sites that request their location without context. Consider tying the request to a user action instead. [Learn more about the geolocation permission](https://developer.chrome.com/docs/lighthouse/best-practices/geolocation-on-start/).",
+        "score": 1
+      },
+      {
+        "id": "notification-on-start",
+        "title": "Avoids requesting the notification permission on page load",
+        "description": "Users are mistrustful of or confused by sites that request to send notifications without context. Consider tying the request to user gestures instead. [Learn more about responsibly getting permission for notifications](https://developer.chrome.com/docs/lighthouse/best-practices/notification-on-start/).",
+        "score": 1
+      },
+      {
+        "id": "csp-xss",
+        "title": "Ensure CSP is effective against XSS attacks",
+        "description": "A strong Content Security Policy (CSP) significantly reduces the risk of cross-site scripting (XSS) attacks. [Learn how to use a CSP to prevent XSS](https://developer.chrome.com/docs/lighthouse/best-practices/csp-xss/)",
+        "score": 1
+      },
+      {
+        "id": "has-hsts",
+        "title": "Use a strong HSTS policy",
+        "description": "Deployment of the HSTS header significantly reduces the risk of downgrading HTTP connections and eavesdropping attacks. A rollout in stages, starting with a low max-age is recommended. [Learn more about using a strong HSTS policy.](https://developer.chrome.com/docs/lighthouse/best-practices/has-hsts)",
+        "score": 1
+      },
+      {
+        "id": "origin-isolation",
+        "title": "Ensure proper origin isolation with COOP",
+        "description": "The Cross-Origin-Opener-Policy (COOP) can be used to isolate the top-level window from other documents such as pop-ups. [Learn more about deploying the COOP header.](https://web.dev/articles/why-coop-coep#coop)",
+        "score": 1
+      },
+      {
+        "id": "clickjacking-mitigation",
+        "title": "Mitigate clickjacking with XFO or CSP",
+        "description": "The `X-Frame-Options` (XFO) header or the `frame-ancestors` directive in the `Content-Security-Policy` (CSP) header control where a page can be embedded. These can mitigate clickjacking attacks by blocking some or all sites from embedding the page. [Learn more about mitigating clickjacking](https://developer.chrome.com/docs/lighthouse/best-practices/clickjacking-mitigation).",
+        "score": 1
+      },
+      {
+        "id": "trusted-types-xss",
+        "title": "Mitigate DOM-based XSS with Trusted Types",
+        "description": "The `require-trusted-types-for` directive in the `Content-Security-Policy` (CSP) header instructs user agents to control the data passed to DOM XSS sink functions. [Learn more about mitigating DOM-based XSS with Trusted Types](https://developer.chrome.com/docs/lighthouse/best-practices/trusted-types-xss).",
+        "score": 1
+      },
+      {
+        "id": "paste-preventing-inputs",
+        "title": "Allows users to paste into input fields",
+        "description": "Preventing input pasting is a bad practice for the UX, and weakens security by blocking password managers.[Learn more about user-friendly input fields](https://developer.chrome.com/docs/lighthouse/best-practices/paste-preventing-inputs/).",
+        "score": 1
+      },
+      {
+        "id": "image-aspect-ratio",
+        "title": "Displays images with correct aspect ratio",
+        "description": "Image display dimensions should match natural aspect ratio. [Learn more about image aspect ratio](https://developer.chrome.com/docs/lighthouse/best-practices/image-aspect-ratio/).",
+        "score": 1
+      },
+      {
+        "id": "image-size-responsive",
+        "title": "Serves images with appropriate resolution",
+        "description": "Image natural dimensions should be proportional to the display size and the pixel ratio to maximize image clarity. [Learn how to provide responsive images](https://web.dev/articles/serve-responsive-images).",
+        "score": 1
+      },
+      {
+        "id": "viewport",
+        "title": "Has a `<meta name=\"viewport\">` tag with `width` or `initial-scale`",
+        "description": "A `<meta name=\"viewport\">` not only optimizes your app for mobile screen sizes, but also prevents [a 300 millisecond delay to user input](https://developer.chrome.com/blog/300ms-tap-delay-gone-away/). [Learn more about using the viewport meta tag](https://developer.chrome.com/docs/lighthouse/pwa/viewport/).",
+        "score": 1
+      },
+      {
+        "id": "font-size",
+        "title": "Document uses legible font sizes",
+        "description": "Font sizes less than 12px are too small to be legible and require mobile visitors to “pinch to zoom” in order to read. Strive to have >60% of page text ≥12px. [Learn more about legible font sizes](https://developer.chrome.com/docs/lighthouse/seo/font-size/).",
+        "score": 1,
+        "displayValue": "99.94% legible text"
+      },
+      {
+        "id": "doctype",
+        "title": "Page has the HTML doctype",
+        "description": "Specifying a doctype prevents the browser from switching to quirks-mode. [Learn more about the doctype declaration](https://developer.chrome.com/docs/lighthouse/best-practices/doctype/).",
+        "score": 1
+      },
+      {
+        "id": "charset",
+        "title": "Properly defines charset",
+        "description": "A character encoding declaration is required. It can be done with a `<meta>` tag in the first 1024 bytes of the HTML or in the Content-Type HTTP response header. [Learn more about declaring the character encoding](https://developer.chrome.com/docs/lighthouse/best-practices/charset/).",
+        "score": 1
+      },
+      {
+        "id": "js-libraries",
+        "title": "Detected JavaScript libraries",
+        "description": "All front-end JavaScript libraries detected on the page. [Learn more about this JavaScript library detection diagnostic audit](https://developer.chrome.com/docs/lighthouse/best-practices/js-libraries/).",
+        "score": 1
+      },
+      {
+        "id": "deprecations",
+        "title": "Avoids deprecated APIs",
+        "description": "Deprecated APIs will eventually be removed from the browser. [Learn more about deprecated APIs](https://developer.chrome.com/docs/lighthouse/best-practices/deprecations/).",
+        "score": 1
+      },
+      {
+        "id": "third-party-cookies",
+        "title": "Avoids third-party cookies",
+        "description": "Third-party cookies may be blocked in some contexts. [Learn more about preparing for third-party cookie restrictions](https://privacysandbox.google.com/cookies/prepare/overview).",
+        "score": 1
+      },
+      {
+        "id": "errors-in-console",
+        "title": "No browser errors logged to the console",
+        "description": "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns. [Learn more about this errors in console diagnostic audit](https://developer.chrome.com/docs/lighthouse/best-practices/errors-in-console/)",
+        "score": 1
+      },
+      {
+        "id": "valid-source-maps",
+        "title": "Page has valid source maps",
+        "description": "Source maps translate minified code to the original source code. This helps developers debug in production. In addition, Lighthouse is able to provide further insights. Consider deploying source maps to take advantage of these benefits. [Learn more about source maps](https://developer.chrome.com/docs/devtools/javascript/source-maps/).",
+        "score": 1
+      },
+      {
+        "id": "inspector-issues",
+        "title": "No issues in the `Issues` panel in Chrome Devtools",
+        "description": "Issues logged to the `Issues` panel in Chrome Devtools indicate unresolved problems. They can come from network request failures, insufficient security controls, and other browser concerns. Open up the Issues panel in Chrome DevTools for more details on each issue.",
+        "score": 1
+      }
+    ],
+    "failed": [],
+    "security": {
+      "https": true,
+      "noUnsafeLinks": true,
+      "noConsoleErrors": true,
+      "modernLibs": true
+    },
+    "imageOptimization": {
+      "score": 0.5,
+      "opportunities": []
+    }
+  }
+}

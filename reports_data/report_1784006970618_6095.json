@@ -1,0 +1,4539 @@
+{
+  "id": "report_1784006970618_6095",
+  "url": "https://storetransform.com/career/",
+  "timestamp": "2026-07-14T05:28:40.440Z",
+  "scores": {
+    "performance": 0.5,
+    "accessibility": 0.83,
+    "bestPractices": 0.75,
+    "seo": 1,
+    "overall": 0.77
+  },
+  "coreWebVitals": {
+    "lcp": {
+      "displayValue": "7.0 s",
+      "numericValue": 7022.789999999999,
+      "score": 0.06,
+      "status": "poor"
+    },
+    "cls": {
+      "displayValue": "0.025",
+      "numericValue": 0.02505142737492,
+      "score": 1,
+      "status": "good"
+    },
+    "tbt": {
+      "displayValue": "370 ms",
+      "numericValue": 373.5,
+      "score": 0.7,
+      "status": "needs-improvement"
+    },
+    "fcp": {
+      "displayValue": "4.2 s",
+      "numericValue": 4166.701999999999,
+      "score": 0.2,
+      "status": "poor"
+    },
+    "speedIndex": {
+      "displayValue": "16.5 s",
+      "numericValue": 16519.759735094653,
+      "score": 0,
+      "status": "poor"
+    },
+    "inp": {
+      "displayValue": "17.5 s",
+      "numericValue": 17507.14922687377,
+      "score": 0.04,
+      "status": "poor"
+    }
+  },
+  "performanceAnalytics": {
+    "opportunities": [
+      {
+        "id": "modern-image-formats",
+        "title": "Serve images in next-gen formats",
+        "description": "Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads and less data consumption. [Learn more about modern image formats](https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images/).",
+        "score": 0,
+        "displayValue": "Est savings of 400 KiB",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": ""
+            },
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Resource Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-104-IMG",
+                "path": "1,HTML,1,BODY,3,DIV,3,DIV,0,DIV,0,MAIN,5,SECTION,0,DIV,0,DIV,1,DIV,0,IMG",
+                "selector": "div.container > div.row-inner > div.col-50 > img.mx-100",
+                "boundingRect": {
+                  "top": 1993,
+                  "bottom": 2279,
+                  "left": 20,
+                  "right": 392,
+                  "width": 372,
+                  "height": 286
+                },
+                "snippet": "<img src=\"https://storetransform.com/wp-content/uploads/2022/06/car-1.jpg\" class=\"mx-100\" alt=\"\">",
+                "nodeLabel": "div.container > div.row-inner > div.col-50 > img.mx-100"
+              },
+              "url": "https://storetransform.com/wp-content/uploads/2022/06/car-1.jpg",
+              "fromProtocol": true,
+              "isCrossOrigin": false,
+              "totalBytes": 225755,
+              "wastedBytes": 195683.6,
+              "wastedWebpBytes": 191929
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-105-IMG",
+                "path": "1,HTML,1,BODY,3,DIV,3,DIV,0,DIV,0,MAIN,5,SECTION,0,DIV,1,DIV,0,DIV,0,IMG",
+                "selector": "div.container > div.row-inner > div.col-50 > img.mx-100",
+                "boundingRect": {
+                  "top": 2734,
+                  "bottom": 3019,
+                  "left": 20,
+                  "right": 392,
+                  "width": 372,
+                  "height": 286
+                },
+                "snippet": "<img src=\"https://storetransform.com/wp-content/uploads/2022/06/car-2.jpg\" class=\"mx-100\" alt=\"\">",
+                "nodeLabel": "div.container > div.row-inner > div.col-50 > img.mx-100"
+              },
+              "url": "https://storetransform.com/wp-content/uploads/2022/06/car-2.jpg",
+              "fromProtocol": true,
+              "isCrossOrigin": false,
+              "totalBytes": 195059,
+              "wastedBytes": 170428.2,
+              "wastedWebpBytes": 169037
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-41-SECTION",
+                "path": "1,HTML,1,BODY,3,DIV,3,DIV,0,DIV,0,MAIN,1,SECTION",
+                "selector": "div#content > div#primary > main#main > section.cr-sec-creer",
+                "boundingRect": {
+                  "top": 98,
+                  "bottom": 422,
+                  "left": 0,
+                  "right": 412,
+                  "width": 412,
+                  "height": 324
+                },
+                "snippet": "<section class=\"cr-sec-creer sec-padd bl-overlay all-src-banner ed_section\">",
+                "nodeLabel": "Build A Career With Store Transform\n\nEmbark on a Fulfilling Journey and Shape Y…"
+              },
+              "url": "https://storetransform.com/wp-content/uploads/2022/06/Careers-Banner.jpg",
+              "fromProtocol": true,
+              "isCrossOrigin": false,
+              "totalBytes": 68069,
+              "wastedBytes": 32434.699999999997,
+              "wastedWebpBytes": 30577
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-108-IMG",
+                "path": "1,HTML,1,BODY,50,DIV,1,DIV,0,DIV,0,IMG",
+                "selector": "div#wpai-chatbot-panel > div#wpai-chatbot-header > div.wpai-header-left > img.wpai-header-logo",
+                "boundingRect": {
+                  "top": 292,
+                  "bottom": 332,
+                  "left": 20,
+                  "right": 60,
+                  "width": 40,
+                  "height": 40
+                },
+                "snippet": "<img src=\"https://storetransform.com/wp-content/plugins/wp-ai-chatbot/assets/image/s…\" alt=\"Logo\" class=\"wpai-header-logo\">",
+                "nodeLabel": "Logo"
+              },
+              "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot/assets/image/storetransform_logo.png",
+              "fromProtocol": true,
+              "isCrossOrigin": false,
+              "totalBytes": 14172,
+              "wastedBytes": 11307.6,
+              "wastedWebpBytes": 9256
+            }
+          ],
+          "overallSavingsMs": 1810,
+          "overallSavingsBytes": 409854.10000000003,
+          "sortedBy": [
+            "wastedBytes"
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "metricSavings": {
+              "FCP": 0,
+              "LCP": 1810
+            }
+          }
+        }
+      },
+      {
+        "id": "render-blocking-resources",
+        "title": "Eliminate render-blocking resources",
+        "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
+        "score": 0,
+        "displayValue": "Est savings of 1,400 ms",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js?ver=6.9.1",
+              "totalBytes": 34967,
+              "wastedMs": 619
+            },
+            {
+              "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?ver=6.9.1",
+              "totalBytes": 5936,
+              "wastedMs": 155
+            },
+            {
+              "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css?ver=6.9.1",
+              "totalBytes": 19179,
+              "wastedMs": 929
+            },
+            {
+              "url": "https://storetransform.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+              "totalBytes": 29835,
+              "wastedMs": 724
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/cleantalk-spam-protect/js/apbct-public-bundle.min.js?ver=6.68_1764763990",
+              "totalBytes": 17149,
+              "wastedMs": 724
+            },
+            {
+              "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/css/menu-style.css?ver=6.9.1",
+              "totalBytes": 2776,
+              "wastedMs": 362
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/wp-job-openings/assets/css/general.min.css?ver=3.5.4",
+              "totalBytes": 5971,
+              "wastedMs": 362
+            },
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
+              "totalBytes": 1170,
+              "wastedMs": 842
+            }
+          ],
+          "overallSavingsMs": 1396
+        }
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "score": 0.5,
+        "displayValue": "Est savings of 703 KiB",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "subItemsHeading": {
+                "key": "source",
+                "valueType": "code"
+              },
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "subItemsHeading": {
+                "key": "sourceBytes"
+              },
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "subItemsHeading": {
+                "key": "sourceWastedBytes"
+              },
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://www.gstatic.com/recaptcha/releases/rL1ELiQAg1kPezz6_H9hTZ_i/recaptcha__en.js",
+              "totalBytes": 377393,
+              "wastedBytes": 251809,
+              "wastedPercent": 66.72335728100445
+            },
+            {
+              "url": "https://www.gstatic.com/recaptcha/releases/rL1ELiQAg1kPezz6_H9hTZ_i/recaptcha__en.js",
+              "totalBytes": 377393,
+              "wastedBytes": 165408,
+              "wastedPercent": 43.82917427652156
+            },
+            {
+              "url": "https://www.googletagmanager.com/gtag/js?id=G-XDFT5S8855&cx=c&gtm=4e67d0h2",
+              "totalBytes": 174705,
+              "wastedBytes": 73381,
+              "wastedPercent": 42.00264858991853
+            },
+            {
+              "url": "https://www.googletagmanager.com/gtag/js?id=G-S8EXFFHLMP&cx=c&gtm=4e67a1h1",
+              "totalBytes": 154523,
+              "wastedBytes": 67255,
+              "wastedPercent": 43.52405807272249
+            },
+            {
+              "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TTZW952",
+              "totalBytes": 128595,
+              "wastedBytes": 63723,
+              "wastedPercent": 49.55356196050985
+            },
+            {
+              "url": "https://www.googletagmanager.com/gtag/js?id=UA-226949759-1",
+              "totalBytes": 113842,
+              "wastedBytes": 60344,
+              "wastedPercent": 53.00667000926812
+            },
+            {
+              "url": "https://cdn.jsdelivr.net/npm/chart.js",
+              "totalBytes": 43063,
+              "wastedBytes": 38426,
+              "wastedPercent": 89.23231121896012
+            }
+          ],
+          "overallSavingsMs": 0,
+          "overallSavingsBytes": 720346,
+          "sortedBy": [
+            "wastedBytes"
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "metricSavings": {
+              "FCP": 0,
+              "LCP": 0
+            }
+          }
+        }
+      },
+      {
+        "id": "offscreen-images",
+        "title": "Defer offscreen images",
+        "description": "Consider lazy-loading offscreen and hidden images after all critical resources have finished loading to lower time to interactive. [Learn how to defer offscreen images](https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/).",
+        "score": 0,
+        "displayValue": "Est savings of 88 KiB",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": ""
+            },
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Resource Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-112-FOOTER",
+                "path": "1,HTML,1,BODY,3,DIV,6,FOOTER",
+                "selector": "body.wp-singular > div#page > footer#colophon",
+                "boundingRect": {
+                  "top": 3406,
+                  "bottom": 4569,
+                  "left": 0,
+                  "right": 412,
+                  "width": 412,
+                  "height": 1163
+                },
+                "snippet": "<footer id=\"colophon\" class=\"site-footer\">",
+                "nodeLabel": "Transforming businesses with innovative, AI-powered IT solutions development, d…"
+              },
+              "url": "https://storetransform.com/wp-content/uploads/2022/12/footer-bg.webp",
+              "requestStartTime": 5866372.299,
+              "totalBytes": 81526,
+              "wastedBytes": 81526,
+              "wastedPercent": 100
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-106-IMG",
+                "path": "1,HTML,1,BODY,3,DIV,6,FOOTER,0,SECTION,0,DIV,0,DIV,0,DIV,0,DIV,0,IMG",
+                "selector": "div.footer-inner > div.custom-footer-content > div.ftr-size-logo > img.mx-100",
+                "boundingRect": {
+                  "top": 3456,
+                  "bottom": 3546,
+                  "left": 20,
+                  "right": 221,
+                  "width": 201,
+                  "height": 90
+                },
+                "snippet": "<img src=\"https://storetransform.com/wp-content/uploads/2023/06/store-logo.png\" class=\"mx-100\" alt=\"Logo\">",
+                "nodeLabel": "Logo"
+              },
+              "url": "https://storetransform.com/wp-content/uploads/2023/06/store-logo.png",
+              "requestStartTime": 5863315.708,
+              "totalBytes": 8596,
+              "wastedBytes": 8596,
+              "wastedPercent": 100
+            }
+          ],
+          "overallSavingsMs": 360,
+          "overallSavingsBytes": 90122,
+          "sortedBy": [
+            "wastedBytes"
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "metricSavings": {
+              "FCP": 0,
+              "LCP": 360
+            }
+          }
+        }
+      },
+      {
+        "id": "unminified-css",
+        "title": "Minify CSS",
+        "description": "Minifying CSS files can reduce network payload sizes. [Learn how to minify CSS](https://developer.chrome.com/docs/lighthouse/performance/unminified-css/).",
+        "score": 0.5,
+        "displayValue": "Est savings of 10 KiB",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/css/gs-custom.css?ver=6.9.1",
+              "totalBytes": 20210,
+              "wastedBytes": 7454,
+              "wastedPercent": 36.88150545539308
+            },
+            {
+              "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/css/responsive.css?ver=6.9.1",
+              "totalBytes": 8610,
+              "wastedBytes": 3259,
+              "wastedPercent": 37.84926511711147
+            }
+          ],
+          "overallSavingsMs": 0,
+          "overallSavingsBytes": 10713,
+          "sortedBy": [
+            "wastedBytes"
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "metricSavings": {
+              "FCP": 0,
+              "LCP": 0
+            }
+          }
+        }
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "dom-size",
+        "title": "Avoids an excessive DOM size",
+        "description": "A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).",
+        "score": 1,
+        "displayValue": "761 elements",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "statistic",
+              "valueType": "text",
+              "label": "Statistic"
+            },
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": "Element"
+            },
+            {
+              "key": "value",
+              "valueType": "numeric",
+              "label": "Value"
+            }
+          ],
+          "items": [
+            {
+              "statistic": "Total DOM Elements",
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 761
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-79-LI",
+                "path": "1,HTML,1,BODY,3,DIV,3,DIV,0,DIV,0,MAIN,3,SECTION,0,DIV,0,DIV,0,DIV,0,DIV,0,FORM,1,DIV,0,DIV,1,DIV,2,DIV,0,DIV,0,UL,0,LI",
+                "selector": "div.awsm-selectric-items > div.awsm-selectric-scroll > ul > li.selected",
+                "boundingRect": {
+                  "top": 0,
+                  "bottom": 0,
+                  "left": 0,
+                  "right": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "snippet": "<li data-index=\"0\" class=\"selected\">",
+                "nodeLabel": "All Job Category"
+              },
+              "statistic": "Maximum DOM Depth",
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 18
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-39-SELECT",
+                "path": "1,HTML,1,BODY,50,DIV,3,DIV,0,DIV,0,DIV,3,FORM,3,DIV,0,SELECT",
+                "selector": "div.welcome-content > form#wpai-lead-form > div.wpai-field > select#wpai-country",
+                "boundingRect": {
+                  "top": 542,
+                  "bottom": 580,
+                  "left": 26,
+                  "right": 386,
+                  "width": 360,
+                  "height": 38
+                },
+                "snippet": "<select id=\"wpai-country\" required=\"\">",
+                "nodeLabel": "Select your country\nAfghanistan\nAlbania\nAlgeria\nAmerican Samoa\nAndorra\nAngola\nA…"
+              },
+              "statistic": "Maximum Child Elements",
+              "value": {
+                "type": "numeric",
+                "granularity": 1,
+                "value": 251
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to minimize main-thread work](https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/)",
+        "score": 0,
+        "displayValue": "7.7 s",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "groupLabel",
+              "valueType": "text",
+              "label": "Category"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "granularity": 1,
+              "label": "Time Spent"
+            }
+          ],
+          "items": [
+            {
+              "group": "other",
+              "groupLabel": "Other",
+              "duration": 2739.0399999996635
+            },
+            {
+              "group": "scriptEvaluation",
+              "groupLabel": "Script Evaluation",
+              "duration": 2360.779999999902
+            },
+            {
+              "group": "paintCompositeRender",
+              "groupLabel": "Rendering",
+              "duration": 1238.1759999999927
+            },
+            {
+              "group": "styleLayout",
+              "groupLabel": "Style & Layout",
+              "duration": 765.4279999999987
+            },
+            {
+              "group": "scriptParseCompile",
+              "groupLabel": "Script Parsing & Compilation",
+              "duration": 420.2760000000002
+            },
+            {
+              "group": "garbageCollection",
+              "groupLabel": "Garbage Collection",
+              "duration": 135.69600000000028
+            },
+            {
+              "group": "parseHTML",
+              "groupLabel": "Parse HTML & CSS",
+              "duration": 90.03999999999999
+            }
+          ],
+          "sortedBy": [
+            "duration"
+          ]
+        }
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "description": "Consider reducing the time spent parsing, compiling, and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to reduce Javascript execution time](https://developer.chrome.com/docs/lighthouse/performance/bootup-time/).",
+        "score": 0,
+        "displayValue": "2.3 s",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "total",
+              "granularity": 1,
+              "valueType": "ms",
+              "label": "Total CPU Time"
+            },
+            {
+              "key": "scripting",
+              "granularity": 1,
+              "valueType": "ms",
+              "label": "Script Evaluation"
+            },
+            {
+              "key": "scriptParseCompile",
+              "granularity": 1,
+              "valueType": "ms",
+              "label": "Script Parse"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://storetransform.com/career/",
+              "total": 4060.8239999999823,
+              "scripting": 14.995999999999977,
+              "scriptParseCompile": 10.451999999999991
+            },
+            {
+              "url": "https://www.gstatic.com/recaptcha/releases/rL1ELiQAg1kPezz6_H9hTZ_i/recaptcha__en.js",
+              "total": 1368.3880000000054,
+              "scripting": 1087.4600000000055,
+              "scriptParseCompile": 222.44000000000003
+            },
+            {
+              "url": "Unattributable",
+              "total": 670.1880000000053,
+              "scripting": 11.744000000000002,
+              "scriptParseCompile": 0
+            },
+            {
+              "url": "https://storetransform.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+              "total": 226.44800000000035,
+              "scripting": 158.22800000000038,
+              "scriptParseCompile": 5.172
+            },
+            {
+              "url": "https://www.googletagmanager.com/gtag/js?id=G-XDFT5S8855&cx=c&gtm=4e67d0h2",
+              "total": 177.77999999999898,
+              "scripting": 147.94799999999898,
+              "scriptParseCompile": 28.832
+            },
+            {
+              "url": "https://scripts.clarity.ms/0.8.67/clarity.js",
+              "total": 171.1480000000004,
+              "scripting": 147.88000000000036,
+              "scriptParseCompile": 4.6080000000000005
+            },
+            {
+              "url": "https://www.googletagmanager.com/gtag/js?id=G-S8EXFFHLMP&cx=c&gtm=4e67a1h1",
+              "total": 167.05199999999914,
+              "scripting": 138.28399999999914,
+              "scriptParseCompile": 27.624000000000002
+            },
+            {
+              "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TTZW952",
+              "total": 111.04000000000012,
+              "scripting": 83.23200000000013,
+              "scriptParseCompile": 26.848
+            },
+            {
+              "url": "https://www.googletagmanager.com/gtag/js?id=UA-226949759-1",
+              "total": 102.20000000000029,
+              "scripting": 82.92000000000029,
+              "scriptParseCompile": 18.236
+            },
+            {
+              "url": "https://fd.cleantalk.org/1.1.67/ct-bot-detector.min.js",
+              "total": 59.4359999999999,
+              "scripting": 49.139999999999915,
+              "scriptParseCompile": 2.024
+            }
+          ],
+          "summary": {
+            "wastedMs": 2268.0680000000048
+          },
+          "sortedBy": [
+            "total"
+          ]
+        }
+      },
+      {
+        "id": "font-display",
+        "title": "Ensure text remains visible during webfont load",
+        "description": "Leverage the `font-display` CSS feature to ensure text is user-visible while webfonts are loading. [Learn more about `font-display`](https://developer.chrome.com/docs/lighthouse/performance/font-display/).",
+        "score": 0.5,
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "ms",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0",
+              "wastedMs": 67.9320000000298
+            }
+          ]
+        }
+      },
+      {
+        "id": "network-requests",
+        "title": "Network Requests",
+        "description": "Lists the network requests that were made during page load.",
+        "score": 1,
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "protocol",
+              "valueType": "text",
+              "label": "Protocol"
+            },
+            {
+              "key": "networkRequestTime",
+              "valueType": "ms",
+              "granularity": 1,
+              "label": "Network Request Time"
+            },
+            {
+              "key": "networkEndTime",
+              "valueType": "ms",
+              "granularity": 1,
+              "label": "Network End Time"
+            },
+            {
+              "key": "transferSize",
+              "valueType": "bytes",
+              "displayUnit": "kb",
+              "granularity": 1,
+              "label": "Transfer Size"
+            },
+            {
+              "key": "resourceSize",
+              "valueType": "bytes",
+              "displayUnit": "kb",
+              "granularity": 1,
+              "label": "Resource Size"
+            },
+            {
+              "key": "statusCode",
+              "valueType": "text",
+              "label": "Status Code"
+            },
+            {
+              "key": "mimeType",
+              "valueType": "text",
+              "label": "MIME Type"
+            },
+            {
+              "key": "resourceType",
+              "valueType": "text",
+              "label": "Resource Type"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://storetransform.com/career/",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 0,
+              "networkRequestTime": 1.3190000001341105,
+              "networkEndTime": 3910.0109999999404,
+              "finished": true,
+              "transferSize": 25012,
+              "resourceSize": 87168,
+              "statusCode": 200,
+              "mimeType": "text/html",
+              "resourceType": "Document",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-includes/css/dist/block-library/style.min.css?ver=6.9.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3911.8120000008494,
+              "networkRequestTime": 3912.5350000010803,
+              "networkEndTime": 4129.0880000004545,
+              "finished": true,
+              "transferSize": 15036,
+              "resourceSize": 119358,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/wp-job-openings/assets/css/general.min.css?ver=3.5.4",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3912.2110000001267,
+              "networkRequestTime": 3912.703000000678,
+              "networkEndTime": 4129.428999999538,
+              "finished": true,
+              "transferSize": 5971,
+              "resourceSize": 38599,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/wp-job-openings/assets/css/style.min.css?ver=3.5.4",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3912.2879999997094,
+              "networkRequestTime": 3912.7970000002533,
+              "networkEndTime": 4129.655000000261,
+              "finished": true,
+              "transferSize": 3903,
+              "resourceSize": 19021,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/themes/twentytwentyone/assets/css/custom-color-overrides.css?ver=1.5",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3912.355000000447,
+              "networkRequestTime": 3912.897000000812,
+              "networkEndTime": 4129.7830000007525,
+              "finished": true,
+              "transferSize": 198,
+              "resourceSize": 130,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/cleantalk-spam-protect/css/cleantalk-public.min.css?ver=6.68_1764763990",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3912.4169999994338,
+              "networkRequestTime": 3913.394999999553,
+              "networkEndTime": 4129.934000000358,
+              "finished": true,
+              "transferSize": 924,
+              "resourceSize": 3032,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/cleantalk-spam-protect/css/cleantalk-email-decoder.min.css?ver=6.68_1764763990",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3912.481000000611,
+              "networkRequestTime": 3913.588999999687,
+              "networkEndTime": 4340.237999999896,
+              "finished": true,
+              "transferSize": 593,
+              "resourceSize": 1630,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.5",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3912.553999999538,
+              "networkRequestTime": 3913.729000000283,
+              "networkEndTime": 4340.34200000111,
+              "finished": true,
+              "transferSize": 970,
+              "resourceSize": 2947,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/country-phone-field-contact-form-7/assets/css/intlTelInput.min.css?ver=6.9.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3912.6220000004396,
+              "networkRequestTime": 3914.117999999784,
+              "networkEndTime": 4340.462999999523,
+              "finished": true,
+              "transferSize": 2596,
+              "resourceSize": 21275,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/country-phone-field-contact-form-7/assets/css/countrySelect.min.css?ver=6.9.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3912.6969999996945,
+              "networkRequestTime": 3914.2659999998286,
+              "networkEndTime": 4340.587000000291,
+              "finished": true,
+              "transferSize": 2213,
+              "resourceSize": 20493,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/st-stock-management/includes/style.css?ver=6.9.1",
+              "sessionTargetType": "page",
+              "protocol": "",
+              "rendererStartTime": 3912.7620000001043,
+              "networkRequestTime": 3912.7620000001043,
+              "networkEndTime": 4342.790000000037,
+              "finished": true,
+              "transferSize": 0,
+              "resourceSize": 0,
+              "statusCode": -1,
+              "mimeType": "",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/st-stock-management/public/css/st-stock-management-public.css?ver=1.0.0",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3912.814000000246,
+              "networkRequestTime": 3914.4370000008494,
+              "networkEndTime": 4340.706000000238,
+              "finished": true,
+              "transferSize": 878,
+              "resourceSize": 3070,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot/assets/css/chatbot.css?ver=1766658601",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3912.8760000010952,
+              "networkRequestTime": 3914.8050000006333,
+              "networkEndTime": 4340.843000000343,
+              "finished": true,
+              "transferSize": 4794,
+              "resourceSize": 17384,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css?ver=6.9.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3912.935999999754,
+              "networkRequestTime": 3914.907999999821,
+              "networkEndTime": 6981.5800000000745,
+              "finished": true,
+              "transferSize": 19179,
+              "resourceSize": 102641,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "Cloudflare CDN"
+            },
+            {
+              "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css?ver=1.8.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3913,
+              "networkRequestTime": 3917.6010000007227,
+              "networkEndTime": 6985.026000000536,
+              "finished": true,
+              "transferSize": 667,
+              "resourceSize": 1369,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "Cloudflare CDN"
+            },
+            {
+              "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css?ver=1.8.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3913.0670000007376,
+              "networkRequestTime": 3917.760000000708,
+              "networkEndTime": 6981.151000000536,
+              "finished": true,
+              "transferSize": 1291,
+              "resourceSize": 2390,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "Cloudflare CDN"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/newsletter/style.css?ver=9.1.2",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3913.1280000004917,
+              "networkRequestTime": 3917.8510000007227,
+              "networkEndTime": 4340.935999999754,
+              "finished": true,
+              "transferSize": 1502,
+              "resourceSize": 6840,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?ver=6.9.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3913.2000000001863,
+              "networkRequestTime": 3918.3190000010654,
+              "networkEndTime": 6988.900999999605,
+              "finished": true,
+              "transferSize": 5936,
+              "resourceSize": 31000,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "Cloudflare CDN"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/style.css?ver=6.9.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3913.2530000004917,
+              "networkRequestTime": 3918.458999999799,
+              "networkEndTime": 4341.071000000462,
+              "finished": true,
+              "transferSize": 1733,
+              "resourceSize": 4637,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/css/st-custom.css?ver=6.9.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3913.299000000581,
+              "networkRequestTime": 3918.55700000003,
+              "networkEndTime": 4341.571000000462,
+              "finished": true,
+              "transferSize": 6284,
+              "resourceSize": 44909,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/css/animation.css?ver=6.9.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3913.3670000005513,
+              "networkRequestTime": 3918.9150000009686,
+              "networkEndTime": 4341.75299999956,
+              "finished": true,
+              "transferSize": 1203,
+              "resourceSize": 8962,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/css/menu-style.css?ver=6.9.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3913.418000000529,
+              "networkRequestTime": 3919.078000000678,
+              "networkEndTime": 4341.8930000001565,
+              "finished": true,
+              "transferSize": 2776,
+              "resourceSize": 11495,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/css/gs-custom.css?ver=6.9.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3913.4630000004545,
+              "networkRequestTime": 3919.18200000003,
+              "networkEndTime": 4550.207999999635,
+              "finished": true,
+              "transferSize": 20210,
+              "resourceSize": 111551,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/css/responsive.css?ver=6.9.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3913.545000000857,
+              "networkRequestTime": 3919.458999999799,
+              "networkEndTime": 4552.055999999866,
+              "finished": true,
+              "transferSize": 8610,
+              "resourceSize": 44701,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.css?ver=6.9.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3913.597000000067,
+              "networkRequestTime": 3919.578000000678,
+              "networkEndTime": 6992.918000000529,
+              "finished": true,
+              "transferSize": 4648,
+              "resourceSize": 19328,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "Cloudflare CDN"
+            },
+            {
+              "url": "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?ver=6.9.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3913.660000000149,
+              "networkRequestTime": 3919.6629999997094,
+              "networkEndTime": 6984.570000000298,
+              "finished": true,
+              "transferSize": 3001,
+              "resourceSize": 12795,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "Cloudflare CDN"
+            },
+            {
+              "url": "https://storetransform.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3913.7220000009984,
+              "networkRequestTime": 3919.9270000001416,
+              "networkEndTime": 4553.8730000006035,
+              "finished": true,
+              "transferSize": 29835,
+              "resourceSize": 87553,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3913.7900000000373,
+              "networkRequestTime": 3920.0149999996647,
+              "networkEndTime": 4552.6430000001565,
+              "finished": true,
+              "transferSize": 4775,
+              "resourceSize": 13577,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/cleantalk-spam-protect/js/apbct-public-bundle.min.js?ver=6.68_1764763990",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3913.8439999995753,
+              "networkRequestTime": 3920.0860000001267,
+              "networkEndTime": 4553.976000000723,
+              "finished": true,
+              "transferSize": 17149,
+              "resourceSize": 70190,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://fd.cleantalk.org/ct-bot-detector-wrapper.js?ver=6.68",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3913.9130000006407,
+              "networkRequestTime": 9653.42900000047,
+              "networkEndTime": 10129.632000000216,
+              "finished": true,
+              "transferSize": 585,
+              "resourceSize": 376,
+              "statusCode": 200,
+              "mimeType": "application/javascript",
+              "resourceType": "Script",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "cleantalk.org"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/st-stock-management/public/js/st-stock-management-public.js?ver=1.0.0",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3913.9770000008866,
+              "networkRequestTime": 3920.376000000164,
+              "networkEndTime": 4553.030000000261,
+              "finished": true,
+              "transferSize": 1567,
+              "resourceSize": 4539,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/themes/twentytwentyone/assets/js/primary-navigation.js?ver=1.5",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3914.0400000000373,
+              "networkRequestTime": 10002.123999999836,
+              "networkEndTime": 10215.253000000492,
+              "finished": true,
+              "transferSize": 1942,
+              "resourceSize": 6540,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js?ver=6.9.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3914.087999999523,
+              "networkRequestTime": 3920.4840000001714,
+              "networkEndTime": 6989.945000000298,
+              "finished": true,
+              "transferSize": 34967,
+              "resourceSize": 143706,
+              "statusCode": 200,
+              "mimeType": "application/javascript",
+              "resourceType": "Script",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "Cloudflare CDN"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/js/st-custom.js?ver=6.9.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3914.1780000003055,
+              "networkRequestTime": 3920.5930000003427,
+              "networkEndTime": 4553.152999999933,
+              "finished": true,
+              "transferSize": 1884,
+              "resourceSize": 10301,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/js/custom.js?ver=6.9.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3914.2400000002235,
+              "networkRequestTime": 3920.857000000775,
+              "networkEndTime": 4553.325000000186,
+              "finished": true,
+              "transferSize": 2883,
+              "resourceSize": 15956,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/js/new.js?ver=6.9.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3914.2900000000373,
+              "networkRequestTime": 3920.966000000015,
+              "networkEndTime": 4553.434000000358,
+              "finished": true,
+              "transferSize": 226,
+              "resourceSize": 404,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://www.googletagmanager.com/gtag/js?id=UA-226949759-1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3914.3400000007823,
+              "networkRequestTime": 10046.023000000045,
+              "networkEndTime": 13341.09499999974,
+              "finished": true,
+              "transferSize": 119733,
+              "resourceSize": 329085,
+              "statusCode": 200,
+              "mimeType": "application/javascript",
+              "resourceType": "Script",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "Google Tag Manager"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/uploads/2022/06/store-logo.png",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3914.3950000004843,
+              "networkRequestTime": 3921.051000000909,
+              "networkEndTime": 4554.135000000708,
+              "finished": true,
+              "transferSize": 8713,
+              "resourceSize": 8596,
+              "statusCode": 200,
+              "mimeType": "image/png",
+              "resourceType": "Image",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/uploads/2022/06/car-1.jpg",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3914.4500000001863,
+              "networkRequestTime": 3921.365999999456,
+              "networkEndTime": 4762.867000000551,
+              "finished": true,
+              "transferSize": 226755,
+              "resourceSize": 225755,
+              "statusCode": 200,
+              "mimeType": "image/jpeg",
+              "resourceType": "Image",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/uploads/2022/06/car-2.jpg",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3914.4900000002235,
+              "networkRequestTime": 6989.474000000395,
+              "networkEndTime": 7841.215000000782,
+              "finished": true,
+              "transferSize": 195229,
+              "resourceSize": 195059,
+              "statusCode": 200,
+              "mimeType": "image/jpeg",
+              "resourceType": "Image",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/uploads/2023/06/store-logo.png",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3914.533999999985,
+              "networkRequestTime": 6989.527999999933,
+              "networkEndTime": 7203.781999999657,
+              "finished": true,
+              "transferSize": 8707,
+              "resourceSize": 8596,
+              "statusCode": 200,
+              "mimeType": "image/png",
+              "resourceType": "Image",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://unpkg.com/leaflet@1.0.3/dist/leaflet.css",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3914.57600000035,
+              "networkRequestTime": 7011.733000000939,
+              "networkEndTime": 10108.57600000035,
+              "finished": true,
+              "transferSize": 3657,
+              "resourceSize": 13736,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "Unpkg"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/wp-job-openings/assets/js/script.min.js?ver=3.5.4",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3914.6220000004396,
+              "networkRequestTime": 7011.975000000559,
+              "networkEndTime": 8053.597000000067,
+              "finished": true,
+              "transferSize": 14923,
+              "resourceSize": 48836,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3914.6639999998733,
+              "networkRequestTime": 7012.069000001065,
+              "networkEndTime": 8053.723000000231,
+              "finished": true,
+              "transferSize": 1929,
+              "resourceSize": 5661,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3914.70100000035,
+              "networkRequestTime": 7012.146000000648,
+              "networkEndTime": 8053.847000000067,
+              "finished": true,
+              "transferSize": 2165,
+              "resourceSize": 5314,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.5",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3914.751000000164,
+              "networkRequestTime": 7015.013999999501,
+              "networkEndTime": 8053.995000000112,
+              "finished": true,
+              "transferSize": 3438,
+              "resourceSize": 12512,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.5",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3914.794000000693,
+              "networkRequestTime": 7015.145999999717,
+              "networkEndTime": 8054.118000000715,
+              "finished": true,
+              "transferSize": 4054,
+              "resourceSize": 13452,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/country-phone-field-contact-form-7/assets/js/intlTelInput.min.js?ver=6.9.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3914.8390000006184,
+              "networkRequestTime": 8055.094000000507,
+              "networkEndTime": 8275.64100000076,
+              "finished": true,
+              "transferSize": 9283,
+              "resourceSize": 23839,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/country-phone-field-contact-form-7/assets/js/countrySelect.min.js?ver=6.9.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3914.876000000164,
+              "networkRequestTime": 8055.168000000529,
+              "networkEndTime": 8275.941000000574,
+              "finished": true,
+              "transferSize": 6167,
+              "resourceSize": 17280,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/st-stock-management/includes/script.js",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3914.912000000477,
+              "networkRequestTime": 8276.080000000075,
+              "networkEndTime": 8493.634999999776,
+              "finished": true,
+              "transferSize": 189,
+              "resourceSize": 0,
+              "statusCode": 404,
+              "mimeType": "text/html",
+              "resourceType": "Script",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://cdn.jsdelivr.net/npm/chart.js",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3914.9550000000745,
+              "networkRequestTime": 8276.161000000313,
+              "networkEndTime": 10001.964000000618,
+              "finished": true,
+              "transferSize": 72551,
+              "resourceSize": 208522,
+              "statusCode": 200,
+              "mimeType": "application/javascript",
+              "resourceType": "Script",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "JSDelivr CDN"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot/assets/js/chatbot.js?ver=1766661010",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3915.002000000328,
+              "networkRequestTime": 3921.472000000067,
+              "networkEndTime": 4553.769999999553,
+              "finished": true,
+              "transferSize": 2636,
+              "resourceSize": 11727,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://www.google.com/recaptcha/api.js?render=6Lfv7RksAAAAAGY9Zz1KTwiMoqgp_0zGcPTD6IbR",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3915.05700000003,
+              "networkRequestTime": 8492.390000000596,
+              "networkEndTime": 8650.735000000335,
+              "finished": true,
+              "transferSize": 1511,
+              "resourceSize": 1582,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "Other Google APIs/SDKs"
+            },
+            {
+              "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js?ver=1.8.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3915.1220000004396,
+              "networkRequestTime": 8650.875000000931,
+              "networkEndTime": 8667.186999999918,
+              "finished": true,
+              "transferSize": 10097,
+              "resourceSize": 43881,
+              "statusCode": 200,
+              "mimeType": "application/javascript",
+              "resourceType": "Script",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "Cloudflare CDN"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/themes/twentytwentyone/assets/js/responsive-embeds.js?ver=1.5",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3915.1710000000894,
+              "networkRequestTime": 8667.311000000685,
+              "networkEndTime": 8880.544999999925,
+              "finished": true,
+              "transferSize": 552,
+              "resourceSize": 1127,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/newsletter/main.js?ver=9.1.2",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3915.2450000001118,
+              "networkRequestTime": 8880.645000000484,
+              "networkEndTime": 9096.377000000328,
+              "finished": true,
+              "transferSize": 411,
+              "resourceSize": 774,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://www.google.com/recaptcha/api.js?render=6LdaBwssAAAAALeuydQjXZZo86xBvOi-xT8zohe4&ver=3.0",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3915.2960000000894,
+              "networkRequestTime": 9096.583999999799,
+              "networkEndTime": 9181.666000001132,
+              "finished": true,
+              "transferSize": 1111,
+              "resourceSize": 1582,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "Other Google APIs/SDKs"
+            },
+            {
+              "url": "https://storetransform.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3915.347000000067,
+              "networkRequestTime": 9181.80700000003,
+              "networkEndTime": 9396.081000000238,
+              "finished": true,
+              "transferSize": 11610,
+              "resourceSize": 33548,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=6.1.5",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3915.3940000003204,
+              "networkRequestTime": 9396.21999999974,
+              "networkEndTime": 9612.116000000387,
+              "finished": true,
+              "transferSize": 463,
+              "resourceSize": 934,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?ver=1.0.0",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3915.4410000005737,
+              "networkRequestTime": 9612.24700000044,
+              "networkEndTime": 9637.106999999844,
+              "finished": true,
+              "transferSize": 19622,
+              "resourceSize": 68253,
+              "statusCode": 200,
+              "mimeType": "application/javascript",
+              "resourceType": "Script",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "Cloudflare CDN"
+            },
+            {
+              "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js?ver=1.0.0",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3915.482000000775,
+              "networkRequestTime": 9637.223000000231,
+              "networkEndTime": 9653.311000000685,
+              "finished": true,
+              "transferSize": 28287,
+              "resourceSize": 89476,
+              "statusCode": 200,
+              "mimeType": "application/javascript",
+              "resourceType": "Script",
+              "priority": "Medium",
+              "experimentalFromMainFrame": true,
+              "entity": "Cloudflare CDN"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/themes/twentytwentyone/assets/css/print.css?ver=1.5",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 3918.1360000008717,
+              "networkRequestTime": 10108.827000000514,
+              "networkEndTime": 10322.334999999963,
+              "finished": true,
+              "transferSize": 1017,
+              "resourceSize": 2897,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryLow",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 4552.229000000283,
+              "networkRequestTime": 4554.315999999642,
+              "networkEndTime": 4702.196000000462,
+              "finished": true,
+              "transferSize": 1170,
+              "resourceSize": 4851,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "Google Fonts"
+            },
+            {
+              "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TTZW952",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 7008.259000000544,
+              "networkRequestTime": 10046.09499999974,
+              "networkEndTime": 13348.491000000387,
+              "finished": true,
+              "transferSize": 130064,
+              "resourceSize": 377208,
+              "statusCode": 200,
+              "mimeType": "application/javascript",
+              "resourceType": "Script",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "Google Tag Manager"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/uploads/2022/06/Careers-Banner.jpg",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 7015.470999999903,
+              "networkRequestTime": 7050.679000000469,
+              "networkEndTime": 8054.359000000171,
+              "finished": true,
+              "transferSize": 68175,
+              "resourceSize": 68069,
+              "statusCode": 200,
+              "mimeType": "image/jpeg",
+              "resourceType": "Image",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/wp-job-openings/assets/img/loading.svg",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 7016.202000000514,
+              "networkRequestTime": 7050.79899999965,
+              "networkEndTime": 8054.979000000283,
+              "finished": true,
+              "transferSize": 498,
+              "resourceSize": 804,
+              "statusCode": 200,
+              "mimeType": "image/svg+xml",
+              "resourceType": "Image",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/uploads/2022/12/footer-bg.webp",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 7016.405000000261,
+              "networkRequestTime": 10046.118999999948,
+              "networkEndTime": 10272.465000000782,
+              "finished": true,
+              "transferSize": 82484,
+              "resourceSize": 81526,
+              "statusCode": 200,
+              "mimeType": "image/webp",
+              "resourceType": "Image",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://fonts.gstatic.com/s/inter/v20/UcCo3FwrK3iLTcviYwYZ8UA3.woff2",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 7016.912000000477,
+              "networkRequestTime": 7053.5,
+              "networkEndTime": 10045.88599999994,
+              "finished": true,
+              "transferSize": 73586,
+              "resourceSize": 73016,
+              "statusCode": 200,
+              "mimeType": "font/woff2",
+              "resourceType": "Font",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "Google Fonts"
+            },
+            {
+              "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 7017.2869999995455,
+              "networkRequestTime": 7053.681000000797,
+              "networkEndTime": 7121.613000000827,
+              "finished": true,
+              "transferSize": 77881,
+              "resourceSize": 77160,
+              "statusCode": 200,
+              "mimeType": "application/octet-stream",
+              "resourceType": "Font",
+              "priority": "VeryHigh",
+              "experimentalFromMainFrame": true,
+              "entity": "Cloudflare CDN"
+            },
+            {
+              "url": "https://www.gstatic.com/recaptcha/releases/rL1ELiQAg1kPezz6_H9hTZ_i/recaptcha__en.js",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 10132.625000000931,
+              "networkRequestTime": 10133.071000000462,
+              "networkEndTime": 10254.732000000775,
+              "finished": true,
+              "transferSize": 383529,
+              "resourceSize": 891428,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "Google CDN"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot/assets/js/ui.js",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 10134.786000000313,
+              "networkRequestTime": 10136.48900000006,
+              "networkEndTime": 10350.14400000032,
+              "finished": true,
+              "transferSize": 6040,
+              "resourceSize": 28859,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot/assets/js/utils.js",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 10134.893000001088,
+              "networkRequestTime": 10136.63300000038,
+              "networkEndTime": 10350.263000000268,
+              "finished": true,
+              "transferSize": 1145,
+              "resourceSize": 2556,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot/assets/js/chat-engine.js",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 10135.024000000209,
+              "networkRequestTime": 10136.707000000402,
+              "networkEndTime": 10350.368999999948,
+              "finished": true,
+              "transferSize": 959,
+              "resourceSize": 1900,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot/assets/js/flows.js",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 10135.104000000283,
+              "networkRequestTime": 10136.792999999598,
+              "networkEndTime": 10350.57600000035,
+              "finished": true,
+              "transferSize": 10350,
+              "resourceSize": 46393,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://fd.cleantalk.org/1.1.67/ct-bot-detector.min.js",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 10149.94800000079,
+              "networkRequestTime": 10215.341000000015,
+              "networkEndTime": 10369.617999999784,
+              "finished": true,
+              "transferSize": 9616,
+              "resourceSize": 28427,
+              "statusCode": 200,
+              "mimeType": "application/javascript",
+              "resourceType": "Script",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "cleantalk.org"
+            },
+            {
+              "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Lfv7RksAAAAAGY9Zz1KTwiMoqgp_0zGcPTD6IbR&co=aHR0cHM6Ly9zdG9yZXRyYW5zZm9ybS5jb206NDQz&hl=en&v=rL1ELiQAg1kPezz6_H9hTZ_i&size=invisible&anchor-ms=20000&execute-ms=30000&cb=53uyvlssi5q3",
+              "sessionTargetType": "iframe",
+              "protocol": "h2",
+              "rendererStartTime": 10307.150000000373,
+              "networkRequestTime": 10308.740000001155,
+              "networkEndTime": 10439.400000000373,
+              "finished": true,
+              "transferSize": 2932,
+              "resourceSize": 17019,
+              "statusCode": 200,
+              "mimeType": "text/html",
+              "resourceType": "Document",
+              "priority": "VeryHigh",
+              "entity": "Other Google APIs/SDKs"
+            },
+            {
+              "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LdaBwssAAAAALeuydQjXZZo86xBvOi-xT8zohe4&co=aHR0cHM6Ly9zdG9yZXRyYW5zZm9ybS5jb206NDQz&hl=en&v=rL1ELiQAg1kPezz6_H9hTZ_i&size=invisible&anchor-ms=20000&execute-ms=30000&cb=mzmvcddk0bqf",
+              "sessionTargetType": "iframe",
+              "protocol": "h2",
+              "rendererStartTime": 10314.913999999873,
+              "networkRequestTime": 10315.933000000194,
+              "networkEndTime": 10520.249000000767,
+              "finished": true,
+              "transferSize": 28819,
+              "resourceSize": 55055,
+              "statusCode": 200,
+              "mimeType": "text/html",
+              "resourceType": "Document",
+              "priority": "VeryHigh",
+              "entity": "Other Google APIs/SDKs"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot/assets/js/detect-country.js",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 10387.681000000797,
+              "networkRequestTime": 10387.980000000447,
+              "networkEndTime": 10601.734000000171,
+              "finished": true,
+              "transferSize": 472,
+              "resourceSize": 1222,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot/assets/js/country-list.js",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 10387.759999999776,
+              "networkRequestTime": 10388.146000000648,
+              "networkEndTime": 10601.895000000484,
+              "finished": true,
+              "transferSize": 1682,
+              "resourceSize": 6523,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot/assets/js/constants.js",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 10387.879000000656,
+              "networkRequestTime": 10388.218000000343,
+              "networkEndTime": 10602.017000000924,
+              "finished": true,
+              "transferSize": 515,
+              "resourceSize": 1095,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot/assets/js/edit-button-toggle.js",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 10387.926000000909,
+              "networkRequestTime": 10388.282000000589,
+              "networkEndTime": 10602.109000001103,
+              "finished": true,
+              "transferSize": 220,
+              "resourceSize": 369,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://fd-api.cleantalk.org/api3.0/frontend_data",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 10390.87200000044,
+              "networkRequestTime": 10909.185999999754,
+              "networkEndTime": 11124.62799999956,
+              "finished": true,
+              "transferSize": 399,
+              "resourceSize": 252,
+              "statusCode": 200,
+              "mimeType": "application/json",
+              "resourceType": "XHR",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "cleantalk.org"
+            },
+            {
+              "url": "https://fd-api.cleantalk.org/api3.0/frontend_data",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 10395.233000000939,
+              "networkRequestTime": 10391.218000000343,
+              "networkEndTime": 10909.099000000395,
+              "finished": true,
+              "transferSize": 0,
+              "resourceSize": 0,
+              "statusCode": 204,
+              "mimeType": "",
+              "resourceType": "Preflight",
+              "priority": "High",
+              "entity": "cleantalk.org"
+            },
+            {
+              "url": "https://www.gstatic.com/recaptcha/releases/rL1ELiQAg1kPezz6_H9hTZ_i/styles__ltr.css",
+              "sessionTargetType": "iframe",
+              "protocol": "h2",
+              "rendererStartTime": 10450.64400000032,
+              "networkRequestTime": 10451.474000000395,
+              "networkEndTime": 10538.080000001006,
+              "finished": true,
+              "transferSize": 42938,
+              "resourceSize": 83001,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "entity": "Google CDN"
+            },
+            {
+              "url": "https://www.gstatic.com/recaptcha/releases/rL1ELiQAg1kPezz6_H9hTZ_i/recaptcha__en.js",
+              "sessionTargetType": "iframe",
+              "protocol": "h2",
+              "rendererStartTime": 10450.95100000035,
+              "networkRequestTime": 10451.626000000164,
+              "networkEndTime": 10457.310000000522,
+              "finished": true,
+              "transferSize": 0,
+              "resourceSize": 891428,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "High",
+              "entity": "Google CDN"
+            },
+            {
+              "url": "https://www.gstatic.com/recaptcha/releases/rL1ELiQAg1kPezz6_H9hTZ_i/styles__ltr.css",
+              "sessionTargetType": "iframe",
+              "protocol": "h2",
+              "rendererStartTime": 10514.514000000432,
+              "networkRequestTime": 10514.951999999583,
+              "networkEndTime": 10538.28799999971,
+              "finished": true,
+              "transferSize": 0,
+              "resourceSize": 83001,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "priority": "VeryHigh",
+              "entity": "Google CDN"
+            },
+            {
+              "url": "https://www.gstatic.com/recaptcha/releases/rL1ELiQAg1kPezz6_H9hTZ_i/recaptcha__en.js",
+              "sessionTargetType": "iframe",
+              "protocol": "h2",
+              "rendererStartTime": 10514.747999999672,
+              "networkRequestTime": 10514.747999999672,
+              "networkEndTime": 10514.890999999829,
+              "finished": true,
+              "transferSize": 0,
+              "resourceSize": 891428,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "High",
+              "entity": "Google CDN"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot/includes/captcha.php?timestamp=1784006931141",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 10608.414000000805,
+              "networkRequestTime": 10608.890000000596,
+              "networkEndTime": 11961.406999999657,
+              "finished": true,
+              "transferSize": 716,
+              "resourceSize": 0,
+              "statusCode": 200,
+              "mimeType": "image/png",
+              "resourceType": "Fetch",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot/assets/image/storetransform_logo.png",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 10608.934000000358,
+              "networkRequestTime": 10609.276999999769,
+              "networkEndTime": 10825.095999999903,
+              "finished": true,
+              "transferSize": 14227,
+              "resourceSize": 14172,
+              "statusCode": 200,
+              "mimeType": "image/png",
+              "resourceType": "Image",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot//assets/image/refresh_icon.svg",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 10609.930999999866,
+              "networkRequestTime": 10610.458000000566,
+              "networkEndTime": 10827.717000000179,
+              "finished": true,
+              "transferSize": 349,
+              "resourceSize": 467,
+              "statusCode": 200,
+              "mimeType": "image/svg+xml",
+              "resourceType": "Image",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot//assets/image/send_icon.png",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 10610.229000000283,
+              "networkRequestTime": 10610.68200000003,
+              "networkEndTime": 10827.567000000738,
+              "finished": true,
+              "transferSize": 475,
+              "resourceSize": 424,
+              "statusCode": 200,
+              "mimeType": "image/png",
+              "resourceType": "Image",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "blob:https://storetransform.com/56c7fc31-4769-422d-84c0-f68cb8a323f2",
+              "sessionTargetType": "worker",
+              "protocol": "blob",
+              "rendererStartTime": 10613.302000000142,
+              "networkRequestTime": 10613.302000000142,
+              "networkEndTime": 10721.933000000194,
+              "finished": true,
+              "transferSize": -1,
+              "resourceSize": 1327,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "VeryLow"
+            },
+            {
+              "url": "https://storetransform.com/wp-json/wpai/v1/services",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 10616.331999999471,
+              "networkRequestTime": 10616.650000000373,
+              "networkEndTime": 10829.833000000566,
+              "finished": true,
+              "transferSize": 1612,
+              "resourceSize": 1433,
+              "statusCode": 200,
+              "mimeType": "application/json",
+              "resourceType": "Fetch",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://ipapi.co/json/",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 10673.211000000127,
+              "networkRequestTime": 10673.563000001013,
+              "networkEndTime": 14208.535000000149,
+              "finished": true,
+              "transferSize": 1687,
+              "resourceSize": 837,
+              "statusCode": 200,
+              "mimeType": "application/json",
+              "resourceType": "XHR",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "ipapi.co"
+            },
+            {
+              "url": "https://storetransform.com/wp-includes/js/wp-emoji-release.min.js?ver=6.9.1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 10722.224999999627,
+              "networkRequestTime": 10722.601999999955,
+              "networkEndTime": 10943.97000000067,
+              "finished": true,
+              "transferSize": 5030,
+              "resourceSize": 22762,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://www.gstatic.com/recaptcha/api2/logo_48.png",
+              "sessionTargetType": "iframe",
+              "protocol": "h2",
+              "rendererStartTime": 10736.334999999963,
+              "networkRequestTime": 10736.659000000916,
+              "networkEndTime": 10750.745000001043,
+              "finished": true,
+              "transferSize": 2368,
+              "resourceSize": 2228,
+              "statusCode": 200,
+              "mimeType": "image/png",
+              "resourceType": "Image",
+              "priority": "Low",
+              "entity": "Google CDN"
+            },
+            {
+              "url": "https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2",
+              "sessionTargetType": "iframe",
+              "protocol": "h2",
+              "rendererStartTime": 10736.726000000723,
+              "networkRequestTime": 10738.521000000648,
+              "networkEndTime": 10810.081000000238,
+              "finished": true,
+              "transferSize": 35221,
+              "resourceSize": 34668,
+              "statusCode": 200,
+              "mimeType": "font/woff2",
+              "resourceType": "Font",
+              "priority": "VeryHigh",
+              "entity": "Google Fonts"
+            },
+            {
+              "url": "https://www.google.com/recaptcha/api2/webworker.js?hl=en&v=rL1ELiQAg1kPezz6_H9hTZ_i",
+              "sessionTargetType": "worker",
+              "protocol": "h2",
+              "rendererStartTime": 10751.945000000298,
+              "networkRequestTime": 10751.945000000298,
+              "networkEndTime": 10936.279000000097,
+              "finished": true,
+              "transferSize": 287,
+              "resourceSize": 102,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "VeryLow",
+              "entity": "Other Google APIs/SDKs"
+            },
+            {
+              "url": "https://www.gstatic.com/recaptcha/api2/logo_48.png",
+              "sessionTargetType": "iframe",
+              "protocol": "h2",
+              "rendererStartTime": 10760.953000000678,
+              "networkRequestTime": 10761.423000000417,
+              "networkEndTime": 10762.377000000328,
+              "finished": true,
+              "transferSize": 0,
+              "resourceSize": 2228,
+              "statusCode": 200,
+              "mimeType": "image/png",
+              "resourceType": "Image",
+              "priority": "Low",
+              "entity": "Google CDN"
+            },
+            {
+              "url": "https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2",
+              "sessionTargetType": "iframe",
+              "protocol": "h2",
+              "rendererStartTime": 10761.483000000939,
+              "networkRequestTime": 10761.879999999888,
+              "networkEndTime": 10810.5,
+              "finished": true,
+              "transferSize": 0,
+              "resourceSize": 34668,
+              "statusCode": 200,
+              "mimeType": "font/woff2",
+              "resourceType": "Font",
+              "priority": "VeryHigh",
+              "entity": "Google Fonts"
+            },
+            {
+              "url": "https://www.gstatic.com/recaptcha/releases/rL1ELiQAg1kPezz6_H9hTZ_i/recaptcha__en.js",
+              "sessionTargetType": "worker",
+              "protocol": "h2",
+              "rendererStartTime": 10835.331000000238,
+              "networkRequestTime": 10835.957000000402,
+              "networkEndTime": 10841.403000000864,
+              "finished": true,
+              "transferSize": 0,
+              "resourceSize": 891428,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Other",
+              "priority": "VeryHigh",
+              "entity": "Google CDN"
+            },
+            {
+              "url": "https://unpkg.com/leaflet@1.0.3/dist/leaflet.js",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 11155.717000000179,
+              "networkRequestTime": 11156.141999999993,
+              "networkEndTime": 11205.042000000365,
+              "finished": true,
+              "transferSize": 39002,
+              "resourceSize": 145312,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "Unpkg"
+            },
+            {
+              "url": "https://www.google.com/recaptcha/api2/reload?k=6LdaBwssAAAAALeuydQjXZZo86xBvOi-xT8zohe4",
+              "sessionTargetType": "iframe",
+              "protocol": "h2",
+              "rendererStartTime": 11213.673000000417,
+              "networkRequestTime": 11214.262000001036,
+              "networkEndTime": 11366.523000000045,
+              "finished": true,
+              "transferSize": 2638,
+              "resourceSize": 3008,
+              "statusCode": 200,
+              "mimeType": "application/json",
+              "resourceType": "XHR",
+              "priority": "High",
+              "entity": "Other Google APIs/SDKs"
+            },
+            {
+              "url": "https://www.google.com/recaptcha/api2/clr?k=6LdaBwssAAAAALeuydQjXZZo86xBvOi-xT8zohe4",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 11380.226000000723,
+              "networkRequestTime": 11380.691000000574,
+              "networkEndTime": 11507.612999999896,
+              "finished": true,
+              "transferSize": 417,
+              "resourceSize": 0,
+              "statusCode": 200,
+              "mimeType": "application/binary",
+              "resourceType": "Fetch",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "Other Google APIs/SDKs"
+            },
+            {
+              "url": "https://ipapi.co/json/",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 11408.37200000044,
+              "networkRequestTime": 11408.927000001073,
+              "networkEndTime": 14597.83400000073,
+              "finished": true,
+              "transferSize": 709,
+              "resourceSize": 837,
+              "statusCode": 200,
+              "mimeType": "application/json",
+              "resourceType": "Fetch",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "ipapi.co"
+            },
+            {
+              "url": "blob:https://storetransform.com/86ffac84-e58d-4b55-823d-f1fb147ba022",
+              "sessionTargetType": "page",
+              "protocol": "blob",
+              "rendererStartTime": 11964.358000000939,
+              "networkRequestTime": 11964.358000000939,
+              "networkEndTime": 11964.79600000009,
+              "finished": true,
+              "transferSize": 0,
+              "resourceSize": 524,
+              "statusCode": 200,
+              "mimeType": "image/png",
+              "resourceType": "Image",
+              "priority": "Low",
+              "experimentalFromMainFrame": true
+            },
+            {
+              "url": "https://www.googletagmanager.com/gtag/js?id=G-S8EXFFHLMP&cx=c&gtm=4e67a1h1",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 13366.202999999747,
+              "networkRequestTime": 13366.6110000005,
+              "networkEndTime": 13661.557000000961,
+              "finished": true,
+              "transferSize": 157358,
+              "resourceSize": 455980,
+              "statusCode": 200,
+              "mimeType": "application/javascript",
+              "resourceType": "Script",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "Google Tag Manager"
+            },
+            {
+              "url": "https://www.google-analytics.com/analytics.js",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 13369.300999999978,
+              "networkRequestTime": 13369.708999999799,
+              "networkEndTime": 16485.275000000373,
+              "finished": true,
+              "transferSize": 21409,
+              "resourceSize": 52310,
+              "statusCode": 200,
+              "mimeType": "text/javascript",
+              "resourceType": "Script",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "Google Analytics"
+            },
+            {
+              "url": "https://www.googletagmanager.com/gtag/js?id=G-XDFT5S8855&cx=c&gtm=4e67d0h2",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 13393.086000000127,
+              "networkRequestTime": 13393.808000000194,
+              "networkEndTime": 13738.867000000551,
+              "finished": true,
+              "transferSize": 180320,
+              "resourceSize": 546706,
+              "statusCode": 200,
+              "mimeType": "application/javascript",
+              "resourceType": "Script",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "Google Tag Manager"
+            },
+            {
+              "url": "https://www.clarity.ms/tag/uyoj4c5fgx?ref=gtm",
+              "sessionTargetType": "page",
+              "protocol": "http/1.1",
+              "rendererStartTime": 13396.734000000171,
+              "networkRequestTime": 13397.167000000365,
+              "networkEndTime": 22867.702999999747,
+              "finished": true,
+              "transferSize": 1128,
+              "resourceSize": 707,
+              "statusCode": 200,
+              "mimeType": "application/x-javascript",
+              "resourceType": "Script",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "Clarity"
+            },
+            {
+              "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S8EXFFHLMP&gtm=45je67a1h1v882898929za20g&_p=1784006927541&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAI&are=1&cid=1556069750.1784006934&frm=0&pscdl=noapi&rcb=4&sr=412x823&uaa=&uab=64&uafvl=Not%253BA%253DBrand%3B8.0.0.0%7CChromium%3B150.0.7871.115%7CGoogle%2520Chrome%3B150.0.7871.115&uam=moto%20g%20power%20(2022)&uamb=1&uap=Android&uapv=11.0&uaw=0&ul=en-us&_s=1&tag_exp=115616985~115938466~115938468~118395333~118826209~118897920~118897930~119027224~119724322&sid=1784006934&sct=1&seg=0&dl=https%3A%2F%2Fstoretransform.com%2Fcareer%2F&dt=Join%20Our%20Team%20%7C%20Careers%20at%20Store%20Transform&en=page_view&_fv=1&_nsi=1&_ss=1&gap.plf=5&tfd=13708",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 13707.969000000507,
+              "networkRequestTime": 13708.867000000551,
+              "networkEndTime": 16546.37200000044,
+              "finished": true,
+              "transferSize": 48,
+              "resourceSize": 0,
+              "statusCode": 204,
+              "mimeType": "text/plain",
+              "resourceType": "Fetch",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "Google Analytics"
+            },
+            {
+              "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-XDFT5S8855&gtm=45je67d0h2v9137856256z8899601995za20gzb899601995zd899601995&_p=1784006927541&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAAC&are=1&cid=1556069750.1784006934&frm=0&pscdl=noapi&rcb=19&sr=412x823&uaa=&uab=64&uafvl=Not%253BA%253DBrand%3B8.0.0.0%7CChromium%3B150.0.7871.115%7CGoogle%2520Chrome%3B150.0.7871.115&uam=moto%20g%20power%20(2022)&uamb=1&uap=Android&uapv=11.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938469~118826209~118897920~118897930~119027224~119724322&sid=1784006934&sct=1&seg=0&dl=https%3A%2F%2Fstoretransform.com%2Fcareer%2F&dt=Join%20Our%20Team%20%7C%20Careers%20at%20Store%20Transform&en=page_view&_fv=1&_ss=1&tfd=13790",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 13789.536999999546,
+              "networkRequestTime": 13790.452000000514,
+              "networkEndTime": 16543.54600000009,
+              "finished": true,
+              "transferSize": 408,
+              "resourceSize": 0,
+              "statusCode": 204,
+              "mimeType": "text/plain",
+              "resourceType": "Fetch",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "Google Analytics"
+            },
+            {
+              "url": "https://scripts.clarity.ms/0.8.67/clarity.js",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 22869.014000000432,
+              "networkRequestTime": 22869.347000000067,
+              "networkEndTime": 35042.93200000096,
+              "finished": true,
+              "transferSize": 25761,
+              "resourceSize": 74445,
+              "statusCode": 200,
+              "mimeType": "application/javascript",
+              "resourceType": "Script",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "Clarity"
+            },
+            {
+              "url": "https://c.clarity.ms/c.gif",
+              "sessionTargetType": "page",
+              "protocol": "",
+              "rendererStartTime": 35080.52099999972,
+              "networkRequestTime": 35080.52099999972,
+              "finished": false,
+              "transferSize": 0,
+              "resourceSize": 0,
+              "statusCode": -1,
+              "mimeType": "",
+              "resourceType": "Image",
+              "priority": "Low",
+              "experimentalFromMainFrame": true,
+              "entity": "Clarity"
+            },
+            {
+              "url": "https://storetransform.com/wp-content/uploads/2022/06/favicon.png",
+              "sessionTargetType": "page",
+              "protocol": "h2",
+              "rendererStartTime": 35086.492999999784,
+              "networkRequestTime": 35086.78799999971,
+              "networkEndTime": 35302.564000000246,
+              "finished": true,
+              "transferSize": 1247,
+              "resourceSize": 1132,
+              "statusCode": 200,
+              "mimeType": "image/png",
+              "resourceType": "Other",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "storetransform.com"
+            },
+            {
+              "url": "https://y.clarity.ms/collect",
+              "sessionTargetType": "page",
+              "protocol": "",
+              "rendererStartTime": 35161.498999999836,
+              "networkRequestTime": 35161.498999999836,
+              "finished": false,
+              "transferSize": 0,
+              "resourceSize": 0,
+              "statusCode": -1,
+              "mimeType": "",
+              "resourceType": "XHR",
+              "priority": "High",
+              "experimentalFromMainFrame": true,
+              "entity": "Clarity"
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "networkStartTimeTs": 5856326180,
+            "initiators": [
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 68,
+                "columnNumber": 156
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 75,
+                "columnNumber": 170
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 76,
+                "columnNumber": 166
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 77,
+                "columnNumber": 201
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 83,
+                "columnNumber": 192
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 84,
+                "columnNumber": 206
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 85,
+                "columnNumber": 163
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 86,
+                "columnNumber": 201
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 87,
+                "columnNumber": 201
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 88,
+                "columnNumber": 171
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 89,
+                "columnNumber": 191
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 90,
+                "columnNumber": 171
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 91,
+                "columnNumber": 150
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 92,
+                "columnNumber": 154
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 93,
+                "columnNumber": 162
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 95,
+                "columnNumber": 141
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 96,
+                "columnNumber": 161
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 97,
+                "columnNumber": 161
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 98,
+                "columnNumber": 166
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 99,
+                "columnNumber": 173
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 100,
+                "columnNumber": 175
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 101,
+                "columnNumber": 173
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 102,
+                "columnNumber": 175
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 103,
+                "columnNumber": 145
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 104,
+                "columnNumber": 148
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 105,
+                "columnNumber": 107
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 106,
+                "columnNumber": 118
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 107,
+                "columnNumber": 168
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 108,
+                "columnNumber": 130
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 113,
+                "columnNumber": 158
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 118,
+                "columnNumber": 198
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 119,
+                "columnNumber": 116
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 120,
+                "columnNumber": 130
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 121,
+                "columnNumber": 124
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 122,
+                "columnNumber": 118
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 284,
+                "columnNumber": 79
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 324,
+                "columnNumber": 309
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 535,
+                "columnNumber": 129
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 540,
+                "columnNumber": 129
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 589,
+                "columnNumber": 130
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 703,
+                "columnNumber": 81
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 834,
+                "columnNumber": 135
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 835,
+                "columnNumber": 116
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 836,
+                "columnNumber": 114
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 842,
+                "columnNumber": 122
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 853,
+                "columnNumber": 129
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 854,
+                "columnNumber": 169
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 859,
+                "columnNumber": 169
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 996,
+                "columnNumber": 131
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 997,
+                "columnNumber": 68
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 1002,
+                "columnNumber": 124
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 1002,
+                "columnNumber": 257
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 1007,
+                "columnNumber": 121
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 1008,
+                "columnNumber": 165
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 1013,
+                "columnNumber": 108
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 1014,
+                "columnNumber": 139
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 1015,
+                "columnNumber": 118
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 1026,
+                "columnNumber": 136
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 1027,
+                "columnNumber": 119
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 1028,
+                "columnNumber": 106
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 94,
+                "columnNumber": 175
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/css/gs-custom.css?ver=6.9.1",
+                "lineNumber": 0,
+                "columnNumber": 0
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/css/gs-custom.css?ver=6.9.1"
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/wp-content/plugins/wp-job-openings/assets/css/style.min.css?ver=3.5.4"
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/css/gs-custom.css?ver=6.9.1"
+              },
+              {
+                "type": "parser",
+                "url": "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+              },
+              {
+                "type": "parser",
+                "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?ver=6.9.1"
+              },
+              {
+                "type": "script",
+                "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot/assets/js/chatbot.js?ver=1766661010",
+                "lineNumber": 0,
+                "columnNumber": 39
+              },
+              {
+                "type": "script",
+                "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot/assets/js/chatbot.js?ver=1766661010",
+                "lineNumber": 1,
+                "columnNumber": 45
+              },
+              {
+                "type": "script",
+                "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot/assets/js/chatbot.js?ver=1766661010",
+                "lineNumber": 2,
+                "columnNumber": 28
+              },
+              {
+                "type": "script",
+                "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot/assets/js/chatbot.js?ver=1766661010",
+                "lineNumber": 3,
+                "columnNumber": 54
+              },
+              {
+                "type": "script",
+                "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot/assets/js/ui.js",
+                "lineNumber": 0,
+                "columnNumber": 34
+              },
+              {
+                "type": "script",
+                "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot/assets/js/ui.js",
+                "lineNumber": 1,
+                "columnNumber": 29
+              },
+              {
+                "type": "script",
+                "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot/assets/js/flows.js",
+                "lineNumber": 9,
+                "columnNumber": 29
+              },
+              {
+                "type": "script",
+                "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot/assets/js/flows.js",
+                "lineNumber": 10,
+                "columnNumber": 37
+              },
+              {
+                "type": "preflight",
+                "url": "https://fd-api.cleantalk.org/api3.0/frontend_data"
+              },
+              {
+                "type": "parser",
+                "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Lfv7RksAAAAAGY9Zz1KTwiMoqgp_0zGcPTD6IbR&co=aHR0cHM6Ly9zdG9yZXRyYW5zZm9ybS5jb206NDQz&hl=en&v=rL1ELiQAg1kPezz6_H9hTZ_i&size=invisible&anchor-ms=20000&execute-ms=30000&cb=53uyvlssi5q3",
+                "lineNumber": 248,
+                "columnNumber": 130
+              },
+              {
+                "type": "parser",
+                "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Lfv7RksAAAAAGY9Zz1KTwiMoqgp_0zGcPTD6IbR&co=aHR0cHM6Ly9zdG9yZXRyYW5zZm9ybS5jb206NDQz&hl=en&v=rL1ELiQAg1kPezz6_H9hTZ_i&size=invisible&anchor-ms=20000&execute-ms=30000&cb=53uyvlssi5q3",
+                "lineNumber": 249,
+                "columnNumber": 153
+              },
+              {
+                "type": "parser",
+                "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LdaBwssAAAAALeuydQjXZZo86xBvOi-xT8zohe4&co=aHR0cHM6Ly9zdG9yZXRyYW5zZm9ybS5jb206NDQz&hl=en&v=rL1ELiQAg1kPezz6_H9hTZ_i&size=invisible&anchor-ms=20000&execute-ms=30000&cb=mzmvcddk0bqf",
+                "lineNumber": 249,
+                "columnNumber": 130
+              },
+              {
+                "type": "parser",
+                "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LdaBwssAAAAALeuydQjXZZo86xBvOi-xT8zohe4&co=aHR0cHM6Ly9zdG9yZXRyYW5zZm9ybS5jb206NDQz&hl=en&v=rL1ELiQAg1kPezz6_H9hTZ_i&size=invisible&anchor-ms=20000&execute-ms=30000&cb=mzmvcddk0bqf",
+                "lineNumber": 249,
+                "columnNumber": 153
+              },
+              {
+                "type": "other",
+                "url": "https://storetransform.com/career/"
+              },
+              {
+                "type": "parser",
+                "url": "https://www.gstatic.com/recaptcha/releases/rL1ELiQAg1kPezz6_H9hTZ_i/styles__ltr.css"
+              },
+              {
+                "type": "parser",
+                "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Lfv7RksAAAAAGY9Zz1KTwiMoqgp_0zGcPTD6IbR&co=aHR0cHM6Ly9zdG9yZXRyYW5zZm9ybS5jb206NDQz&hl=en&v=rL1ELiQAg1kPezz6_H9hTZ_i&size=invisible&anchor-ms=20000&execute-ms=30000&cb=53uyvlssi5q3",
+                "lineNumber": 254,
+                "columnNumber": 28
+              },
+              {
+                "type": "other",
+                "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LdaBwssAAAAALeuydQjXZZo86xBvOi-xT8zohe4&co=aHR0cHM6Ly9zdG9yZXRyYW5zZm9ybS5jb206NDQz&hl=en&v=rL1ELiQAg1kPezz6_H9hTZ_i&size=invisible&anchor-ms=20000&execute-ms=30000&cb=mzmvcddk0bqf"
+              },
+              {
+                "type": "parser",
+                "url": "https://www.gstatic.com/recaptcha/releases/rL1ELiQAg1kPezz6_H9hTZ_i/styles__ltr.css"
+              },
+              {
+                "type": "parser",
+                "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LdaBwssAAAAALeuydQjXZZo86xBvOi-xT8zohe4&co=aHR0cHM6Ly9zdG9yZXRyYW5zZm9ybS5jb206NDQz&hl=en&v=rL1ELiQAg1kPezz6_H9hTZ_i&size=invisible&anchor-ms=20000&execute-ms=30000&cb=mzmvcddk0bqf",
+                "lineNumber": 258,
+                "columnNumber": 13
+              },
+              {
+                "type": "parser",
+                "url": "https://storetransform.com/career/",
+                "lineNumber": 1066,
+                "columnNumber": 67
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "network-server-latency",
+        "title": "Server Backend Latencies",
+        "description": "Server latencies can impact web performance. If the server latency of an origin is high, it's an indication the server is overloaded or has poor backend performance. [Learn more about server response time](https://hpbn.co/primer-on-web-performance/#analyzing-the-resource-waterfall).",
+        "score": 1,
+        "displayValue": "380 ms",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "origin",
+              "valueType": "text",
+              "label": "URL"
+            },
+            {
+              "key": "serverResponseTime",
+              "valueType": "ms",
+              "granularity": 1,
+              "label": "Time Spent"
+            }
+          ],
+          "items": [
+            {
+              "origin": "https://ipapi.co",
+              "serverResponseTime": 384.5830000000001
+            },
+            {
+              "origin": "https://storetransform.com",
+              "serverResponseTime": 204.34199999999998
+            },
+            {
+              "origin": "https://fd-api.cleantalk.org",
+              "serverResponseTime": 182.35346
+            },
+            {
+              "origin": "https://www.google.com",
+              "serverResponseTime": 81.7575
+            },
+            {
+              "origin": "https://www.googletagmanager.com",
+              "serverResponseTime": 71.52649999999998
+            },
+            {
+              "origin": "https://www.google-analytics.com",
+              "serverResponseTime": 62.91700000000037
+            },
+            {
+              "origin": "https://fonts.googleapis.com",
+              "serverResponseTime": 61.53399999999999
+            },
+            {
+              "origin": "https://unpkg.com",
+              "serverResponseTime": 21.250999999999674
+            },
+            {
+              "origin": "https://cdn.jsdelivr.net",
+              "serverResponseTime": 10.759000000000015
+            },
+            {
+              "origin": "https://cdnjs.cloudflare.com",
+              "serverResponseTime": 10.692000000000007
+            },
+            {
+              "origin": "https://scripts.clarity.ms",
+              "serverResponseTime": 4.845000000001164
+            },
+            {
+              "origin": "https://fd.cleantalk.org",
+              "serverResponseTime": 0
+            },
+            {
+              "origin": "https://fonts.gstatic.com",
+              "serverResponseTime": 0
+            },
+            {
+              "origin": "https://www.gstatic.com",
+              "serverResponseTime": 0
+            },
+            {
+              "origin": "https://www.clarity.ms",
+              "serverResponseTime": 0
+            }
+          ],
+          "sortedBy": [
+            "serverResponseTime"
+          ]
+        }
+      },
+      {
+        "id": "user-timings",
+        "title": "User Timing marks and measures",
+        "description": "Consider instrumenting your app with the User Timing API to measure your app's real-world performance during key user experiences. [Learn more about User Timing marks](https://developer.chrome.com/docs/lighthouse/performance/user-timings/).",
+        "score": 1,
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "name",
+              "valueType": "text",
+              "label": "Name"
+            },
+            {
+              "key": "timingType",
+              "valueType": "text",
+              "label": "Type"
+            },
+            {
+              "key": "startTime",
+              "valueType": "ms",
+              "granularity": 0.01,
+              "label": "Start Time"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "granularity": 0.01,
+              "label": "Duration"
+            }
+          ],
+          "items": []
+        }
+      }
+    ],
+    "resourceSummary": [
+      {
+        "resourceType": "total",
+        "count": 114
+      },
+      {
+        "resourceType": "script",
+        "count": 51
+      },
+      {
+        "resourceType": "image",
+        "count": 13
+      },
+      {
+        "resourceType": "font",
+        "count": 4
+      },
+      {
+        "resourceType": "stylesheet",
+        "count": 30
+      },
+      {
+        "resourceType": "document",
+        "count": 3
+      },
+      {
+        "resourceType": "other",
+        "count": 13
+      },
+      {
+        "resourceType": "media",
+        "count": 0
+      },
+      {
+        "resourceType": "third-party",
+        "count": 50
+      }
+    ],
+    "networkRequests": [
+      {
+        "url": "https://storetransform.com/career/",
+        "transferSize": 25012,
+        "resourceType": "Document",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-includes/css/dist/block-library/style.min.css?ver=6.9.1",
+        "transferSize": 15036,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/plugins/wp-job-openings/assets/css/general.min.css?ver=3.5.4",
+        "transferSize": 5971,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/plugins/wp-job-openings/assets/css/style.min.css?ver=3.5.4",
+        "transferSize": 3903,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/themes/twentytwentyone/assets/css/custom-color-overrides.css?ver=1.5",
+        "transferSize": 198,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/plugins/cleantalk-spam-protect/css/cleantalk-public.min.css?ver=6.68_1764763990",
+        "transferSize": 924,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/plugins/cleantalk-spam-protect/css/cleantalk-email-decoder.min.css?ver=6.68_1764763990",
+        "transferSize": 593,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.5",
+        "transferSize": 970,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/plugins/country-phone-field-contact-form-7/assets/css/intlTelInput.min.css?ver=6.9.1",
+        "transferSize": 2596,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/plugins/country-phone-field-contact-form-7/assets/css/countrySelect.min.css?ver=6.9.1",
+        "transferSize": 2213,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/plugins/st-stock-management/includes/style.css?ver=6.9.1",
+        "transferSize": 0,
+        "resourceType": "Stylesheet",
+        "statusCode": -1
+      },
+      {
+        "url": "https://storetransform.com/wp-content/plugins/st-stock-management/public/css/st-stock-management-public.css?ver=1.0.0",
+        "transferSize": 878,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/plugins/wp-ai-chatbot/assets/css/chatbot.css?ver=1766658601",
+        "transferSize": 4794,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css?ver=6.9.1",
+        "transferSize": 19179,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css?ver=1.8.1",
+        "transferSize": 667,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css?ver=1.8.1",
+        "transferSize": 1291,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/plugins/newsletter/style.css?ver=9.1.2",
+        "transferSize": 1502,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?ver=6.9.1",
+        "transferSize": 5936,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/style.css?ver=6.9.1",
+        "transferSize": 1733,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/css/st-custom.css?ver=6.9.1",
+        "transferSize": 6284,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/css/animation.css?ver=6.9.1",
+        "transferSize": 1203,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/css/menu-style.css?ver=6.9.1",
+        "transferSize": 2776,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/css/gs-custom.css?ver=6.9.1",
+        "transferSize": 20210,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/css/responsive.css?ver=6.9.1",
+        "transferSize": 8610,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.css?ver=6.9.1",
+        "transferSize": 4648,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?ver=6.9.1",
+        "transferSize": 3001,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "transferSize": 29835,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+        "transferSize": 4775,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/plugins/cleantalk-spam-protect/js/apbct-public-bundle.min.js?ver=6.68_1764763990",
+        "transferSize": 17149,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://fd.cleantalk.org/ct-bot-detector-wrapper.js?ver=6.68",
+        "transferSize": 585,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/plugins/st-stock-management/public/js/st-stock-management-public.js?ver=1.0.0",
+        "transferSize": 1567,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/themes/twentytwentyone/assets/js/primary-navigation.js?ver=1.5",
+        "transferSize": 1942,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js?ver=6.9.1",
+        "transferSize": 34967,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/js/st-custom.js?ver=6.9.1",
+        "transferSize": 1884,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/js/custom.js?ver=6.9.1",
+        "transferSize": 2883,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/js/new.js?ver=6.9.1",
+        "transferSize": 226,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=UA-226949759-1",
+        "transferSize": 119733,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/uploads/2022/06/store-logo.png",
+        "transferSize": 8713,
+        "resourceType": "Image",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/uploads/2022/06/car-1.jpg",
+        "transferSize": 226755,
+        "resourceType": "Image",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/uploads/2022/06/car-2.jpg",
+        "transferSize": 195229,
+        "resourceType": "Image",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/uploads/2023/06/store-logo.png",
+        "transferSize": 8707,
+        "resourceType": "Image",
+        "statusCode": 200
+      },
+      {
+        "url": "https://unpkg.com/leaflet@1.0.3/dist/leaflet.css",
+        "transferSize": 3657,
+        "resourceType": "Stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/plugins/wp-job-openings/assets/js/script.min.js?ver=3.5.4",
+        "transferSize": 14923,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1",
+        "transferSize": 1929,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375",
+        "transferSize": 2165,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.5",
+        "transferSize": 3438,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.5",
+        "transferSize": 4054,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/plugins/country-phone-field-contact-form-7/assets/js/intlTelInput.min.js?ver=6.9.1",
+        "transferSize": 9283,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/plugins/country-phone-field-contact-form-7/assets/js/countrySelect.min.js?ver=6.9.1",
+        "transferSize": 6167,
+        "resourceType": "Script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/wp-content/plugins/st-stock-management/includes/script.js",
+        "transferSize": 189,
+        "resourceType": "Script",
+        "statusCode": 404
+      }
+    ],
+    "javascriptExecutionTime": [
+      {
+        "url": "https://storetransform.com/career/",
+        "duration": 0
+      },
+      {
+        "url": "https://www.gstatic.com/recaptcha/releases/rL1ELiQAg1kPezz6_H9hTZ_i/recaptcha__en.js",
+        "duration": 0
+      },
+      {
+        "url": "Unattributable",
+        "duration": 0
+      },
+      {
+        "url": "https://storetransform.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "duration": 0
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-XDFT5S8855&cx=c&gtm=4e67d0h2",
+        "duration": 0
+      },
+      {
+        "url": "https://scripts.clarity.ms/0.8.67/clarity.js",
+        "duration": 0
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-S8EXFFHLMP&cx=c&gtm=4e67a1h1",
+        "duration": 0
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TTZW952",
+        "duration": 0
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=UA-226949759-1",
+        "duration": 0
+      },
+      {
+        "url": "https://fd.cleantalk.org/1.1.67/ct-bot-detector.min.js",
+        "duration": 0
+      }
+    ],
+    "largestAssets": [
+      {
+        "url": "https://storetransform.com/wp-content/uploads/2022/06/car-1.jpg",
+        "totalBytes": 226755
+      },
+      {
+        "url": "https://storetransform.com/wp-content/uploads/2022/06/car-2.jpg",
+        "totalBytes": 195229
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=UA-226949759-1",
+        "totalBytes": 119733
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js?ver=6.9.1",
+        "totalBytes": 34967
+      },
+      {
+        "url": "https://storetransform.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "totalBytes": 29835
+      },
+      {
+        "url": "https://storetransform.com/career/",
+        "totalBytes": 25012
+      },
+      {
+        "url": "https://storetransform.com/wp-content/themes/twenty-twenty-one-child/css/gs-custom.css?ver=6.9.1",
+        "totalBytes": 20210
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css?ver=6.9.1",
+        "totalBytes": 19179
+      },
+      {
+        "url": "https://storetransform.com/wp-content/plugins/cleantalk-spam-protect/js/apbct-public-bundle.min.js?ver=6.68_1764763990",
+        "totalBytes": 17149
+      },
+      {
+        "url": "https://storetransform.com/wp-includes/css/dist/block-library/style.min.css?ver=6.9.1",
+        "totalBytes": 15036
+      }
+    ]
+  },
+  "seoAnalytics": {
+    "passed": [
+      {
+        "id": "is-crawlable",
+        "title": "Page isn’t blocked from indexing",
+        "description": "Search engines are unable to include your pages in search results if they don't have permission to crawl them. [Learn more about crawler directives](https://developer.chrome.com/docs/lighthouse/seo/is-crawlable/).",
+        "score": 1
+      },
+      {
+        "id": "document-title",
+        "title": "Document has a `<title>` element",
+        "description": "The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a page is relevant to their search. [Learn more about document titles](https://dequeuniversity.com/rules/axe/4.10/document-title).",
+        "score": 1
+      },
+      {
+        "id": "meta-description",
+        "title": "Document has a meta description",
+        "description": "Meta descriptions may be included in search results to concisely summarize page content. [Learn more about the meta description](https://developer.chrome.com/docs/lighthouse/seo/meta-description/).",
+        "score": 1
+      },
+      {
+        "id": "http-status-code",
+        "title": "Page has successful HTTP status code",
+        "description": "Pages with unsuccessful HTTP status codes may not be indexed properly. [Learn more about HTTP status codes](https://developer.chrome.com/docs/lighthouse/seo/http-status-code/).",
+        "score": 1
+      },
+      {
+        "id": "link-text",
+        "title": "Links have descriptive text",
+        "description": "Descriptive link text helps search engines understand your content. [Learn how to make links more accessible](https://developer.chrome.com/docs/lighthouse/seo/link-text/).",
+        "score": 1
+      },
+      {
+        "id": "crawlable-anchors",
+        "title": "Links are crawlable",
+        "description": "Search engines may use `href` attributes on links to crawl websites. Ensure that the `href` attribute of anchor elements links to an appropriate destination, so more pages of the site can be discovered. [Learn how to make links crawlable](https://support.google.com/webmasters/answer/9112205)",
+        "score": 1
+      },
+      {
+        "id": "robots-txt",
+        "title": "robots.txt is valid",
+        "description": "If your robots.txt file is malformed, crawlers may not be able to understand how you want your website to be crawled or indexed. [Learn more about robots.txt](https://developer.chrome.com/docs/lighthouse/seo/invalid-robots-txt/).",
+        "score": 1
+      },
+      {
+        "id": "image-alt",
+        "title": "Image elements have `[alt]` attributes",
+        "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.10/image-alt).",
+        "score": 1
+      },
+      {
+        "id": "hreflang",
+        "title": "Document has a valid `hreflang`",
+        "description": "hreflang links tell search engines what version of a page they should list in search results for a given language or region. [Learn more about `hreflang`](https://developer.chrome.com/docs/lighthouse/seo/hreflang/).",
+        "score": 1
+      },
+      {
+        "id": "canonical",
+        "title": "Document has a valid `rel=canonical`",
+        "description": "Canonical links suggest which URL to show in search results. [Learn more about canonical links](https://developer.chrome.com/docs/lighthouse/seo/canonical/).",
+        "score": 1
+      },
+      {
+        "id": "structured-data",
+        "title": "Structured data is valid",
+        "description": "Run the [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/) and the [Structured Data Linter](http://linter.structured-data.org/) to validate structured data. [Learn more about Structured Data](https://developer.chrome.com/docs/lighthouse/seo/structured-data/).",
+        "score": 1
+      }
+    ],
+    "failed": [],
+    "metadata": {
+      "hasTitle": true,
+      "hasMetaDescription": true,
+      "hasViewport": true,
+      "hasH1": true,
+      "isIndexable": true
+    },
+    "structuredData": {
+      "valid": true,
+      "detectedTypes": []
+    }
+  },
+  "accessibilityAnalytics": {
+    "passed": [
+      {
+        "id": "accesskeys",
+        "title": "`[accesskey]` values are unique",
+        "description": "Access keys let users quickly focus a part of the page. For proper navigation, each access key must be unique. [Learn more about access keys](https://dequeuniversity.com/rules/axe/4.10/accesskeys).",
+        "score": 1
+      },
+      {
+        "id": "aria-allowed-attr",
+        "title": "`[aria-*]` attributes match their roles",
+        "description": "Each ARIA `role` supports a specific subset of `aria-*` attributes. Mismatching these invalidates the `aria-*` attributes. [Learn how to match ARIA attributes to their roles](https://dequeuniversity.com/rules/axe/4.10/aria-allowed-attr).",
+        "score": 1
+      },
+      {
+        "id": "aria-allowed-role",
+        "title": "Uses ARIA roles only on compatible elements",
+        "description": "Many HTML elements can only be assigned certain ARIA roles. Using ARIA roles where they are not allowed can interfere with the accessibility of the web page. [Learn more about ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role).",
+        "score": 1
+      },
+      {
+        "id": "aria-command-name",
+        "title": "`button`, `link`, and `menuitem` elements have accessible names",
+        "description": "When an element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn how to make command elements more accessible](https://dequeuniversity.com/rules/axe/4.10/aria-command-name).",
+        "score": 1
+      },
+      {
+        "id": "aria-conditional-attr",
+        "title": "ARIA attributes are used as specified for the element's role",
+        "description": "Some ARIA attributes are only allowed on an element under certain conditions. [Learn more about conditional ARIA attributes](https://dequeuniversity.com/rules/axe/4.10/aria-conditional-attr).",
+        "score": 1
+      },
+      {
+        "id": "aria-deprecated-role",
+        "title": "Deprecated ARIA roles were not used",
+        "description": "Deprecated ARIA roles may not be processed correctly by assistive technology. [Learn more about deprecated ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-deprecated-role).",
+        "score": 1
+      },
+      {
+        "id": "aria-dialog-name",
+        "title": "Elements with `role=\"dialog\"` or `role=\"alertdialog\"` have accessible names.",
+        "description": "ARIA dialog elements without accessible names may prevent screen readers users from discerning the purpose of these elements. [Learn how to make ARIA dialog elements more accessible](https://dequeuniversity.com/rules/axe/4.10/aria-dialog-name).",
+        "score": 1
+      },
+      {
+        "id": "aria-hidden-body",
+        "title": "`[aria-hidden=\"true\"]` is not present on the document `<body>`",
+        "description": "Assistive technologies, like screen readers, work inconsistently when `aria-hidden=\"true\"` is set on the document `<body>`. [Learn how `aria-hidden` affects the document body](https://dequeuniversity.com/rules/axe/4.10/aria-hidden-body).",
+        "score": 1
+      },
+      {
+        "id": "aria-hidden-focus",
+        "title": "`[aria-hidden=\"true\"]` elements do not contain focusable descendents",
+        "description": "Focusable descendents within an `[aria-hidden=\"true\"]` element prevent those interactive elements from being available to users of assistive technologies like screen readers. [Learn how `aria-hidden` affects focusable elements](https://dequeuniversity.com/rules/axe/4.10/aria-hidden-focus).",
+        "score": 1
+      },
+      {
+        "id": "aria-input-field-name",
+        "title": "ARIA input fields have accessible names",
+        "description": "When an input field doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn more about input field labels](https://dequeuniversity.com/rules/axe/4.10/aria-input-field-name).",
+        "score": 1
+      },
+      {
+        "id": "aria-meter-name",
+        "title": "ARIA `meter` elements have accessible names",
+        "description": "When a meter element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn how to name `meter` elements](https://dequeuniversity.com/rules/axe/4.10/aria-meter-name).",
+        "score": 1
+      },
+      {
+        "id": "aria-progressbar-name",
+        "title": "ARIA `progressbar` elements have accessible names",
+        "description": "When a `progressbar` element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn how to label `progressbar` elements](https://dequeuniversity.com/rules/axe/4.10/aria-progressbar-name).",
+        "score": 1
+      },
+      {
+        "id": "aria-prohibited-attr",
+        "title": "Elements use only permitted ARIA attributes",
+        "description": "Using ARIA attributes in roles where they are prohibited can mean that important information is not communicated to users of assistive technologies. [Learn more about prohibited ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-prohibited-attr).",
+        "score": 1
+      },
+      {
+        "id": "aria-required-attr",
+        "title": "`[role]`s have all required `[aria-*]` attributes",
+        "description": "Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more about roles and required attributes](https://dequeuniversity.com/rules/axe/4.10/aria-required-attr).",
+        "score": 1
+      },
+      {
+        "id": "aria-required-children",
+        "title": "Elements with an ARIA `[role]` that require children to contain a specific `[role]` have all required children.",
+        "description": "Some ARIA parent roles must contain specific child roles to perform their intended accessibility functions. [Learn more about roles and required children elements](https://dequeuniversity.com/rules/axe/4.10/aria-required-children).",
+        "score": 1
+      },
+      {
+        "id": "aria-required-parent",
+        "title": "`[role]`s are contained by their required parent element",
+        "description": "Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.10/aria-required-parent).",
+        "score": 1
+      },
+      {
+        "id": "aria-roles",
+        "title": "`[role]` values are valid",
+        "description": "ARIA roles must have valid values in order to perform their intended accessibility functions. [Learn more about valid ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-roles).",
+        "score": 1
+      },
+      {
+        "id": "aria-text",
+        "title": "Elements with the `role=text` attribute do not have focusable descendents.",
+        "description": "Adding `role=text` around a text node split by markup enables VoiceOver to treat it as one phrase, but the element's focusable descendents will not be announced. [Learn more about the `role=text` attribute](https://dequeuniversity.com/rules/axe/4.10/aria-text).",
+        "score": 1
+      },
+      {
+        "id": "aria-toggle-field-name",
+        "title": "ARIA toggle fields have accessible names",
+        "description": "When a toggle field doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn more about toggle fields](https://dequeuniversity.com/rules/axe/4.10/aria-toggle-field-name).",
+        "score": 1
+      },
+      {
+        "id": "aria-tooltip-name",
+        "title": "ARIA `tooltip` elements have accessible names",
+        "description": "When a tooltip element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn how to name `tooltip` elements](https://dequeuniversity.com/rules/axe/4.10/aria-tooltip-name).",
+        "score": 1
+      },
+      {
+        "id": "aria-treeitem-name",
+        "title": "ARIA `treeitem` elements have accessible names",
+        "description": "When a `treeitem` element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn more about labeling `treeitem` elements](https://dequeuniversity.com/rules/axe/4.10/aria-treeitem-name).",
+        "score": 1
+      },
+      {
+        "id": "aria-valid-attr-value",
+        "title": "`[aria-*]` attributes have valid values",
+        "description": "Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid values. [Learn more about valid values for ARIA attributes](https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr-value).",
+        "score": 1
+      },
+      {
+        "id": "aria-valid-attr",
+        "title": "`[aria-*]` attributes are valid and not misspelled",
+        "description": "Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid names. [Learn more about valid ARIA attributes](https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr).",
+        "score": 1
+      },
+      {
+        "id": "button-name",
+        "title": "Buttons have an accessible name",
+        "description": "When a button doesn't have an accessible name, screen readers announce it as \"button\", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.10/button-name).",
+        "score": 1
+      },
+      {
+        "id": "bypass",
+        "title": "The page contains a heading, skip link, or landmark region",
+        "description": "Adding ways to bypass repetitive content lets keyboard users navigate the page more efficiently. [Learn more about bypass blocks](https://dequeuniversity.com/rules/axe/4.10/bypass).",
+        "score": 1
+      },
+      {
+        "id": "definition-list",
+        "title": "`<dl>`'s contain only properly-ordered `<dt>` and `<dd>` groups, `<script>`, `<template>` or `<div>` elements.",
+        "description": "When definition lists are not properly marked up, screen readers may produce confusing or inaccurate output. [Learn how to structure definition lists correctly](https://dequeuniversity.com/rules/axe/4.10/definition-list).",
+        "score": 1
+      },
+      {
+        "id": "dlitem",
+        "title": "Definition list items are wrapped in `<dl>` elements",
+        "description": "Definition list items (`<dt>` and `<dd>`) must be wrapped in a parent `<dl>` element to ensure that screen readers can properly announce them. [Learn how to structure definition lists correctly](https://dequeuniversity.com/rules/axe/4.10/dlitem).",
+        "score": 1
+      },
+      {
+        "id": "document-title",
+        "title": "Document has a `<title>` element",
+        "description": "The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a page is relevant to their search. [Learn more about document titles](https://dequeuniversity.com/rules/axe/4.10/document-title).",
+        "score": 1
+      },
+      {
+        "id": "duplicate-id-aria",
+        "title": "ARIA IDs are unique",
+        "description": "The value of an ARIA ID must be unique to prevent other instances from being overlooked by assistive technologies. [Learn how to fix duplicate ARIA IDs](https://dequeuniversity.com/rules/axe/4.10/duplicate-id-aria).",
+        "score": 1
+      },
+      {
+        "id": "form-field-multiple-labels",
+        "title": "No form fields have multiple labels",
+        "description": "Form fields with multiple labels can be confusingly announced by assistive technologies like screen readers which use either the first, the last, or all of the labels. [Learn how to use form labels](https://dequeuniversity.com/rules/axe/4.10/form-field-multiple-labels).",
+        "score": 1
+      },
+      {
+        "id": "frame-title",
+        "title": "`<frame>` or `<iframe>` elements have a title",
+        "description": "Screen reader users rely on frame titles to describe the contents of frames. [Learn more about frame titles](https://dequeuniversity.com/rules/axe/4.10/frame-title).",
+        "score": 1
+      },
+      {
+        "id": "html-has-lang",
+        "title": "`<html>` element has a `[lang]` attribute",
+        "description": "If a page doesn't specify a `lang` attribute, a screen reader assumes that the page is in the default language that the user chose when setting up the screen reader. If the page isn't actually in the default language, then the screen reader might not announce the page's text correctly. [Learn more about the `lang` attribute](https://dequeuniversity.com/rules/axe/4.10/html-has-lang).",
+        "score": 1
+      },
+      {
+        "id": "html-lang-valid",
+        "title": "`<html>` element has a valid value for its `[lang]` attribute",
+        "description": "Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) helps screen readers announce text properly. [Learn how to use the `lang` attribute](https://dequeuniversity.com/rules/axe/4.10/html-lang-valid).",
+        "score": 1
+      },
+      {
+        "id": "html-xml-lang-mismatch",
+        "title": "`<html>` element has an `[xml:lang]` attribute with the same base language as the `[lang]` attribute.",
+        "description": "If the webpage does not specify a consistent language, then the screen reader might not announce the page's text correctly. [Learn more about the `lang` attribute](https://dequeuniversity.com/rules/axe/4.10/html-xml-lang-mismatch).",
+        "score": 1
+      },
+      {
+        "id": "image-alt",
+        "title": "Image elements have `[alt]` attributes",
+        "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.10/image-alt).",
+        "score": 1
+      },
+      {
+        "id": "image-redundant-alt",
+        "title": "Image elements do not have `[alt]` attributes that are redundant text.",
+        "description": "Informative elements should aim for short, descriptive alternative text. Alternative text that is exactly the same as the text adjacent to the link or image is potentially confusing for screen reader users, because the text will be read twice. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt).",
+        "score": 1
+      },
+      {
+        "id": "input-button-name",
+        "title": "Input buttons have discernible text.",
+        "description": "Adding discernable and accessible text to input buttons may help screen reader users understand the purpose of the input button. [Learn more about input buttons](https://dequeuniversity.com/rules/axe/4.10/input-button-name).",
+        "score": 1
+      },
+      {
+        "id": "input-image-alt",
+        "title": "`<input type=\"image\">` elements have `[alt]` text",
+        "description": "When an image is being used as an `<input>` button, providing alternative text can help screen reader users understand the purpose of the button. [Learn about input image alt text](https://dequeuniversity.com/rules/axe/4.10/input-image-alt).",
+        "score": 1
+      },
+      {
+        "id": "label",
+        "title": "Form elements have associated labels",
+        "description": "Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more about form element labels](https://dequeuniversity.com/rules/axe/4.10/label).",
+        "score": 1
+      },
+      {
+        "id": "link-in-text-block",
+        "title": "Links are distinguishable without relying on color.",
+        "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.10/link-in-text-block).",
+        "score": 1
+      },
+      {
+        "id": "listitem",
+        "title": "List items (`<li>`) are contained within `<ul>`, `<ol>` or `<menu>` parent elements",
+        "description": "Screen readers require list items (`<li>`) to be contained within a parent `<ul>`, `<ol>` or `<menu>` to be announced properly. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.10/listitem).",
+        "score": 1
+      },
+      {
+        "id": "meta-refresh",
+        "title": "The document does not use `<meta http-equiv=\"refresh\">`",
+        "description": "Users do not expect a page to refresh automatically, and doing so will move focus back to the top of the page. This may create a frustrating or confusing experience. [Learn more about the refresh meta tag](https://dequeuniversity.com/rules/axe/4.10/meta-refresh).",
+        "score": 1
+      },
+      {
+        "id": "meta-viewport",
+        "title": "`[user-scalable=\"no\"]` is not used in the `<meta name=\"viewport\">` element and the `[maximum-scale]` attribute is not less than 5.",
+        "description": "Disabling zooming is problematic for users with low vision who rely on screen magnification to properly see the contents of a web page. [Learn more about the viewport meta tag](https://dequeuniversity.com/rules/axe/4.10/meta-viewport).",
+        "score": 1
+      },
+      {
+        "id": "object-alt",
+        "title": "`<object>` elements have alternate text",
+        "description": "Screen readers cannot translate non-text content. Adding alternate text to `<object>` elements helps screen readers convey meaning to users. [Learn more about alt text for `object` elements](https://dequeuniversity.com/rules/axe/4.10/object-alt).",
+        "score": 1
+      },
+      {
+        "id": "skip-link",
+        "title": "Skip links are focusable.",
+        "description": "Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.10/skip-link).",
+        "score": 1
+      },
+      {
+        "id": "tabindex",
+        "title": "No element has a `[tabindex]` value greater than 0",
+        "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.10/tabindex).",
+        "score": 1
+      },
+      {
+        "id": "table-duplicate-name",
+        "title": "Tables have different content in the summary attribute and `<caption>`.",
+        "description": "The summary attribute should describe the table structure, while `<caption>` should have the onscreen title. Accurate table mark-up helps users of screen readers. [Learn more about summary and caption](https://dequeuniversity.com/rules/axe/4.10/table-duplicate-name).",
+        "score": 1
+      },
+      {
+        "id": "target-size",
+        "title": "Touch targets have sufficient size and spacing.",
+        "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.10/target-size).",
+        "score": 1
+      },
+      {
+        "id": "td-headers-attr",
+        "title": "Cells in a `<table>` element that use the `[headers]` attribute refer to table cells within the same table.",
+        "description": "Screen readers have features to make navigating tables easier. Ensuring `<td>` cells using the `[headers]` attribute only refer to other cells in the same table may improve the experience for screen reader users. [Learn more about the `headers` attribute](https://dequeuniversity.com/rules/axe/4.10/td-headers-attr).",
+        "score": 1
+      },
+      {
+        "id": "th-has-data-cells",
+        "title": "`<th>` elements and elements with `[role=\"columnheader\"/\"rowheader\"]` have data cells they describe.",
+        "description": "Screen readers have features to make navigating tables easier. Ensuring table headers always refer to some set of cells may improve the experience for screen reader users. [Learn more about table headers](https://dequeuniversity.com/rules/axe/4.10/th-has-data-cells).",
+        "score": 1
+      },
+      {
+        "id": "valid-lang",
+        "title": "`[lang]` attributes have a valid value",
+        "description": "Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) on elements helps ensure that text is pronounced correctly by a screen reader. [Learn how to use the `lang` attribute](https://dequeuniversity.com/rules/axe/4.10/valid-lang).",
+        "score": 1
+      },
+      {
+        "id": "video-caption",
+        "title": "`<video>` elements contain a `<track>` element with `[kind=\"captions\"]`",
+        "description": "When a video provides a caption it is easier for deaf and hearing impaired users to access its information. [Learn more about video captions](https://dequeuniversity.com/rules/axe/4.10/video-caption).",
+        "score": 1
+      },
+      {
+        "id": "focusable-controls",
+        "title": "Interactive controls are keyboard focusable",
+        "description": "Custom interactive controls are keyboard focusable and display a focus indicator. [Learn how to make custom controls focusable](https://developer.chrome.com/docs/lighthouse/accessibility/focusable-controls/).",
+        "score": 1
+      },
+      {
+        "id": "interactive-element-affordance",
+        "title": "Interactive elements indicate their purpose and state",
+        "description": "Interactive elements, such as links and buttons, should indicate their state and be distinguishable from non-interactive elements. [Learn how to decorate interactive elements with affordance hints](https://developer.chrome.com/docs/lighthouse/accessibility/interactive-element-affordance/).",
+        "score": 1
+      },
+      {
+        "id": "logical-tab-order",
+        "title": "The page has a logical tab order",
+        "description": "Tabbing through the page follows the visual layout. Users cannot focus elements that are offscreen. [Learn more about logical tab ordering](https://developer.chrome.com/docs/lighthouse/accessibility/logical-tab-order/).",
+        "score": 1
+      },
+      {
+        "id": "visual-order-follows-dom",
+        "title": "Visual order on the page follows DOM order",
+        "description": "DOM order matches the visual order, improving navigation for assistive technology. [Learn more about DOM and visual ordering](https://developer.chrome.com/docs/lighthouse/accessibility/visual-order-follows-dom/).",
+        "score": 1
+      },
+      {
+        "id": "focus-traps",
+        "title": "User focus is not accidentally trapped in a region",
+        "description": "A user can tab into and out of any control or region without accidentally trapping their focus. [Learn how to avoid focus traps](https://developer.chrome.com/docs/lighthouse/accessibility/focus-traps/).",
+        "score": 1
+      },
+      {
+        "id": "managed-focus",
+        "title": "The user's focus is directed to new content added to the page",
+        "description": "If new content, such as a dialog, is added to the page, the user's focus is directed to it. [Learn how to direct focus to new content](https://developer.chrome.com/docs/lighthouse/accessibility/managed-focus/).",
+        "score": 1
+      },
+      {
+        "id": "use-landmarks",
+        "title": "HTML5 landmark elements are used to improve navigation",
+        "description": "Landmark elements (`<main>`, `<nav>`, etc.) are used to improve the keyboard navigation of the page for assistive technology. [Learn more about landmark elements](https://developer.chrome.com/docs/lighthouse/accessibility/use-landmarks/).",
+        "score": 1
+      },
+      {
+        "id": "offscreen-content-hidden",
+        "title": "Offscreen content is hidden from assistive technology",
+        "description": "Offscreen content is hidden with display: none or aria-hidden=true. [Learn how to properly hide offscreen content](https://developer.chrome.com/docs/lighthouse/accessibility/offscreen-content-hidden/).",
+        "score": 1
+      },
+      {
+        "id": "custom-controls-labels",
+        "title": "Custom controls have associated labels",
+        "description": "Custom interactive controls have associated labels, provided by aria-label or aria-labelledby. [Learn more about custom controls and labels](https://developer.chrome.com/docs/lighthouse/accessibility/custom-controls-labels/).",
+        "score": 1
+      },
+      {
+        "id": "custom-controls-roles",
+        "title": "Custom controls have ARIA roles",
+        "description": "Custom interactive controls have appropriate ARIA roles. [Learn how to add roles to custom controls](https://developer.chrome.com/docs/lighthouse/accessibility/custom-control-roles/).",
+        "score": 1
+      },
+      {
+        "id": "empty-heading",
+        "title": "All heading elements contain content.",
+        "description": "A heading with no content or inaccessible text prevent screen reader users from accessing information on the page's structure. [Learn more about headings](https://dequeuniversity.com/rules/axe/4.10/empty-heading).",
+        "score": 1
+      },
+      {
+        "id": "identical-links-same-purpose",
+        "title": "Identical links have the same purpose.",
+        "description": "Links with the same destination should have the same description, to help users understand the link's purpose and decide whether to follow it. [Learn more about identical links](https://dequeuniversity.com/rules/axe/4.10/identical-links-same-purpose).",
+        "score": 1
+      },
+      {
+        "id": "landmark-one-main",
+        "title": "Document has a main landmark.",
+        "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.10/landmark-one-main).",
+        "score": 1
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels have matching accessible names.",
+        "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.10/label-content-name-mismatch).",
+        "score": 1
+      },
+      {
+        "id": "table-fake-caption",
+        "title": "Tables use `<caption>` instead of cells with the `[colspan]` attribute to indicate a caption.",
+        "description": "Screen readers have features to make navigating tables easier. Ensuring that tables use the actual caption element instead of cells with the `[colspan]` attribute may improve the experience for screen reader users. [Learn more about captions](https://dequeuniversity.com/rules/axe/4.10/table-fake-caption).",
+        "score": 1
+      },
+      {
+        "id": "td-has-header",
+        "title": "`<td>` elements in a large `<table>` have one or more table headers.",
+        "description": "Screen readers have features to make navigating tables easier. Ensuring that `<td>` elements in a large table (3 or more cells in width and height) have an associated table header may improve the experience for screen reader users. [Learn more about table headers](https://dequeuniversity.com/rules/axe/4.10/td-has-header).",
+        "score": 1
+      }
+    ],
+    "failed": [
+      {
+        "id": "color-contrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.10/color-contrast).",
+        "score": 0
+      },
+      {
+        "id": "heading-order",
+        "title": "Heading elements are not in a sequentially-descending order",
+        "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.10/heading-order).",
+        "score": 0
+      },
+      {
+        "id": "link-name",
+        "title": "Links do not have a discernible name",
+        "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.10/link-name).",
+        "score": 0
+      },
+      {
+        "id": "list",
+        "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+        "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.10/list).",
+        "score": 0
+      },
+      {
+        "id": "select-name",
+        "title": "Select elements do not have associated label elements.",
+        "description": "Form elements without effective labels can create frustrating experiences for screen reader users. [Learn more about the `select` element](https://dequeuniversity.com/rules/axe/4.10/select-name).",
+        "score": 0
+      }
+    ],
+    "colorContrast": {
+      "passed": false,
+      "score": 0
+    },
+    "ariaValidation": {
+      "passed": true,
+      "score": 1
+    }
+  },
+  "bestPracticesAnalytics": {
+    "passed": [
+      {
+        "id": "is-on-https",
+        "title": "Uses HTTPS",
+        "description": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more about HTTPS](https://developer.chrome.com/docs/lighthouse/pwa/is-on-https/).",
+        "score": 1
+      },
+      {
+        "id": "redirects-http",
+        "title": "Redirects HTTP traffic to HTTPS",
+        "description": "Make sure that you redirect all HTTP traffic to HTTPS in order to enable secure web features for all your users. [Learn more](https://developer.chrome.com/docs/lighthouse/pwa/redirects-http/).",
+        "score": 1
+      },
+      {
+        "id": "geolocation-on-start",
+        "title": "Avoids requesting the geolocation permission on page load",
+        "description": "Users are mistrustful of or confused by sites that request their location without context. Consider tying the request to a user action instead. [Learn more about the geolocation permission](https://developer.chrome.com/docs/lighthouse/best-practices/geolocation-on-start/).",
+        "score": 1
+      },
+      {
+        "id": "notification-on-start",
+        "title": "Avoids requesting the notification permission on page load",
+        "description": "Users are mistrustful of or confused by sites that request to send notifications without context. Consider tying the request to user gestures instead. [Learn more about responsibly getting permission for notifications](https://developer.chrome.com/docs/lighthouse/best-practices/notification-on-start/).",
+        "score": 1
+      },
+      {
+        "id": "csp-xss",
+        "title": "Ensure CSP is effective against XSS attacks",
+        "description": "A strong Content Security Policy (CSP) significantly reduces the risk of cross-site scripting (XSS) attacks. [Learn how to use a CSP to prevent XSS](https://developer.chrome.com/docs/lighthouse/best-practices/csp-xss/)",
+        "score": 1
+      },
+      {
+        "id": "has-hsts",
+        "title": "Use a strong HSTS policy",
+        "description": "Deployment of the HSTS header significantly reduces the risk of downgrading HTTP connections and eavesdropping attacks. A rollout in stages, starting with a low max-age is recommended. [Learn more about using a strong HSTS policy.](https://developer.chrome.com/docs/lighthouse/best-practices/has-hsts)",
+        "score": 1
+      },
+      {
+        "id": "origin-isolation",
+        "title": "Ensure proper origin isolation with COOP",
+        "description": "The Cross-Origin-Opener-Policy (COOP) can be used to isolate the top-level window from other documents such as pop-ups. [Learn more about deploying the COOP header.](https://web.dev/articles/why-coop-coep#coop)",
+        "score": 1
+      },
+      {
+        "id": "clickjacking-mitigation",
+        "title": "Mitigate clickjacking with XFO or CSP",
+        "description": "The `X-Frame-Options` (XFO) header or the `frame-ancestors` directive in the `Content-Security-Policy` (CSP) header control where a page can be embedded. These can mitigate clickjacking attacks by blocking some or all sites from embedding the page. [Learn more about mitigating clickjacking](https://developer.chrome.com/docs/lighthouse/best-practices/clickjacking-mitigation).",
+        "score": 1
+      },
+      {
+        "id": "trusted-types-xss",
+        "title": "Mitigate DOM-based XSS with Trusted Types",
+        "description": "The `require-trusted-types-for` directive in the `Content-Security-Policy` (CSP) header instructs user agents to control the data passed to DOM XSS sink functions. [Learn more about mitigating DOM-based XSS with Trusted Types](https://developer.chrome.com/docs/lighthouse/best-practices/trusted-types-xss).",
+        "score": 1
+      },
+      {
+        "id": "paste-preventing-inputs",
+        "title": "Allows users to paste into input fields",
+        "description": "Preventing input pasting is a bad practice for the UX, and weakens security by blocking password managers.[Learn more about user-friendly input fields](https://developer.chrome.com/docs/lighthouse/best-practices/paste-preventing-inputs/).",
+        "score": 1
+      },
+      {
+        "id": "image-aspect-ratio",
+        "title": "Displays images with correct aspect ratio",
+        "description": "Image display dimensions should match natural aspect ratio. [Learn more about image aspect ratio](https://developer.chrome.com/docs/lighthouse/best-practices/image-aspect-ratio/).",
+        "score": 1
+      },
+      {
+        "id": "image-size-responsive",
+        "title": "Serves images with appropriate resolution",
+        "description": "Image natural dimensions should be proportional to the display size and the pixel ratio to maximize image clarity. [Learn how to provide responsive images](https://web.dev/articles/serve-responsive-images).",
+        "score": 1
+      },
+      {
+        "id": "viewport",
+        "title": "Has a `<meta name=\"viewport\">` tag with `width` or `initial-scale`",
+        "description": "A `<meta name=\"viewport\">` not only optimizes your app for mobile screen sizes, but also prevents [a 300 millisecond delay to user input](https://developer.chrome.com/blog/300ms-tap-delay-gone-away/). [Learn more about using the viewport meta tag](https://developer.chrome.com/docs/lighthouse/pwa/viewport/).",
+        "score": 1
+      },
+      {
+        "id": "font-size",
+        "title": "Document uses legible font sizes",
+        "description": "Font sizes less than 12px are too small to be legible and require mobile visitors to “pinch to zoom” in order to read. Strive to have >60% of page text ≥12px. [Learn more about legible font sizes](https://developer.chrome.com/docs/lighthouse/seo/font-size/).",
+        "score": 1,
+        "displayValue": "99.97% legible text"
+      },
+      {
+        "id": "doctype",
+        "title": "Page has the HTML doctype",
+        "description": "Specifying a doctype prevents the browser from switching to quirks-mode. [Learn more about the doctype declaration](https://developer.chrome.com/docs/lighthouse/best-practices/doctype/).",
+        "score": 1
+      },
+      {
+        "id": "charset",
+        "title": "Properly defines charset",
+        "description": "A character encoding declaration is required. It can be done with a `<meta>` tag in the first 1024 bytes of the HTML or in the Content-Type HTTP response header. [Learn more about declaring the character encoding](https://developer.chrome.com/docs/lighthouse/best-practices/charset/).",
+        "score": 1
+      },
+      {
+        "id": "js-libraries",
+        "title": "Detected JavaScript libraries",
+        "description": "All front-end JavaScript libraries detected on the page. [Learn more about this JavaScript library detection diagnostic audit](https://developer.chrome.com/docs/lighthouse/best-practices/js-libraries/).",
+        "score": 1
+      },
+      {
+        "id": "deprecations",
+        "title": "Avoids deprecated APIs",
+        "description": "Deprecated APIs will eventually be removed from the browser. [Learn more about deprecated APIs](https://developer.chrome.com/docs/lighthouse/best-practices/deprecations/).",
+        "score": 1
+      },
+      {
+        "id": "valid-source-maps",
+        "title": "Page has valid source maps",
+        "description": "Source maps translate minified code to the original source code. This helps developers debug in production. In addition, Lighthouse is able to provide further insights. Consider deploying source maps to take advantage of these benefits. [Learn more about source maps](https://developer.chrome.com/docs/devtools/javascript/source-maps/).",
+        "score": 1
+      }
+    ],
+    "failed": [
+      {
+        "id": "third-party-cookies",
+        "title": "Uses third-party cookies",
+        "description": "Third-party cookies may be blocked in some contexts. [Learn more about preparing for third-party cookie restrictions](https://privacysandbox.google.com/cookies/prepare/overview).",
+        "score": 0,
+        "displayValue": "2 cookies found"
+      },
+      {
+        "id": "errors-in-console",
+        "title": "Browser errors were logged to the console",
+        "description": "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns. [Learn more about this errors in console diagnostic audit](https://developer.chrome.com/docs/lighthouse/best-practices/errors-in-console/)",
+        "score": 0
+      },
+      {
+        "id": "inspector-issues",
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+        "description": "Issues logged to the `Issues` panel in Chrome Devtools indicate unresolved problems. They can come from network request failures, insufficient security controls, and other browser concerns. Open up the Issues panel in Chrome DevTools for more details on each issue.",
+        "score": 0
+      }
+    ],
+    "security": {
+      "https": true,
+      "noUnsafeLinks": true,
+      "noConsoleErrors": false,
+      "modernLibs": true
+    },
+    "imageOptimization": {
+      "score": 0,
+      "opportunities": []
+    }
+  }
+}
