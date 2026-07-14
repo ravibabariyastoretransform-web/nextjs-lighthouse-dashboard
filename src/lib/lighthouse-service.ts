@@ -5,7 +5,9 @@ import { promisify } from 'util';
 import { AuditReport, CoreWebVitals, PerformanceAnalytics, SEOAnalytics, AccessibilityAnalytics, BestPracticesAnalytics, ResourceSummaryItem, NetworkRequestItem, JSExecTimeItem, AssetSizeItem, AuditItem, MetricDetail } from '@/types/lighthouse';
 
 const execAsync = promisify(exec);
-const REPORTS_DIR = path.join(process.cwd(), 'reports_data');
+const REPORTS_DIR = process.env.VERCEL
+    ? path.join('/tmp', 'reports_data')
+    : path.join(process.cwd(), 'reports_data');
 
 // Helper to ensure reports folder exists
 function ensureReportsDir() {
