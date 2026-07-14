@@ -27,12 +27,12 @@ export default function Sidebar({ className, onLinkClick }: SidebarProps) {
             icon: History,
             active: pathname === "/history",
         },
-        {
-            name: "Settings",
-            href: "/settings",
-            icon: Settings,
-            active: pathname === "/settings",
-        },
+        // {
+        //     name: "Settings",
+        //     href: "/settings",
+        //     icon: Settings,
+        //     active: pathname === "/settings",
+        // },
     ];
 
     return (
