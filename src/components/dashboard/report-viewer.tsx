@@ -337,28 +337,32 @@ export default function ReportViewer({ report, onDelete }: ReportViewerProps) {
                                     <CardDescription>Visual breakdown of transfer weight across media types.</CardDescription>
                                 </CardHeader>
                                 <CardContent className="h-64">
-                                    <ResponsiveContainer width="100%" height="100%">
-                                        <BarChart
-                                            data={chartData}
-                                            layout="vertical"
-                                            margin={{ top: 5, right: 30, left: 10, bottom: 5 }}
-                                        >
-                                            <XAxis type="number" stroke="currentColor" fontSize={11} />
-                                            <YAxis dataKey="name" type="category" stroke="currentColor" fontSize={11} width={80} />
-                                            <Tooltip
-                                                contentStyle={{
-                                                    backgroundColor: 'hsl(var(--card))',
-                                                    borderColor: 'hsl(var(--border))',
-                                                    borderRadius: '8px'
-                                                }}
-                                            />
-                                            <Bar dataKey="sizeKB" name="Size (KB)" fill="hsl(var(--primary))" radius={[0, 4, 4, 0]}>
-                                                {chartData.map((entry, index) => (
-                                                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                                                ))}
-                                            </Bar>
-                                        </BarChart>
-                                    </ResponsiveContainer>
+                                    {mounted ? (
+                                        <ResponsiveContainer width="100%" height="100%">
+                                            <BarChart
+                                                data={chartData}
+                                                layout="vertical"
+                                                margin={{ top: 5, right: 30, left: 10, bottom: 5 }}
+                                            >
+                                                <XAxis type="number" stroke="currentColor" fontSize={11} />
+                                                <YAxis dataKey="name" type="category" stroke="currentColor" fontSize={11} width={80} />
+                                                <Tooltip
+                                                    contentStyle={{
+                                                        backgroundColor: 'hsl(var(--card))',
+                                                        borderColor: 'hsl(var(--border))',
+                                                        borderRadius: '8px'
+                                                    }}
+                                                />
+                                                <Bar dataKey="sizeKB" name="Size (KB)" fill="hsl(var(--primary))" radius={[0, 4, 4, 0]}>
+                                                    {chartData.map((entry, index) => (
+                                                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                                                    ))}
+                                                </Bar>
+                                            </BarChart>
+                                        </ResponsiveContainer>
+                                    ) : (
+                                        <div className="w-full h-full animate-pulse bg-muted/10 rounded-md" />
+                                    )}
                                 </CardContent>
                             </Card>
 
