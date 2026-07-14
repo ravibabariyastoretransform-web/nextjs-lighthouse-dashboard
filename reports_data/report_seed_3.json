@@ -1,0 +1,418 @@
+{
+  "id": "report_seed_3",
+  "url": "https://vercel.com",
+  "timestamp": "2026-07-10T04:11:24.693Z",
+  "scores": {
+    "performance": 0.43,
+    "accessibility": 0.87,
+    "bestPractices": 0.67,
+    "seo": 1,
+    "overall": 0.74
+  },
+  "coreWebVitals": {
+    "lcp": {
+      "displayValue": "1.60 s",
+      "numericValue": 1596,
+      "score": 0.93616,
+      "status": "good"
+    },
+    "cls": {
+      "displayValue": "0.380",
+      "numericValue": 0.38,
+      "score": 0.2,
+      "status": "poor"
+    },
+    "tbt": {
+      "displayValue": "824 ms",
+      "numericValue": 824,
+      "score": 0.3,
+      "status": "poor"
+    },
+    "fcp": {
+      "displayValue": "1.86 s",
+      "numericValue": 1856,
+      "score": 0.75,
+      "status": "needs-improvement"
+    },
+    "speedIndex": {
+      "displayValue": "5.53 s",
+      "numericValue": 5525,
+      "score": 0.71,
+      "status": "needs-improvement"
+    },
+    "inp": {
+      "displayValue": "409 ms",
+      "numericValue": 409,
+      "score": 0.73,
+      "status": "needs-improvement"
+    }
+  },
+  "performanceAnalytics": {
+    "opportunities": [
+      {
+        "id": "modern-image-formats",
+        "title": "Serve images in next-gen formats",
+        "description": "Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads and less data consumption.",
+        "score": 0.75,
+        "displayValue": "Potential savings of 297 KB"
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity.",
+        "score": 0.76,
+        "displayValue": "Potential savings of 286 KB"
+      },
+      {
+        "id": "render-blocking-resources",
+        "title": "Eliminate render-blocking resources",
+        "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles.",
+        "score": 0.78,
+        "displayValue": "Potential savings of 979 ms"
+      },
+      {
+        "id": "unused-css",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity.",
+        "score": 0.86,
+        "displayValue": "Potential savings of 292 KB"
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "dom-size",
+        "title": "Avoid an excessive DOM size",
+        "description": "A large DOM will increase memory usage, cause longer style calculations, and produce costly layout reflows.",
+        "score": 0.96,
+        "displayValue": "1803 elements"
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find rendering and layout optimization help.",
+        "score": 0.92,
+        "displayValue": "6.54 s"
+      },
+      {
+        "id": "bootup-time",
+        "title": "JavaScript execution time",
+        "description": "Consider reducing the time spent parsing, compiling, and executing JS. You may find delivery optimization helpful.",
+        "score": 0.96,
+        "displayValue": "3.24 s"
+      },
+      {
+        "id": "font-display",
+        "title": "Ensure text remains visible during webfont load",
+        "description": "Use the css font-display property to ensure text is user-visible while the webfont is loading.",
+        "score": 1,
+        "displayValue": "Passed"
+      }
+    ],
+    "resourceSummary": [
+      {
+        "resourceType": "document",
+        "count": 1,
+        "size": 49152
+      },
+      {
+        "resourceType": "stylesheet",
+        "count": 3,
+        "size": 88064
+      },
+      {
+        "resourceType": "script",
+        "count": 11,
+        "size": 407552
+      },
+      {
+        "resourceType": "image",
+        "count": 5,
+        "size": 6553600
+      },
+      {
+        "resourceType": "font",
+        "count": 2,
+        "size": 87040
+      },
+      {
+        "resourceType": "other",
+        "count": 4,
+        "size": 76800
+      }
+    ],
+    "networkRequests": [
+      {
+        "url": "https://vercel.com/",
+        "startTime": 0,
+        "endTime": 120,
+        "transferSize": 49152,
+        "resourceType": "document",
+        "statusCode": 200
+      },
+      {
+        "url": "https://vercel.com/static/css/main.css",
+        "startTime": 125,
+        "endTime": 240,
+        "transferSize": 52838,
+        "resourceType": "stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://vercel.com/static/js/main.js",
+        "startTime": 150,
+        "endTime": 650,
+        "transferSize": 163020,
+        "resourceType": "script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://vercel.com/static/js/vendor.js",
+        "startTime": 160,
+        "endTime": 980,
+        "transferSize": 244531,
+        "resourceType": "script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://vercel.com/images/hero.webp",
+        "startTime": 300,
+        "endTime": 1200,
+        "transferSize": 1966080,
+        "resourceType": "image",
+        "statusCode": 200
+      },
+      {
+        "url": "https://vercel.com/images/logo.png",
+        "startTime": 250,
+        "endTime": 350,
+        "transferSize": 327680,
+        "resourceType": "image",
+        "statusCode": 200
+      },
+      {
+        "url": "https://vercel.com/fonts/inter.woff2",
+        "startTime": 200,
+        "endTime": 480,
+        "transferSize": 43520,
+        "resourceType": "font",
+        "statusCode": 200
+      },
+      {
+        "url": "https://www.google-analytics.com/analytics.js",
+        "startTime": 400,
+        "endTime": 580,
+        "transferSize": 28672,
+        "resourceType": "script",
+        "statusCode": 200
+      }
+    ],
+    "javascriptExecutionTime": [
+      {
+        "url": "https://vercel.com/static/js/vendor.js",
+        "duration": 518
+      },
+      {
+        "url": "https://vercel.com/static/js/main.js",
+        "duration": 240
+      },
+      {
+        "url": "https://www.google-analytics.com/analytics.js",
+        "duration": 54
+      }
+    ],
+    "largestAssets": [
+      {
+        "url": "https://vercel.com/images/hero.webp",
+        "totalBytes": 1966080
+      },
+      {
+        "url": "https://vercel.com/images/banner.jpg",
+        "totalBytes": 1310720
+      },
+      {
+        "url": "https://vercel.com/static/js/vendor.js",
+        "totalBytes": 244531
+      },
+      {
+        "url": "https://vercel.com/static/js/main.js",
+        "totalBytes": 163020
+      },
+      {
+        "url": "https://vercel.com/fonts/inter.woff2",
+        "totalBytes": 43520
+      }
+    ]
+  },
+  "seoAnalytics": {
+    "passed": [
+      {
+        "id": "meta-title",
+        "title": "Document has a `<title>` element",
+        "description": "The title element gives screen reader users and search engine crawlers an overview of the page context.",
+        "score": 1
+      },
+      {
+        "id": "meta-viewport",
+        "title": "Has a `<meta name=\"viewport\">` tag with `width` or `initial-scale`",
+        "description": "Optimizes mobile layout and text sizing.",
+        "score": 1
+      },
+      {
+        "id": "http-status",
+        "title": "Page has successful HTTP status code",
+        "description": "Returns a valid status code so crawlers can index it.",
+        "score": 1
+      },
+      {
+        "id": "content-width",
+        "title": "Content is sized correctly for the viewport",
+        "description": "Ensures users don't need to scroll horizontally.",
+        "score": 1
+      },
+      {
+        "id": "robots-txt",
+        "title": "robots.txt is valid",
+        "description": "Crawilers read this file to understand indexing rules.",
+        "score": 1
+      },
+      {
+        "id": "image-alt",
+        "title": "Image elements have [alt] attributes",
+        "description": "Images are annotated properly for accessibility and engines.",
+        "score": 1
+      }
+    ],
+    "failed": [
+      {
+        "id": "meta-description",
+        "title": "Document does not have a meta description",
+        "description": "Meta descriptions may be included in search results to concisely summarize page content.",
+        "score": 0
+      }
+    ],
+    "metadata": {
+      "hasTitle": true,
+      "hasMetaDescription": false,
+      "hasViewport": true,
+      "hasH1": true,
+      "isIndexable": true
+    },
+    "structuredData": {
+      "valid": true,
+      "detectedTypes": [
+        "WebSite",
+        "Organization"
+      ]
+    }
+  },
+  "accessibilityAnalytics": {
+    "passed": [
+      {
+        "id": "aria-hidden",
+        "title": "`[aria-hidden=\"true\"]` is not present on the document `<body>`",
+        "description": "Assistive technologies are not blocked from reading components.",
+        "score": 1
+      },
+      {
+        "id": "document-title",
+        "title": "Document has a `<title>`",
+        "description": "Screen readers read this first.",
+        "score": 1
+      },
+      {
+        "id": "html-lang",
+        "title": "`<html>` element has a `[lang]` attribute",
+        "description": "Allows screen readers to pronounce words correctly.",
+        "score": 1
+      },
+      {
+        "id": "bypass-nav",
+        "title": "Page contains a heading, skip link, or landmark region",
+        "description": "Supports keyboard navigation shortcuts.",
+        "score": 1
+      }
+    ],
+    "failed": [
+      {
+        "id": "color-contrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "description": "Low-contrast text is difficult or impossible for many users to read.",
+        "score": 0.4,
+        "displayValue": "Fail (Contrast ratio is below 4.5:1)"
+      },
+      {
+        "id": "aria-valid",
+        "title": "ARIA attributes are not valid or misspelled",
+        "description": "Ensures assistive technologies can read widgets correctly.",
+        "score": 0.1,
+        "displayValue": "2 elements fail ARIA spec rules"
+      }
+    ],
+    "colorContrast": {
+      "passed": false,
+      "score": 0.4,
+      "details": "Found elements with contrast ratio < 4.5:1"
+    },
+    "ariaValidation": {
+      "passed": false,
+      "score": 0.1,
+      "details": "Detected invalid role definitions"
+    }
+  },
+  "bestPracticesAnalytics": {
+    "passed": [
+      {
+        "id": "valid-source-maps",
+        "title": "Avoids submitting production maps",
+        "description": "Prevents exposing internal application code structures directly.",
+        "score": 1
+      },
+      {
+        "id": "doctype",
+        "title": "Page has the HTML doctype",
+        "description": "Prevents browser rendering in Quirks Mode.",
+        "score": 1
+      },
+      {
+        "id": "font-size",
+        "title": "Legible font sizes are maintained",
+        "description": "Font sizes are large enough to be legible on mobile displays.",
+        "score": 1
+      },
+      {
+        "id": "is-on-https",
+        "title": "Uses HTTPS",
+        "description": "Secure connection verified.",
+        "score": 1
+      },
+      {
+        "id": "browser-errors",
+        "title": "No browser errors logged to the console",
+        "description": "Page executed clean of console errors.",
+        "score": 1
+      }
+    ],
+    "failed": [],
+    "security": {
+      "https": true,
+      "noUnsafeLinks": false,
+      "noConsoleErrors": true,
+      "modernLibs": true
+    },
+    "imageOptimization": {
+      "score": 0.45,
+      "opportunities": [
+        {
+          "url": "https://vercel.com/images/banner.jpg",
+          "size": 1310720,
+          "wastedBytes": 524288
+        },
+        {
+          "url": "https://vercel.com/images/gallery_1.png",
+          "size": 983040,
+          "wastedBytes": 589824
+        }
+      ]
+    }
+  }
+}

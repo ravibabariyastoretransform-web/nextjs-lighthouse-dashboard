@@ -1,0 +1,416 @@
+{
+  "id": "report_1784002362508_1045",
+  "url": "https://storetransform.com/career/",
+  "timestamp": "2026-07-14T04:12:42.508Z",
+  "scores": {
+    "performance": 0.49,
+    "accessibility": 0.82,
+    "bestPractices": 0.81,
+    "seo": 0.73,
+    "overall": 0.71
+  },
+  "coreWebVitals": {
+    "lcp": {
+      "displayValue": "4.40 s",
+      "numericValue": 4404,
+      "score": 0.133,
+      "status": "poor"
+    },
+    "cls": {
+      "displayValue": "0.120",
+      "numericValue": 0.12,
+      "score": 0.6,
+      "status": "needs-improvement"
+    },
+    "tbt": {
+      "displayValue": "266 ms",
+      "numericValue": 266,
+      "score": 0.7,
+      "status": "needs-improvement"
+    },
+    "fcp": {
+      "displayValue": "2.53 s",
+      "numericValue": 2534,
+      "score": 0.75,
+      "status": "needs-improvement"
+    },
+    "speedIndex": {
+      "displayValue": "1.73 s",
+      "numericValue": 1730,
+      "score": 0.92,
+      "status": "good"
+    },
+    "inp": {
+      "displayValue": "301 ms",
+      "numericValue": 301,
+      "score": 0.73,
+      "status": "needs-improvement"
+    }
+  },
+  "performanceAnalytics": {
+    "opportunities": [
+      {
+        "id": "modern-image-formats",
+        "title": "Serve images in next-gen formats",
+        "description": "Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads and less data consumption.",
+        "score": 0.85,
+        "displayValue": "Potential savings of 1557 KB"
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity.",
+        "score": 0.86,
+        "displayValue": "Potential savings of 1091 KB"
+      },
+      {
+        "id": "render-blocking-resources",
+        "title": "Eliminate render-blocking resources",
+        "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles.",
+        "score": 0.87,
+        "displayValue": "Potential savings of 341 ms"
+      },
+      {
+        "id": "unused-css",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity.",
+        "score": 0.92,
+        "displayValue": "Potential savings of 39 KB"
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "dom-size",
+        "title": "Avoid an excessive DOM size",
+        "description": "A large DOM will increase memory usage, cause longer style calculations, and produce costly layout reflows.",
+        "score": 0.81,
+        "displayValue": "2600 elements"
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find rendering and layout optimization help.",
+        "score": 0.77,
+        "displayValue": "4.68 s"
+      },
+      {
+        "id": "bootup-time",
+        "title": "JavaScript execution time",
+        "description": "Consider reducing the time spent parsing, compiling, and executing JS. You may find delivery optimization helpful.",
+        "score": 0.83,
+        "displayValue": "3.73 s"
+      },
+      {
+        "id": "font-display",
+        "title": "Ensure text remains visible during webfont load",
+        "description": "Use the css font-display property to ensure text is user-visible while the webfont is loading.",
+        "score": 1,
+        "displayValue": "Passed"
+      }
+    ],
+    "resourceSummary": [
+      {
+        "resourceType": "document",
+        "count": 1,
+        "size": 25600
+      },
+      {
+        "resourceType": "stylesheet",
+        "count": 3,
+        "size": 104448
+      },
+      {
+        "resourceType": "script",
+        "count": 30,
+        "size": 1930240
+      },
+      {
+        "resourceType": "image",
+        "count": 29,
+        "size": 4411392
+      },
+      {
+        "resourceType": "font",
+        "count": 3,
+        "size": 123904
+      },
+      {
+        "resourceType": "other",
+        "count": 1,
+        "size": 10240
+      }
+    ],
+    "networkRequests": [
+      {
+        "url": "https://storetransform.com/",
+        "startTime": 0,
+        "endTime": 120,
+        "transferSize": 25600,
+        "resourceType": "document",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/static/css/main.css",
+        "startTime": 125,
+        "endTime": 240,
+        "transferSize": 62668,
+        "resourceType": "stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/static/js/main.js",
+        "startTime": 150,
+        "endTime": 650,
+        "transferSize": 772096,
+        "resourceType": "script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/static/js/vendor.js",
+        "startTime": 160,
+        "endTime": 980,
+        "transferSize": 1158144,
+        "resourceType": "script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/images/hero.webp",
+        "startTime": 300,
+        "endTime": 1200,
+        "transferSize": 1323417,
+        "resourceType": "image",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/images/logo.png",
+        "startTime": 250,
+        "endTime": 350,
+        "transferSize": 220569,
+        "resourceType": "image",
+        "statusCode": 200
+      },
+      {
+        "url": "https://storetransform.com/fonts/inter.woff2",
+        "startTime": 200,
+        "endTime": 480,
+        "transferSize": 61952,
+        "resourceType": "font",
+        "statusCode": 200
+      },
+      {
+        "url": "https://www.google-analytics.com/analytics.js",
+        "startTime": 400,
+        "endTime": 580,
+        "transferSize": 28672,
+        "resourceType": "script",
+        "statusCode": 200
+      }
+    ],
+    "javascriptExecutionTime": [
+      {
+        "url": "https://storetransform.com/static/js/vendor.js",
+        "duration": 1242
+      },
+      {
+        "url": "https://storetransform.com/static/js/main.js",
+        "duration": 557
+      },
+      {
+        "url": "https://www.google-analytics.com/analytics.js",
+        "duration": 109
+      }
+    ],
+    "largestAssets": [
+      {
+        "url": "https://storetransform.com/images/hero.webp",
+        "totalBytes": 1323417
+      },
+      {
+        "url": "https://storetransform.com/static/js/vendor.js",
+        "totalBytes": 1158144
+      },
+      {
+        "url": "https://storetransform.com/images/banner.jpg",
+        "totalBytes": 882278
+      },
+      {
+        "url": "https://storetransform.com/static/js/main.js",
+        "totalBytes": 772096
+      },
+      {
+        "url": "https://storetransform.com/fonts/inter.woff2",
+        "totalBytes": 61952
+      }
+    ]
+  },
+  "seoAnalytics": {
+    "passed": [
+      {
+        "id": "meta-title",
+        "title": "Document has a `<title>` element",
+        "description": "The title element gives screen reader users and search engine crawlers an overview of the page context.",
+        "score": 1
+      },
+      {
+        "id": "meta-viewport",
+        "title": "Has a `<meta name=\"viewport\">` tag with `width` or `initial-scale`",
+        "description": "Optimizes mobile layout and text sizing.",
+        "score": 1
+      },
+      {
+        "id": "http-status",
+        "title": "Page has successful HTTP status code",
+        "description": "Returns a valid status code so crawlers can index it.",
+        "score": 1
+      },
+      {
+        "id": "content-width",
+        "title": "Content is sized correctly for the viewport",
+        "description": "Ensures users don't need to scroll horizontally.",
+        "score": 1
+      },
+      {
+        "id": "robots-txt",
+        "title": "robots.txt is valid",
+        "description": "Crawilers read this file to understand indexing rules.",
+        "score": 1
+      },
+      {
+        "id": "meta-description",
+        "title": "Document has a meta description",
+        "description": "Summarizes website contents for search results.",
+        "score": 1
+      },
+      {
+        "id": "image-alt",
+        "title": "Image elements have [alt] attributes",
+        "description": "Images are annotated properly for accessibility and engines.",
+        "score": 1
+      }
+    ],
+    "failed": [],
+    "metadata": {
+      "hasTitle": true,
+      "hasMetaDescription": true,
+      "hasViewport": true,
+      "hasH1": true,
+      "isIndexable": true
+    },
+    "structuredData": {
+      "valid": true,
+      "detectedTypes": [
+        "WebSite",
+        "Organization"
+      ]
+    }
+  },
+  "accessibilityAnalytics": {
+    "passed": [
+      {
+        "id": "aria-hidden",
+        "title": "`[aria-hidden=\"true\"]` is not present on the document `<body>`",
+        "description": "Assistive technologies are not blocked from reading components.",
+        "score": 1
+      },
+      {
+        "id": "document-title",
+        "title": "Document has a `<title>`",
+        "description": "Screen readers read this first.",
+        "score": 1
+      },
+      {
+        "id": "html-lang",
+        "title": "`<html>` element has a `[lang]` attribute",
+        "description": "Allows screen readers to pronounce words correctly.",
+        "score": 1
+      },
+      {
+        "id": "bypass-nav",
+        "title": "Page contains a heading, skip link, or landmark region",
+        "description": "Supports keyboard navigation shortcuts.",
+        "score": 1
+      },
+      {
+        "id": "color-contrast",
+        "title": "Background and foreground colors have sufficient contrast ratio.",
+        "description": "Text contrast matches WCAG AA requirements.",
+        "score": 1
+      },
+      {
+        "id": "aria-valid",
+        "title": "ARIA attributes match validation rules",
+        "description": "ARIA configurations are fully valid.",
+        "score": 1
+      }
+    ],
+    "failed": [],
+    "colorContrast": {
+      "passed": true,
+      "score": 1,
+      "details": "All text elements exhibit compliant contrast"
+    },
+    "ariaValidation": {
+      "passed": true,
+      "score": 1,
+      "details": "ARIA validation complete"
+    }
+  },
+  "bestPracticesAnalytics": {
+    "passed": [
+      {
+        "id": "valid-source-maps",
+        "title": "Avoids submitting production maps",
+        "description": "Prevents exposing internal application code structures directly.",
+        "score": 1
+      },
+      {
+        "id": "doctype",
+        "title": "Page has the HTML doctype",
+        "description": "Prevents browser rendering in Quirks Mode.",
+        "score": 1
+      },
+      {
+        "id": "font-size",
+        "title": "Legible font sizes are maintained",
+        "description": "Font sizes are large enough to be legible on mobile displays.",
+        "score": 1
+      }
+    ],
+    "failed": [
+      {
+        "id": "is-on-https",
+        "title": "Does not use HTTPS",
+        "description": "All sites should be protected with HTTPS, even ones that don't handle sensitive data.",
+        "score": 0
+      },
+      {
+        "id": "browser-errors",
+        "title": "Browser errors were logged to the console",
+        "description": "Errors logged to the console indicate unresolved problems. They can come from network request failures and other concern areas.",
+        "score": 0,
+        "displayValue": "5 errors detected"
+      }
+    ],
+    "security": {
+      "https": false,
+      "noUnsafeLinks": true,
+      "noConsoleErrors": false,
+      "modernLibs": false
+    },
+    "imageOptimization": {
+      "score": 0.67,
+      "opportunities": [
+        {
+          "url": "https://storetransform.com/images/banner.jpg",
+          "size": 882278,
+          "wastedBytes": 352911
+        },
+        {
+          "url": "https://storetransform.com/images/gallery_1.png",
+          "size": 661708,
+          "wastedBytes": 397025
+        }
+      ]
+    }
+  }
+}

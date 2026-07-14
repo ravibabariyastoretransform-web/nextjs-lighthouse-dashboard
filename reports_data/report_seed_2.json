@@ -1,0 +1,414 @@
+{
+  "id": "report_seed_2",
+  "url": "https://github.com",
+  "timestamp": "2026-07-12T04:11:24.692Z",
+  "scores": {
+    "performance": 0.57,
+    "accessibility": 0.81,
+    "bestPractices": 0.67,
+    "seo": 0.72,
+    "overall": 0.69
+  },
+  "coreWebVitals": {
+    "lcp": {
+      "displayValue": "4.24 s",
+      "numericValue": 4244,
+      "score": 0.14633333333333332,
+      "status": "poor"
+    },
+    "cls": {
+      "displayValue": "0.100",
+      "numericValue": 0.1,
+      "score": 0.6,
+      "status": "needs-improvement"
+    },
+    "tbt": {
+      "displayValue": "230 ms",
+      "numericValue": 230,
+      "score": 0.7,
+      "status": "needs-improvement"
+    },
+    "fcp": {
+      "displayValue": "2.42 s",
+      "numericValue": 2418,
+      "score": 0.75,
+      "status": "needs-improvement"
+    },
+    "speedIndex": {
+      "displayValue": "5.55 s",
+      "numericValue": 5546,
+      "score": 0.71,
+      "status": "needs-improvement"
+    },
+    "inp": {
+      "displayValue": "281 ms",
+      "numericValue": 281,
+      "score": 0.73,
+      "status": "needs-improvement"
+    }
+  },
+  "performanceAnalytics": {
+    "opportunities": [
+      {
+        "id": "modern-image-formats",
+        "title": "Serve images in next-gen formats",
+        "description": "Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads and less data consumption.",
+        "score": 0.67,
+        "displayValue": "Potential savings of 1128 KB"
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity.",
+        "score": 0.69,
+        "displayValue": "Potential savings of 912 KB"
+      },
+      {
+        "id": "render-blocking-resources",
+        "title": "Eliminate render-blocking resources",
+        "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles.",
+        "score": 0.71,
+        "displayValue": "Potential savings of 1452 ms"
+      },
+      {
+        "id": "unused-css",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity.",
+        "score": 0.82,
+        "displayValue": "Potential savings of 12 KB"
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "dom-size",
+        "title": "Avoid an excessive DOM size",
+        "description": "A large DOM will increase memory usage, cause longer style calculations, and produce costly layout reflows.",
+        "score": 0.82,
+        "displayValue": "2667 elements"
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find rendering and layout optimization help.",
+        "score": 0.79,
+        "displayValue": "2.02 s"
+      },
+      {
+        "id": "bootup-time",
+        "title": "JavaScript execution time",
+        "description": "Consider reducing the time spent parsing, compiling, and executing JS. You may find delivery optimization helpful.",
+        "score": 0.84,
+        "displayValue": "4.84 s"
+      },
+      {
+        "id": "font-display",
+        "title": "Ensure text remains visible during webfont load",
+        "description": "Use the css font-display property to ensure text is user-visible while the webfont is loading.",
+        "score": 1,
+        "displayValue": "Passed"
+      }
+    ],
+    "resourceSummary": [
+      {
+        "resourceType": "document",
+        "count": 1,
+        "size": 35840
+      },
+      {
+        "resourceType": "stylesheet",
+        "count": 5,
+        "size": 192512
+      },
+      {
+        "resourceType": "script",
+        "count": 30,
+        "size": 2014208
+      },
+      {
+        "resourceType": "image",
+        "count": 8,
+        "size": 952320
+      },
+      {
+        "resourceType": "font",
+        "count": 1,
+        "size": 66560
+      },
+      {
+        "resourceType": "other",
+        "count": 8,
+        "size": 153600
+      }
+    ],
+    "networkRequests": [
+      {
+        "url": "https://github.com/",
+        "startTime": 0,
+        "endTime": 120,
+        "transferSize": 35840,
+        "resourceType": "document",
+        "statusCode": 200
+      },
+      {
+        "url": "https://github.com/static/css/main.css",
+        "startTime": 125,
+        "endTime": 240,
+        "transferSize": 115507,
+        "resourceType": "stylesheet",
+        "statusCode": 200
+      },
+      {
+        "url": "https://github.com/static/js/main.js",
+        "startTime": 150,
+        "endTime": 650,
+        "transferSize": 805683,
+        "resourceType": "script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://github.com/static/js/vendor.js",
+        "startTime": 160,
+        "endTime": 980,
+        "transferSize": 1208524,
+        "resourceType": "script",
+        "statusCode": 200
+      },
+      {
+        "url": "https://github.com/images/hero.webp",
+        "startTime": 300,
+        "endTime": 1200,
+        "transferSize": 285696,
+        "resourceType": "image",
+        "statusCode": 200
+      },
+      {
+        "url": "https://github.com/images/logo.png",
+        "startTime": 250,
+        "endTime": 350,
+        "transferSize": 47616,
+        "resourceType": "image",
+        "statusCode": 200
+      },
+      {
+        "url": "https://github.com/fonts/inter.woff2",
+        "startTime": 200,
+        "endTime": 480,
+        "transferSize": 33280,
+        "resourceType": "font",
+        "statusCode": 200
+      },
+      {
+        "url": "https://www.google-analytics.com/analytics.js",
+        "startTime": 400,
+        "endTime": 580,
+        "transferSize": 28672,
+        "resourceType": "script",
+        "statusCode": 200
+      }
+    ],
+    "javascriptExecutionTime": [
+      {
+        "url": "https://github.com/static/js/vendor.js",
+        "duration": 374
+      },
+      {
+        "url": "https://github.com/static/js/main.js",
+        "duration": 175
+      },
+      {
+        "url": "https://www.google-analytics.com/analytics.js",
+        "duration": 42
+      }
+    ],
+    "largestAssets": [
+      {
+        "url": "https://github.com/static/js/vendor.js",
+        "totalBytes": 1208524
+      },
+      {
+        "url": "https://github.com/static/js/main.js",
+        "totalBytes": 805683
+      },
+      {
+        "url": "https://github.com/images/hero.webp",
+        "totalBytes": 285696
+      },
+      {
+        "url": "https://github.com/images/banner.jpg",
+        "totalBytes": 190464
+      },
+      {
+        "url": "https://github.com/fonts/inter.woff2",
+        "totalBytes": 33280
+      }
+    ]
+  },
+  "seoAnalytics": {
+    "passed": [
+      {
+        "id": "meta-title",
+        "title": "Document has a `<title>` element",
+        "description": "The title element gives screen reader users and search engine crawlers an overview of the page context.",
+        "score": 1
+      },
+      {
+        "id": "meta-viewport",
+        "title": "Has a `<meta name=\"viewport\">` tag with `width` or `initial-scale`",
+        "description": "Optimizes mobile layout and text sizing.",
+        "score": 1
+      },
+      {
+        "id": "http-status",
+        "title": "Page has successful HTTP status code",
+        "description": "Returns a valid status code so crawlers can index it.",
+        "score": 1
+      },
+      {
+        "id": "content-width",
+        "title": "Content is sized correctly for the viewport",
+        "description": "Ensures users don't need to scroll horizontally.",
+        "score": 1
+      },
+      {
+        "id": "robots-txt",
+        "title": "robots.txt is valid",
+        "description": "Crawilers read this file to understand indexing rules.",
+        "score": 1
+      },
+      {
+        "id": "meta-description",
+        "title": "Document has a meta description",
+        "description": "Summarizes website contents for search results.",
+        "score": 1
+      },
+      {
+        "id": "image-alt",
+        "title": "Image elements have [alt] attributes",
+        "description": "Images are annotated properly for accessibility and engines.",
+        "score": 1
+      }
+    ],
+    "failed": [],
+    "metadata": {
+      "hasTitle": true,
+      "hasMetaDescription": true,
+      "hasViewport": true,
+      "hasH1": true,
+      "isIndexable": true
+    },
+    "structuredData": {
+      "valid": true,
+      "detectedTypes": [
+        "WebSite",
+        "Organization"
+      ]
+    }
+  },
+  "accessibilityAnalytics": {
+    "passed": [
+      {
+        "id": "aria-hidden",
+        "title": "`[aria-hidden=\"true\"]` is not present on the document `<body>`",
+        "description": "Assistive technologies are not blocked from reading components.",
+        "score": 1
+      },
+      {
+        "id": "document-title",
+        "title": "Document has a `<title>`",
+        "description": "Screen readers read this first.",
+        "score": 1
+      },
+      {
+        "id": "html-lang",
+        "title": "`<html>` element has a `[lang]` attribute",
+        "description": "Allows screen readers to pronounce words correctly.",
+        "score": 1
+      },
+      {
+        "id": "bypass-nav",
+        "title": "Page contains a heading, skip link, or landmark region",
+        "description": "Supports keyboard navigation shortcuts.",
+        "score": 1
+      },
+      {
+        "id": "color-contrast",
+        "title": "Background and foreground colors have sufficient contrast ratio.",
+        "description": "Text contrast matches WCAG AA requirements.",
+        "score": 1
+      },
+      {
+        "id": "aria-valid",
+        "title": "ARIA attributes match validation rules",
+        "description": "ARIA configurations are fully valid.",
+        "score": 1
+      }
+    ],
+    "failed": [],
+    "colorContrast": {
+      "passed": true,
+      "score": 1,
+      "details": "All text elements exhibit compliant contrast"
+    },
+    "ariaValidation": {
+      "passed": true,
+      "score": 1,
+      "details": "ARIA validation complete"
+    }
+  },
+  "bestPracticesAnalytics": {
+    "passed": [
+      {
+        "id": "valid-source-maps",
+        "title": "Avoids submitting production maps",
+        "description": "Prevents exposing internal application code structures directly.",
+        "score": 1
+      },
+      {
+        "id": "doctype",
+        "title": "Page has the HTML doctype",
+        "description": "Prevents browser rendering in Quirks Mode.",
+        "score": 1
+      },
+      {
+        "id": "font-size",
+        "title": "Legible font sizes are maintained",
+        "description": "Font sizes are large enough to be legible on mobile displays.",
+        "score": 1
+      },
+      {
+        "id": "is-on-https",
+        "title": "Uses HTTPS",
+        "description": "Secure connection verified.",
+        "score": 1
+      },
+      {
+        "id": "browser-errors",
+        "title": "No browser errors logged to the console",
+        "description": "Page executed clean of console errors.",
+        "score": 1
+      }
+    ],
+    "failed": [],
+    "security": {
+      "https": true,
+      "noUnsafeLinks": true,
+      "noConsoleErrors": true,
+      "modernLibs": true
+    },
+    "imageOptimization": {
+      "score": 0.56,
+      "opportunities": [
+        {
+          "url": "https://github.com/images/banner.jpg",
+          "size": 190464,
+          "wastedBytes": 76185
+        },
+        {
+          "url": "https://github.com/images/gallery_1.png",
+          "size": 142848,
+          "wastedBytes": 85708
+        }
+      ]
+    }
+  }
+}
