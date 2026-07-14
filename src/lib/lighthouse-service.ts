@@ -11,8 +11,9 @@ const execAsync = promisify(exec);
 // Neon DB Initialization
 const sql = process.env.DATABASE_URL ? neon(process.env.DATABASE_URL) : null;
 
+let tableEnsured = false;
 async function ensureTableExists() {
-    if (!sql) return;
+    if (!sql || tableEnsured) return;
     try {
         await sql`
             CREATE TABLE IF NOT EXISTS audit_reports (
@@ -22,13 +23,12 @@ async function ensureTableExists() {
                 report_data JSONB NOT NULL
             )
         `;
+        tableEnsured = true;
     } catch (e) {
         console.error("Neon DB Table Creation Error:", e);
+        throw e;
     }
 }
-
-// Ensure the table on module load
-ensureTableExists().catch(console.error);
 
 // Generate a deterministic number between min and max based on a string seed
 function getSeededRandom(seed: string, key: string, min: number, max: number): number {
@@ -425,6 +425,7 @@ export async function getReports(): Promise<AuditReport[]> {
         throw new Error("Neon Database is not configured. Cannot get reports.");
     }
     try {
+        await ensureTableExists();
         const rows = await sql`SELECT report_data FROM audit_reports ORDER BY timestamp DESC`;
         if (rows.length === 0) {
             // Seed initial reports if DB is empty
@@ -454,6 +455,7 @@ export async function getReportById(id: string): Promise<AuditReport | null> {
         return null;
     }
     try {
+        await ensureTableExists();
         const rows = await sql`SELECT report_data FROM audit_reports WHERE id = ${id}`;
         if (rows.length > 0) return rows[0].report_data as AuditReport;
         return null;
@@ -468,6 +470,7 @@ export async function saveReport(report: AuditReport): Promise<void> {
         throw new Error("Neon Database is not configured. Cannot save report.");
     }
     try {
+        await ensureTableExists();
         await sql`
             INSERT INTO audit_reports (id, url, timestamp, report_data)
             VALUES (${report.id}, ${report.url}, ${new Date(report.timestamp)}, ${report as any})
@@ -485,6 +488,7 @@ export async function deleteReport(id: string): Promise<boolean> {
         return false;
     }
     try {
+        await ensureTableExists();
         await sql`DELETE FROM audit_reports WHERE id = ${id}`;
         return true;
     } catch (e) {
