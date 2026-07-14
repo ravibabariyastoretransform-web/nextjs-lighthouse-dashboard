@@ -507,7 +507,7 @@ export async function runLighthouseAudit(url: string, forceSimulated = false): P
 
         // Spawn command
         // We execute via npx lighthouse so it uses our local node_modules install if available, or pulls standard cli
-        const command = `npx lighthouse ${checkUrl} --output=json --output-path=${tempOutPath} --chrome-flags="--headless --no-sandbox --disable-gpu --disable-dev-shm-usage" --quiet`;
+        const command = `npx lighthouse ${checkUrl} --preset=desktop --output=json --output-path=${tempOutPath} --chrome-flags="--headless --no-sandbox --disable-gpu --disable-dev-shm-usage" --quiet`;
 
         console.log(`Executing audit: ${command}`);
 
