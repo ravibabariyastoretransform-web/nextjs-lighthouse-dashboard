@@ -64,8 +64,8 @@ export default function ReportViewer({ report, onDelete }: ReportViewerProps) {
         .filter(item => item.resourceType !== 'total')
         .map(item => ({
             name: item.resourceType.charAt(0).toUpperCase() + item.resourceType.slice(1),
-            sizeKB: Math.round(item.size / 1024),
-            count: item.count
+            sizeKB: Math.round((item.size || 0) / 1024) || 0,
+            count: item.count || 0
         }));
 
     const COLORS = ["#8884d8", "#82ca9d", "#ffc658", "#ff8042", "#0088fe", "#00c49f"];
@@ -393,7 +393,7 @@ export default function ReportViewer({ report, onDelete }: ReportViewerProps) {
                                                         <div
                                                             className="h-full rounded-full"
                                                             style={{
-                                                                width: `${Math.min(100, (item.size / report.performanceAnalytics.resourceSummary[0]?.size) * 100)}%`,
+                                                                width: `${report.performanceAnalytics.resourceSummary[0]?.size ? Math.min(100, ((item.size || 0) / report.performanceAnalytics.resourceSummary[0].size) * 100) : 0}%`,
                                                                 backgroundColor: COLORS[idx % COLORS.length]
                                                             }}
                                                         />
